@@ -1,4 +1,4 @@
-# Data definition
+# Data Definition
 
 **CREATE DATABASE**
 
@@ -28,8 +28,9 @@ A schema is a collection of database objects including tables, views, triggers, 
 A schema always belongs to one database. On the other hand, a database may have one or multiple schemas.
 
 **Get Information about tables**
-
+```
 Select * From INFORMATION_SCHEMA.COLUMNS Where TABLE_NAME = 'jobs'
+```
 
 **Create Schema**
 
