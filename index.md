@@ -22,6 +22,9 @@
   - [PostgreSQL](database/postgres/README.md)
     - [PostgreSQL Queries](database/postgres/postgres_queries.md)
     - [PostgreSQL Joins](database/postgres/postgres_joins.md)
+  
+  - [SQL Server](database/sql_server/README.md)
+    - [Data Organization](database/sql_server/ddl.md)
 
 ### [Blockchain](blockchain/README.md)
   - [Smart Contract 101](blockchain/contract.md)
