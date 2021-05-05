@@ -25,6 +25,7 @@
   
   - [SQL Server](database/sql_server/README.md)
     - [Data Organization](database/sql_server/ddl.md)
+    - [Data Manipulation](database/sql_server/dml.md)
 
 ### [Blockchain](blockchain/README.md)
   - [Smart Contract 101](blockchain/contract.md)
