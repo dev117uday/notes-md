@@ -7,6 +7,12 @@
 ### Rust
   - [Rust](rust/README.md)
 
+### Java
+  - [Java Notes](java/index.md)
+
+### Golang
+  - [Golang Notes](golang/index.md)
+
 ### Networking
   - [Introduction to CN](networking/intro.pdf)
   - [TCP & IP](networking/tcp_ip.pdf)
