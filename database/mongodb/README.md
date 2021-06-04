@@ -10,7 +10,7 @@ use the connect settings in mongodb atlas
 
 After installing, you can start the mongod by
 
-```sh
+```bash
 sudo systemctl start mongod
 ```
 
@@ -18,19 +18,19 @@ if you receive an error : **Failed to start mongod.service: Unit mongod.service 
 
 **Run the following command first:**
 
-```sh
+```bash
 sudo systemctl daemon-reload
 ```
 
 **Verify that MongoDB has started successfully.**
 
-```sh
+```bash
 sudo systemctl status mongod
 ```
 
 **You can optionally ensure that MongoDB will start following a system reboot by issuing the following command:**
 
-```sh
+```bash
 sudo systemctl enable mongod
 ```
 
@@ -38,7 +38,7 @@ sudo systemctl enable mongod
 
 As needed, you can stop the [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod) process by issuing the following command:
 
-```sh
+```bash
 sudo systemctl stop mongod
 ```
 
@@ -46,12 +46,13 @@ sudo systemctl stop mongod
 
 You can restart the [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod) process by issuing the following command:
 
-```sh
+```bash
 sudo systemctl restart mongod
 ```
 
 ## MongoDB setup Docker
-```sh
+
+```bash
 sudo docker run --name mongo --network mongonet -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=pass mongo
 
 sudo docker exec -it some-mongo sh
@@ -61,13 +62,13 @@ sudo docker exec -it some-mongo sh
 
 Start a [`mongo`](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo) shell on the same host machine as the [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod). You can run the [`mongo`](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo) shell without any command-line options to connect to a [`mongod`](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod) that is running on your localhost with default port 27017:
 
-```sh
+```bash
 mongo "mongodb+srv://<username>:<password>@<url>:<port>/<db>"
 ```
 
 **To show collections**
 
-```sh
+```bash
 show dbs
 use <name of db>
 
@@ -85,14 +86,16 @@ show collections
 * to create new collection : `db.createCollection("employees")`
 * to shutdown db server : 
 
-```sh
+```bash
 use admin
 db.shutdownServer()
 exit
 ```
 
-## To delete 
-```sh
+## To delete
+
+```bash
 drop collection
 db.inspection.drop()
 ```
+

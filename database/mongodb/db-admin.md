@@ -1,14 +1,10 @@
 # DB admin
 
-### Taking backups 
-Json 
-	mongoimport
-	mongoexport
-Bson
-	mongorestore
-	mongodump
+### Taking backups
 
-```sh
+Json mongoimport mongoexport Bson mongorestore mongodump
+
+```bash
 mongoexport --uri="mongodb+srv://admin:ThisIsMyDSXMPH01@mycluster.aog3s.mongodb.net/sample_weatherdata" --collection=data --out=sales.json
 
 // dont specifiy --out on bson
@@ -19,7 +15,7 @@ mongorestore --uri "mongodb+srv://admin:ThisIsMyDSXMPH01@mycluster.aog3s.mongodb
 mongoimport --uri="mongodb+srv://admin:ThisIsMyDSXMPH01@mycluster.aog3s.mongodb.net/sample_weatherdata" --drop sales.json
 ```
 
-## Options to configure 
+## Options to configure
 
 * default DB path : `mongod --dbpath`
 * to change DB path : `mongod --dbpath` 
@@ -33,19 +29,19 @@ mongoimport --uri="mongodb+srv://admin:ThisIsMyDSXMPH01@mycluster.aog3s.mongodb.
 
 #### To get log config \(containing verbosity\)
 
-```sh
+```bash
 db.getLogComponents()
 ```
 
 ### To get logs
 
-```sh
+```bash
 db.adminCommand({ "getLog" : "global" })
 ```
 
 ### View the logs through the command line:
 
-```sh
+```bash
 tail -f /data/db/mongod.log
 ```
 
@@ -55,7 +51,7 @@ tail -f /data/db/mongod.log
 
 ### Commands
 
-```sh
+```bash
 db.getProfiliingLevel()
 db.setProfilingLevel(1)
 

@@ -1,7 +1,8 @@
 # Operations
 
 ## Inserting Operations
-```sh
+
+```bash
 db.<name of collection>.insert({ *your object* })
 
 ## To insert multiple objects
@@ -19,7 +20,7 @@ add : `, {"ordered"true}` before the last `)` to insert many docs orderly
 
 ## Finding document
 
-```sh
+```bash
 db.zips.findOne({"state":"NY"})
 db.zips.findMany({"state":"NY"})
 ```
@@ -28,30 +29,33 @@ db.zips.findMany({"state":"NY"})
 
 * `updateOne()` and `findOne()` for one document only
 * `updateMany()` and `find()` for many documents
-
 * to increment a field docs :
-```sh
-db.zips.updateMany({ "city": "HUDSON" }, { "$inc": { "pop": 10 } })
-```
+
+  ```bash
+  db.zips.updateMany({ "city": "HUDSON" }, { "$inc": { "pop": 10 } })
+  ```
 
 * to set value :
-```sh
-db.zips.updateOne({ "zip": "12534" }, { "$set": { "pop": 17630 } })
-```
+
+  ```bash
+  db.zips.updateOne({ "zip": "12534" }, { "$set": { "pop": 17630 } })
+  ```
 
 * to push new fields to array
-```sh
-db.grades.updateOne({ "student_id": 250, "class_id": 339 },
+
+  ```bash
+  db.grades.updateOne({ "student_id": 250, "class_id": 339 },
                     { "$push": { "scores": { "type": "extra credit",
                                               "score": 100 }
                                 }
                       })
-```
+  ```
 
 ## To delete
+
 * `deleteOne()` for one doc and `deleteMany()` to delete multiple
 
-```sh
+```bash
 db.inspections.deleteMany({ "test": 1 })
 
 db.inspections.deleteOne({ "test": 3 })

@@ -30,6 +30,7 @@
   * [MS-SQL on Linux](database/sql_server/README.md)
     * [Data Definition](database/sql_server/ddl.md)
     * [Data Manipulation](database/sql_server/dml.md)
+  * [Cassandra : Scylla](database/cassandra-scylla.md)
   * [PostgreSQL](database/postgres/README.md)
     * [PostgreSQL Joins](database/postgres/postgres_joins.md)
     * [PostgreSQL Queries](database/postgres/postgres_queries.md)

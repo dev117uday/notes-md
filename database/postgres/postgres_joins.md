@@ -17,10 +17,9 @@ Allows data retrieval from multiple tables in one query. JOINS are not physical 
 * Think about the types of join you are making
 * How are connecting records
 
-
 ### Inner Join
 
-![Inner Join](img/innerjoin.png)
+![Inner Join](../../.gitbook/assets/innerjoin.png)
 
 The INNER Join keyword select records that have matching values in both sides
 
@@ -29,7 +28,6 @@ The INNER Join keyword select records that have matching values in both sides
 * Joining tables together affects overall database performance 
 * You can join multiple tables.
 * List all the tables, then define the condition
-
 
 ```sql
 SELECT
@@ -50,7 +48,7 @@ FROM Supplier
 INNER JOIN Products ON Suppliers.supplierid = Products.supplierid
 ```
 
-The inner join examines each row in the first table (basket_a). It compares the value in the fruit_a column with the value in the fruit_b column of each row in the second table (basket_b). If these values are equal, the inner join creates a new row that contains columns from both tables and adds this new row the result set.
+The inner join examines each row in the first table \(basket\_a\). It compares the value in the fruit\_a column with the value in the fruit\_b column of each row in the second table \(basket\_b\). If these values are equal, the inner join creates a new row that contains columns from both tables and adds this new row the result set.
 
 ### Cartesian \(Cross\) Joins
 
@@ -104,7 +102,7 @@ LEFT JOIN basket_b
    ON fruit_a = fruit_b;
 ```
 
-![Left Join](img/leftjoin.png)
+![Left Join](../../.gitbook/assets/leftjoin.png)
 
 ### Right Join
 
