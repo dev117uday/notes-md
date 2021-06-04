@@ -1,3 +1,7 @@
+---
+description: paid
+---
+
 # MS-SQL on Linux
 
 ```bash
@@ -26,4 +30,6 @@ Connection string :
 
 Server=127.0.0.1,1433;Database=tempdb;User Id=SA;Password=ThisIsMyDSXMPH@01
 ```
+
+
 

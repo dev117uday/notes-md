@@ -1,4 +1,8 @@
-# Mongo Query Language \( MQL \)
+---
+description: its weird
+---
+
+# MQL
 
 Example :
 

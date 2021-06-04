@@ -1,3 +1,7 @@
+---
+description: 'Some Usefull, some abandoned'
+---
+
 # Table of contents
 
 ## Spring Boot
@@ -18,7 +22,7 @@
 
 ## Databases
 
-* [MongoDB](database/mongodb/mongodb.md)
+* [MongoDB]()
   * [Operations](database/mongodb/operations.md)
   * [DB administration](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/database/mongodb/db-administration/README.md)
   * [Mongo Query Language](database/mongodb/mongo-query-language-mql.md)

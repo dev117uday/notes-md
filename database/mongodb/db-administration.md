@@ -1,4 +1,4 @@
-# db-administration
+# DB admin
 
 ## DB administration
 

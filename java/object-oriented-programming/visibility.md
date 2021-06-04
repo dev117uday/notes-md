@@ -1,5 +1,5 @@
 ---
-description: controlling access tomembers of a class
+description: controlling access to members of a class
 ---
 
 # Visibility
