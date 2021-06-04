@@ -24,8 +24,8 @@ description: 'Some Usefull, some abandoned'
 
 * [MongoDB]()
   * [Operations](database/mongodb/operations.md)
-  * [DB administration](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/database/mongodb/db-administration/README.md)
-  * [Mongo Query Language](database/mongodb/mongo-query-language-mql.md)
+  * [DB administration](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/database/mongodb/db-admin/README.md)
+  * [Mongo Query Language](database/mongodb/mql.md)
 * [PostgreSQL](database/postgres/)
   * [PostgreSQL Queries](database/postgres/postgres_queries.md)
   * [PostgreSQL Joins](database/postgres/postgres_joins.md)

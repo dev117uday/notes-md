@@ -1,6 +1,25 @@
 # DB admin
 
-## DB administration
+### Taking backups 
+Json 
+	mongoimport
+	mongoexport
+Bson
+	mongorestore
+	mongodump
+
+```sh
+mongoexport --uri="mongodb+srv://admin:ThisIsMyDSXMPH01@mycluster.aog3s.mongodb.net/sample_weatherdata" --collection=data --out=sales.json
+
+// dont specifiy --out on bson
+mongodump --uri="mongodb+srv://admin:ThisIsMyDSXMPH01@mycluster.aog3s.mongodb.net/sample_weatherdata" --collection=data 
+
+mongorestore --uri "mongodb+srv://admin:ThisIsMyDSXMPH01@mycluster.aog3s.mongodb.net/sample_weatherdata"  --drop dump
+
+mongoimport --uri="mongodb+srv://admin:ThisIsMyDSXMPH01@mycluster.aog3s.mongodb.net/sample_weatherdata" --drop sales.json
+```
+
+## Options to configure 
 
 * default DB path : `mongod --dbpath`
 * to change DB path : `mongod --dbpath` 
@@ -8,56 +27,25 @@
 * to enable auth : `mongod --auth`
 * to bind\_ip : `mongod --bind_ip 123.123.123.123`
 * example configuration file : 
-
-```bash
-storage:
-  dbPath: "/data/db"
-systemLog:
-  path: "/data/log/mongod.log"
-  destination: "file"
-replication:
-  replSetName: M103
-net:
-  bindIp : "127.0.0.1,192.168.103.100"
-tls:
-  mode: "requireTLS"
-  certificateKeyFile: "/etc/tls/tls.pem"
-  CAFile: "/etc/tls/TLSCA.pem"
-security:
-  keyFile: "/data/keyfile"
-processManagement:
-  fork: true
-```
-
-```bash
-storage:
-  dbPath: "/var/mongodb/db/"
-net:
-  bindIp: localhost
-  port: 27000
-security:
-  authorization: enabled
-```
-
 * to start the mongod with the config file : `mongod --config mongod.conf`
 
 ## Logging
 
 #### To get log config \(containing verbosity\)
 
-```text
+```sh
 db.getLogComponents()
 ```
 
 ### To get logs
 
-```text
+```sh
 db.adminCommand({ "getLog" : "global" })
 ```
 
 ### View the logs through the command line:
 
-```text
+```sh
 tail -f /data/db/mongod.log
 ```
 
@@ -67,7 +55,7 @@ tail -f /data/db/mongod.log
 
 ### Commands
 
-```text
+```sh
 db.getProfiliingLevel()
 db.setProfilingLevel(1)
 
