@@ -35,7 +35,7 @@
   * [PostgreSQL](database/postgres/README.md)
     * [PostgreSQL Joins](database/postgres/postgres_joins.md)
     * [PostgreSQL Queries](database/postgres/postgres_queries.md)
-  * [mongodb](database/mongodb/README.md)
+  * [Mongodb](database/mongodb/README.md)
     * [Mongo Query Language \( MQL \)](database/mongodb/mongo-query-language-mql.md)
     * [MongoDB](database/mongodb/mongodb.md)
     * [Operations](database/mongodb/operations.md)
