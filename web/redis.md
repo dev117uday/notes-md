@@ -2,7 +2,7 @@
 
 ## Setup
 
-```
+```text
 sudo docker run --name redis-learn -p 6370:6370 -d redis 
 sudo docker exec -it redis-learn redis-cli
 
@@ -18,7 +18,7 @@ $ to set max memory limit (as LRU cache)
 
 **Set & Get value**
 
-```
+```text
 set name "uday"
 get name
 exists name
@@ -26,7 +26,7 @@ exists name
 
 **All commands**
 
-```
+```text
 # Get all keys
 keys *
 
@@ -35,11 +35,9 @@ flushall
 ## options : async|sync
 ```
 
-
-
 **Set key with expiry time**
 
-```
+```text
 # After 5 seconds, this  key will be deleted
 set nametemp "uday" EX 5
 get nametemp
@@ -59,20 +57,20 @@ setex b 10 "uday"
 
 **Delete Key**
 
-```
+```text
 del name
 ```
 
 **Set & Get multiple values**
 
-```
+```text
 mset first "uday" last "yadav"
 mget first last
 ```
 
 **Miscellaneous**
 
-```
+```text
 # Specifies the range : from 0th char to 3rd char
 getrange name 0 3
 strlen first
@@ -84,7 +82,7 @@ append name " yadav"
 
 **Math operations**
 
-```
+```text
 set count 1
 incr count
 incrby count 10
@@ -96,7 +94,7 @@ incrbyfloat pi 0.1
 
 **Lists in redis**
 
-```
+```text
 lpush country india
 lpush country USA
 lpush country UK
@@ -129,7 +127,7 @@ linsert country after "germany" "UAE"
 
 **Sorting List**
 
-```
+```text
 # Alpha is needed only for strings, nothing for integers
 sort country ALPHA
 sort country desc ALPHA
@@ -137,7 +135,7 @@ sort country desc ALPHA
 
 **Sets in Redis**
 
-```
+```text
 sadd tech golang
 sadd tech postgis python aws
 sadd tech1 aws python mysql nodejs
@@ -152,14 +150,14 @@ sismember tech aws
 # to get the diff between to sets
 sdiff tech tech1
 # to store the difference btw 2 sets to a new set 
-sdiffstore 	tech3 tech tech1
+sdiffstore     tech3 tech tech1
 # to check intersection
 sinter tech tech1
 ```
 
 **Sorted Set Redis**
 
-```
+```text
 # add key values
 zadd users 10 uday
 zadd users 5 saatvik 8 kunal
@@ -179,7 +177,7 @@ zrem users uday
 
 **Hashes in Redis**
 
-```
+```text
 # add keys to a set
 hset myhash name uday
 hset myhash email dev117uday@gmail.com
@@ -190,7 +188,7 @@ hkeys myhash
 hvals myhash
 # to check for keys 
 hexists myhash name
-# check the length	
+# check the length    
 hlen myhash
 # to set multiple values at once
 hmset myhash country india phone_no 9810039759 age 24
@@ -206,7 +204,7 @@ hsetnx myhash name Uday
 
 **Transaction**
 
-```
+```text
 # to go in transaction mode
 multi
 set name1 uday
@@ -220,7 +218,7 @@ discard
 
 **Pub/Sub**
 
-```
+```text
 subscribe my-chat
 publish my-chat "hello world"
 
@@ -229,17 +227,17 @@ psubscribe chats*
 psubscribe h?llo
 ```
 
-- If no one is sub to the channel you specify in publish, it returns 0
+* If no one is sub to the channel you specify in publish, it returns 0
 
 **Benchmarking Redis**
 
-```
+```text
 redis-benchmark -n 1000 -d 10000
 ```
 
 **GeoSpatial Data**
 
-```
+```text
 # add geo spatial data ing long : lat
 GEOADD maps 77.216721 28.644800 delhi
 GEOADD maps 72.877426 19.076090 mumbai

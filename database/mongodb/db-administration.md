@@ -1,4 +1,6 @@
-# DB administration
+# db-administration
+
+## DB administration
 
 * default DB path : `mongod --dbpath`
 * to change DB path : `mongod --dbpath` 
@@ -7,7 +9,7 @@
 * to bind\_ip : `mongod --bind_ip 123.123.123.123`
 * example configuration file : 
 
-```sh
+```bash
 storage:
   dbPath: "/data/db"
 systemLog:
@@ -27,7 +29,7 @@ processManagement:
   fork: true
 ```
 
-```sh
+```bash
 storage:
   dbPath: "/var/mongodb/db/"
 net:
@@ -39,9 +41,9 @@ security:
 
 * to start the mongod with the config file : `mongod --config mongod.conf`
 
-# Logging
+## Logging
 
-#### To get log config (containing verbosity)
+#### To get log config \(containing verbosity\)
 
 ```text
 db.getLogComponents()
@@ -59,7 +61,7 @@ db.adminCommand({ "getLog" : "global" })
 tail -f /data/db/mongod.log
 ```
 
-# Profiling DB
+## Profiling DB
 
 ### Profiler Levels
 
@@ -71,7 +73,6 @@ db.setProfilingLevel(1)
 
 # get profiling data
 db.system.profile.find().pretty()
-
 ```
 
 **Things profiled by profiler**

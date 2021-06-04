@@ -1,7 +1,6 @@
 # MS-SQL on Linux
 
-```sh
-
+```bash
 Docker pull : 
 
 sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
@@ -26,5 +25,5 @@ sudo docker exec -it sql-server "bash"
 Connection string : 
 
 Server=127.0.0.1,1433;Database=tempdb;User Id=SA;Password=ThisIsMyDSXMPH@01
-
 ```
+

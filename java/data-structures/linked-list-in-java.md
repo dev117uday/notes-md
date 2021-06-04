@@ -27,5 +27,3 @@ Just refer to the documentation for the methods
 
 [read more](https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html)
 
-
-

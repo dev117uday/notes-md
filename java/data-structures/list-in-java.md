@@ -4,11 +4,11 @@ description: Just like shopping list
 
 # List in Java
 
-![Class Diagram \(click to zoom\)](../.gitbook/assets/image%20%284%29.png)
+![Class Diagram \(click to zoom\)](../../.gitbook/assets/image%20%284%29.png)
 
 [read more here](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)
 
-**imports** 
+**imports**
 
 ```java
 import java.util.List;
@@ -26,7 +26,7 @@ List<String> strings;
 List<Double> doubles;
 ```
 
-If you try to add something to the lists above you will get a `NullPointerException`, because strings and doubles, both equal **null!** 
+If you try to add something to the lists above you will get a `NullPointerException`, because strings and doubles, both equal **null!**
 
 ```java
 List<T> myArrayList = new ArrayList<>();
@@ -78,10 +78,4 @@ myArrayList.remove(index);
 numbersB.removeAll(numbersA);
     System.out.println("B cleared: " + numbersB);
 ```
-
-
-
-
-
-
 

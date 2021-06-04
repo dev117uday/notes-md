@@ -12,12 +12,12 @@ Consider we have a task of sorting objects that are instances of the following c
 public class User {
     public final Long id;
     public final String username;
-    
+
     public User(Long id, String username) {
         this.id = id;
         this.username = username;
     }
-    
+
     @Override
     public String toString() {
         return String.format("%s:%d", username, id);
@@ -31,17 +31,17 @@ In order to use `Collections.sort(List list)` we need to modify the User class t
 public class User implements Comparable<User> {
     public final Long id;
     public final String username;
-    
+
     public User(Long id, String username) {
         this.id = id;
         this.username = username;
     }
-    
+
     @Override
     public String toString() {
         return String.format("%s:%d", username, id);
     }
-    
+
     @Override
     /** The natural ordering for 'User' objects is by the 'id' field. */
     public int compareTo(User o) {
@@ -69,6 +69,4 @@ You can also compare the `username`
 ```java
 Collections.sort(users, (l, r) -> l.username.compareTo(r.username));
 ```
-
-
 

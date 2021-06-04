@@ -1,11 +1,7 @@
 # Useful Stuff Java
 
-### This section contains
+## This section contains
 
 * Comparators
 * Annotations
-
-
-
-
 

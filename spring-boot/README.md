@@ -1,6 +1,8 @@
 # Spring Boot
 
-### Start point
+## Spring Boot
+
+#### Start point
 
 ```java
 @SpringBootApplication
@@ -26,14 +28,13 @@ public class DemoApplication
 * final executable binary inside : `target` with the name `<name>.<version>-SNAPSHOT.jar`
 * dependencies inside : `pom.xml`
 
-## Annotations
+### Annotations
 
 `@AutoWired`
 
-*  It allows Spring to resolve and inject collaborating beans into our bean.
+* It allows Spring to resolve and inject collaborating beans into our bean.
 
-## Bean
-
+### Bean
 
 ```java
 @Bean
@@ -45,9 +46,9 @@ CommandLineRunner commandLineRunner(StudentRepository studentRepository) {
 }
 ```
 
-## Controller
+### Controller
 
-### Rest Controller
+#### Rest Controller
 
 Class with to handle requests are marked as `@RestController` inside the api folder
 
@@ -75,7 +76,7 @@ Class with to handle requests are marked as `@RestController` inside the api fol
 * `public T <function_name>(@PathVariable("id") UUID id) {}` to assign it to a variable
 * `@RequestParam(required = false)` is used to Request Parameters, those that come after `?name=uday&email=uada@sds.com`
 
-## Data Access Object
+### Data Access Object
 
 **Data Access Objects**
 
@@ -83,17 +84,17 @@ Class with to handle requests are marked as `@RestController` inside the api fol
 * Actual class implements a interface    
 * create a repository with : `@Repository("<db>")`
 
-## Service
+### Service
 
 * annotate with `@Service`
 * create a member `private final` of Dao
 * create a constructor
   * `@Autowired`
-  * `@Qualifier\(""\) `
+  * `@Qualifier\(""\)`
   * `public Tservice(@Qualifier("<db>") T t)`
 * `@Transactional`
 
-## Repository
+### Repository
 
 * create a interface implementing all the functions needed.
 * Actual class implements a interface    
@@ -115,13 +116,13 @@ To create a custom function to run a custom query, use something like this:
     Optional<Student> findStudentByEmail(String email);
 ```
 
-# Model 
+## Model
 
-## Model Class
+### Model Class
 
 Read more about `Entity` [here](https://www.baeldung.com/jpa-entities)
 
-*  `@Entity` : Entities in JPA are nothing but plain old java object representing data that can be persisted to the database. An entity represents a table stored in a database. Every instance of an entity represents a row in the table.
+* `@Entity` : Entities in JPA are nothing but plain old java object representing data that can be persisted to the database. An entity represents a table stored in a database. Every instance of an entity represents a row in the table.
 
   ```text
   @Entity(name = "Student")
@@ -173,10 +174,9 @@ Read more about `Entity` [here](https://www.baeldung.com/jpa-entities)
 
   * As a result, the field _age_ will not be persisted to the table.
 
+## Interfaces
 
-# Interfaces
-
-## JpaRepository
+### JpaRepository
 
 ```java
 JpaRepository<Student,Long>
@@ -188,9 +188,10 @@ JpaRepository<Student,Long>
 ```java
 @Query("select s from Student s where s.email = ?1")
 ```
-# Configuration
 
-### Examples
+## Configuration
+
+#### Examples
 
 ```java
 @Configuration
@@ -208,3 +209,4 @@ public class StudentConfig {
     }
 }
 ```
+

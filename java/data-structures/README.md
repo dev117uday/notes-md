@@ -4,7 +4,7 @@ description: Because everything has a strcuture
 
 # Data Structures
 
-### Contains : 
+## Contains :
 
 * Enums
 * Some important information about Collections
@@ -15,6 +15,4 @@ description: Because everything has a strcuture
 * Stacks and Queues
 * Map
 * TreeSet and TreeMap
-
-
 

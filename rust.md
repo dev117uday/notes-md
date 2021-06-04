@@ -4,9 +4,11 @@ description: Aamzing programming lanuguage but ...
 
 # Rust
 
-## Concepts of Rust
+## Rust
 
-### Ownership
+### Concepts of Rust
+
+#### Ownership
 
 All programs have to manage the way they use a computer’s memory while running. Some languages have garbage collection that constantly looks for no longer used memory as the program runs; in other languages, the programmer must explicitly allocate and free the memory. Rust uses a third approach: memory is managed through a system of ownership with a set of rules that the compiler checks at compile time. None of the ownership features slow down your program while it’s running.
 
@@ -18,19 +20,19 @@ Keep these rules in mind as we work through the examples that illustrate them:
 2. There can only be one owner at a time.
 3. When the owner goes out of scope, the value will be dropped.
 
-### Traits in Rust Programming
+#### Traits in Rust Programming
 
 A trait tells the Rust compiler about functionality a particular type has and can share with other types. We can use traits to define shared behavior in an abstract way. We can use trait bounds to specify that a generic can be any type that has certain behavior.
 
-### Traits in Rust Programming
+#### Traits in Rust Programming
 
 A trait tells the Rust compiler about functionality a particular type has and can share with other types. We can use traits to define shared behavior in an abstract way. We can use trait bounds to specify that a generic can be any type that has certain behavior.
 
-# Formating Strings
+## Formating Strings
 
-## The Basic Formatting
+### The Basic Formatting
 
-### Single Placeholder
+#### Single Placeholder
 
 ```rust
 fn main() {
@@ -38,7 +40,7 @@ fn main() {
 }
 ```
 
-### Multiple Placeholders
+#### Multiple Placeholders
 
 ```rust
 fn main() {
@@ -46,7 +48,7 @@ fn main() {
 }
 ```
 
-### Positional Arguments
+#### Positional Arguments
 
 ```rust
 fn main() {
@@ -54,7 +56,7 @@ fn main() {
 }
 ```
 
-### Named Arguments
+#### Named Arguments
 
 ```rust
 fn main() {
@@ -62,7 +64,7 @@ fn main() {
 }
 ```
 
-### Placeholder Traits
+#### Placeholder Traits
 
 ```rust
 fn main() {
@@ -70,7 +72,7 @@ fn main() {
 }
 ```
 
-### Placeholder for a Debug Trait
+#### Placeholder for a Debug Trait
 
 ```rust
 fn main() {
@@ -78,7 +80,7 @@ fn main() {
 }
 ```
 
-### `print!()` && `println!()`
+#### `print!()` && `println!()`
 
 ```rust
 fn main() {
@@ -94,7 +96,7 @@ fn main() {
 }
 ```
 
-### `eprint!()`&& `eprintln!()`
+#### `eprint!()`&& `eprintln!()`
 
 ```rust
 fn main() {
@@ -110,15 +112,15 @@ fn main() {
 }
 ```
 
-# Concept of Lifetime
+## Concept of Lifetime
 
-## Lifetimes Specifiers
+### Lifetimes Specifiers
 
 **Note : Please read the whole note in order to revise it properly**
 
 Every reference in Rust has a lifetime, which is the scope for which that reference is valid.
 
-### Preventing Dangling References with Lifetimes :
+#### Preventing Dangling References with Lifetimes :
 
 The main aim of lifetimes is to prevent dangling references, which cause a program to reference data other than the data it’s intended to reference.
 
@@ -155,7 +157,7 @@ error: could not compile `lifetime.rs`.
 To learn more, run the command again with --verbose.
 ```
 
-### The Borrow Checker :
+#### The Borrow Checker :
 
 The Rust compiler has a borrow checker that compares scopes to determine whether all borrows are valid.
 
@@ -216,7 +218,7 @@ For more information about this error, try `rustc --explain E0106`.
 To learn more, run the command again with --verbose.
 ```
 
-### Lifetime Annotation
+#### Lifetime Annotation
 
 * Lifetime Annotation don’t change how long any of the references live.
 * Lifetime Annotation describe the relationships of the lifetimes of multiple references to each other without affecting the lifetimes
@@ -234,7 +236,7 @@ To learn more, run the command again with --verbose.
 
 Let’s say we have a function with the parameter first that is a reference to an i32 with lifetime `'a`. The function also has another parameter named second that is another reference to an i32 that has the lifetime `'b`. The lifetime annotations indicate that the references first and second must both live as long as that **generic lifetime**, or the lifetime of the shortest, known as concrete lifetime.
 
-### Lifetime Annotations in Function Signatures
+#### Lifetime Annotations in Function Signatures
 
 Let's go back to our longest function and solve the error
 
@@ -309,7 +311,7 @@ To learn more, run the command again with --verbose.
 
 The error shows that for result to be valid for the println! statement, string2 would need to be valid until the end of the outer scope. Rust knows this because we annotated the lifetimes of the function parameters and return values using the same lifetime parameter 'a.
 
-### Thinking in Terms of Lifetimes
+#### Thinking in Terms of Lifetimes
 
 The way in which you need to specify lifetime parameters depends on what your function is doing.
 
@@ -323,19 +325,19 @@ In this example, we’ve specified a lifetime parameter `'a` for the parameter x
 
 ... to be continued
 
-# Structs in Rust
+## Structs in Rust
 
-## Structures
+### Structures
 
-### Types of structures
+#### Types of structures
 
 * named-field structure : normal structure
 * tuple struct : tuple like structure
 * unit type struct : unit tuple like structures "\(\)"
 
-## Named-field structures
+### Named-field structures
 
-### Syntax
+#### Syntax
 
 ```rust
 struct Person {
@@ -346,7 +348,7 @@ struct Person {
 }
 ```
 
-### Declarations :
+#### Declarations :
 
 ```rust
 let uday = Person { 
@@ -362,15 +364,15 @@ let uday = Person {
 
 **Note 2** : In-order to make the data members of a structure public, you have to add **pub** in front the field in order to make it public, because it is private by default, meaning only the file in which the structure is declared can access it.
 
-## Tuple-like struct
+### Tuple-like struct
 
-### Definition syntax
+#### Definition syntax
 
 ```rust
 struct points(usize,usize);
 ```
 
-### Declaration syntax
+#### Declaration syntax
 
 ```rust
 let image_bounds = points(34,232);
@@ -384,9 +386,9 @@ let image_bounds = points(34,232);
 pub struct points(pub usize, pub usize)
 ```
 
-## Unit-like structure
+### Unit-like structure
 
-### definition
+#### definition
 
 ```rust
 struct OneSuch;
@@ -394,7 +396,7 @@ struct OneSuch;
 
 A value of such a type occupies no memory, much like the unit type \(\).
 
-## Defining struct methods with impl
+### Defining struct methods with impl
 
 > ```rust
 > struct Rectangle {
@@ -421,17 +423,17 @@ A value of such a type occupies no memory, much like the unit type \(\).
 > }
 > ```
 
-### Implementation
+#### Implementation
 
 In order to create a member function, Rust syntax's doesn't allow declaring the function inside the struct. Rust do not have classes. So using `impl <T> {}`, we define function inside. The first parameter of every function that is being implemented for a struct has the argument **&self** which is similar to python.
 
 **NOTE** : `&self` contains **&** as it is a reference to the struct. we cannot change the value of the data members of structure. For that we need `&mut self`.
 
-## Associate Functions
+### Associate Functions
 
 Another useful feature of `impl` blocks is that we’re allowed to define functions within `impl` blocks that _don’t_ take `self` as a parameter. These are called _associated functions_ because they’re associated with the struct. They’re still functions, not methods, because they don’t have an instance of the struct to work with
 
-#### Example
+**Example**
 
 ```rust
 impl Rectangle {
@@ -444,7 +446,7 @@ impl Rectangle {
 }
 ```
 
-### Multiple impl Blocks
+#### Multiple impl Blocks
 
 Each struct is allowed to have multiple `impl` blocks. For example, Listing 5-15 is equivalent to the code shown in Listing 5-16, which has each method in its own `impl` block.
 
@@ -462,7 +464,7 @@ impl Rectangle {
 }
 ```
 
-## Generics Structs
+### Generics Structs
 
 Rust structs can be generic, meaning that their definition is a template into which you can plug whatever types you like
 
@@ -486,9 +488,9 @@ impl<T> Queue<T> {
 }
 ```
 
-## Structs with lifetime parameter
+### Structs with lifetime parameter
 
-### Structs Containing References
+#### Structs Containing References
 
 Example :
 
@@ -505,6 +507,4 @@ assert_eq!(*s.r, 10);
 ```
 
 **This program contains errors** : because the r in struct stores the reference of of x, as x goes out of scope, r has nothing to point to. So we get the error **expected lifetime parameter**.
-
-
 

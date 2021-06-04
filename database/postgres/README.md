@@ -151,11 +151,11 @@ CREATE TABLE person (
 
 **You can download dummy database from mackaroo.com**
 
-![mockaroo](img/mockaroo.png)
+![mockaroo](../../.gitbook/assets/mockaroo.png)
 
 **now make the following changes in `.sql` file**
 
-![changes to be made](img/vscode-sql-mockaroo-changes.png)
+![changes to be made](../../.gitbook/assets/vscode-sql-mockaroo-changes.png)
 
 **Import downloaded SQL database**
 
@@ -186,3 +186,4 @@ VALUES('UDAY','YADAV','MALE',date '2001-02-02');
 ### Aliases
 
 Just to rename the a column temporarily. Search for ' as ' in the document and you will find examples. an alias only exists for the duration of the query. they are often used to make column names more readable.
+

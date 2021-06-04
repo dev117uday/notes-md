@@ -12,5 +12,3 @@ $ go tool compile main.go
 $ go tool compile -S main.go
 ```
 
-
-

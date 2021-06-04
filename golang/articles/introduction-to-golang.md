@@ -16,11 +16,11 @@ For those of you who don’t know what Golang is, here is a quick and short intr
 
 In simple words, Golang is like Java in terms of processing but written like C
 
-#### Why Golang?
+### Why Golang?
 
 We live in a world where Java handles the majority of critical processes, but the thing is, java is old getting old, in the sense that writing concurrent programs is difficult, as more and more servers are UNIX based, shell scripts to manage servers is limit \(that’s where python came in \), poorly implemented generics and no support for unsigned data-types, has hidden relationship between code and hardware. This is where Golang comes in.
 
-#### Why I love Golang
+### Why I love Golang
 
 * **Performance**: Golang is compiled to machine code by its compiler, it’s fast, hence faster than java.
 * **Modern**: Just like any other modern programming language, Golang’s syntax is relatively easy to understand and write code. It keeps one’s understanding of how memory is used will abstracting out a lot of complex features.
@@ -35,11 +35,11 @@ You can read more about this topic in detail here :
 * [**Why you can have millions of Goroutines but only thousands of Java Threads**](https://rcoh.me/posts/why-you-can-have-a-million-go-routines-but-only-1000-java-threads/)
 * [**Achieving concurrency in Go**](https://medium.com/rungo/achieving-concurrency-in-go-3f84cbf870ca)
 
-### Major Other Advantages :
+## Major Other Advantages :
 
 * Cross-compiling: The Go compiler allows you to generate executable binaries for different operating systems with simple commands, and because it is a simple executable file, this makes deploying Go applications to production servers or local machines a breeze — all it requires is moving the final executable file. No hassle that comes with JVM.
 
-#### Some concerns regarding Go
+### Some concerns regarding Go
 
 Well it’s not all perfect in Go’s world
 
@@ -55,7 +55,7 @@ Well, the stated disadvantages of Golang are more opinion-based rather than actu
 
 The Disadvantages are more like design drawbacks which people complain about but Golang says its the part of the new programming language design paradigm.
 
-#### Lack of Package Manager
+### Lack of Package Manager
 
 * Golang doesn’t have a package manager \(as of June 2020\). Every single modern programming language has a package manager, not even modern languages, older than Golang like Python and JavaScript have a package manager, even Rust, a systems programming language has one. 
 

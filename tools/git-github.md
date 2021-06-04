@@ -83,7 +83,7 @@ description: Git it
 
 ## Diff & Patch
 
-![Git cheat sheet](img/git-cheat-sheet.png)
+![Git cheat sheet](../.gitbook/assets/git-cheat-sheet.png)
 
 ### Differences
 

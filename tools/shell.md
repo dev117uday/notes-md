@@ -1,10 +1,12 @@
-# Getting Started
+# Shell programming
 
-## Getting Started with Shell Programming
+## Getting Started
 
-### 1.1 Hello  World
+### Getting Started with Shell Programming
 
-#### Printing Hello World
+#### 1.1 Hello  World
+
+**Printing Hello World**
 
 ```text
 echo "Hello World"
@@ -13,7 +15,7 @@ echo hello world
 
 `echo` is a Bash builtin command that writes the arguments it receives to the standard output. It appends a newline to the output, by default.
 
-#### Non-interactive shell
+**Non-interactive shell**
 
 * Create a file with `.sh` extension using
 
@@ -67,7 +69,7 @@ echo hello world
 
 **Note** : Forgetting to apply execute permission on the file, i.e., `chmod +x hello-world.sh`, resulting in the output of `./hello-world.sh`: `Permission denied`
 
-### 1.2 Hello World using Variables
+#### 1.2 Hello World using Variables
 
 * Create a new file called `hello.sh`
 * Add
@@ -80,9 +82,9 @@ echo hello world
 
   **Note :** spaces cannot be used around the `=` assignment operator
 
-### 1.3 Hello World with User Input
+#### 1.3 Hello World with User Input
 
-#### 1.3.1 Reading from console
+**1.3.1 Reading from console**
 
 ```text
 echo "Who are you?"
@@ -92,7 +94,7 @@ echo "Hello, $name.
 
 `read` will **read** input given in a new line until the `enter` key is not pressed and will store the value in variable mentioned after the keyword.
 
-#### 1.3.2 Formatting String
+**1.3.2 Formatting String**
 
 ```text
 echo "What are you doing?"
@@ -100,7 +102,7 @@ read action
 echo "You are ${action}ing."
 ```
 
-### 1.4 Importance of Quoting in String
+#### 1.4 Importance of Quoting in String
 
 There are two types of quoting: \
 
@@ -123,7 +125,7 @@ There are two types of quoting: \
   #> Hello $world
   ```
 
-### 1.5  Hello World in "Debug" mode
+#### 1.5  Hello World in "Debug" mode
 
 To see which line is running, you can use Debug mode
 
@@ -143,11 +145,11 @@ $ Hello World
 
 **Note** : The -x argument enables you to walk through each line in the script
 
-# Cat & Alias
+## Cat & Alias
 
-## Using Cat
+### Using Cat
 
-#### Concatenate files
+**Concatenate files**
 
 This is the primary purpose of `cat` is to concatenate files.
 
@@ -157,7 +159,7 @@ cat text1.txt text2.txt > text3.txt
 
 This will add the contents of `text1.txt` and `text2.txt` to a new files called `text3.txt`
 
-#### Printing the Contents of a File
+**Printing the Contents of a File**
 
 ```text
 cat file.txt
@@ -185,7 +187,7 @@ If you want to print the contents with line numbers, then use `-n` with cat:
 cat -n file.txt
 ```
 
-#### Write to a file
+**Write to a file**
 
 ```text
 cat >file
@@ -201,7 +203,7 @@ will do the same, except it will append the text to the end of the file.
 
 **N.B:** `Ctrl+D` to end writing text on terminal \(Linux\)
 
-#### Read from standard input
+**Read from standard input**
 
 ```text
 cat < file.txt
@@ -215,7 +217,7 @@ printf "first line\nSecond line\n" | cat -n
 
 The echo command before \| outputs two lines. The cat command acts on the output to add line numbers.
 
-#### Display line numbers with output
+**Display line numbers with output**
 
 Use the --number flag to print line numbers before each line. Alternatively, `-n` does the same thing.
 
@@ -229,11 +231,11 @@ To skip empty lines when counting lines, use the `--number -nonblank` , or simpl
 cat -b file
 ```
 
-## Aliasing
+### Aliasing
 
 Shell aliases are a simple way to create new commands or to wrap existing commands with code of your own. They somewhat overlap with shell functions, which are however more versatile and should therefore often be preferred.
 
-### Create an Alias
+#### Create an Alias
 
 ```text
 alias word='command'
@@ -247,7 +249,7 @@ To include multiple commands in the same alias, you can string them together wit
 alias print_things='echo "foo" && echo "bar" && echo "baz"'
 ```
 
-### Remove an alias
+#### Remove an alias
 
 To remove an existing alias, use:
 
@@ -255,7 +257,7 @@ To remove an existing alias, use:
 unalias {alias_name}
 ```
 
-### Bypass an alias
+#### Bypass an alias
 
 Sometimes you may want to bypass an alias temporarily, without disabling it. To work with a concrete example, consider this alias:
 
@@ -263,7 +265,7 @@ Sometimes you may want to bypass an alias temporarily, without disabling it. To 
 alias ls='ls --color=auto'
 ```
 
-### The BASH\_ALIASES is an internal bash assoc array
+#### The BASH\_ALIASES is an internal bash assoc array
 
 Aliases are named shortcuts of commands, one can define and use in interactive bash instances. They are held in an associative array named BASH\_ALIASES. To use this var in a script, it must be run within an interactive shell
 
@@ -281,7 +283,7 @@ printf "alias: %-10s triggers: %s\n" "$ali" "${BASH_ALIASES[$ali]}"
 done
 ```
 
-### List all Aliases
+#### List all Aliases
 
 ```text
 alias -p
@@ -289,9 +291,9 @@ alias -p
 
 will list all the current aliases.
 
-# Jobs
-
 ## Jobs
+
+### Jobs
 
 * To create an job, just append a single & after the command: `$ sleep 10 &`
 * Or run immediately : `sleep 10`
@@ -305,11 +307,11 @@ will list all the current aliases.
   [1]+ Terminated                    sleep 10
   ```
 
-# Navigating & Listing
+## Navigating & Listing
 
-## Navigating Directory
+### Navigating Directory
 
-### Absolute vs relative directories
+#### Absolute vs relative directories
 
 To change to an absolutely specified directory, use the entire name, starting with a slash /, thus:
 
@@ -331,7 +333,7 @@ For example, if you were in `/home/username/project/abc` and wanted to go to `/h
 cd ..
 ```
 
-### Change to the last directory
+#### Change to the last directory
 
 For the current shell, this takes you to the previous directory that you were in, no matter where it was.
 
@@ -339,7 +341,7 @@ For the current shell, this takes you to the previous directory that you were in
 cd -
 ```
 
-### Change to the home directory
+#### Change to the home directory
 
 The default directory is the home directory `$HOME`, typically `/home/username`,
 
@@ -349,27 +351,15 @@ Or you could be more explicit: `cd $HOME`
 
 A shortcut for the home directory is `cd ~`, so that could be used as well.
 
-## Listing Files
+### Listing Files
 
-|option	| description|
-|---|---|
-ls -a	| list all files including hidden file starting with '.'
-ls --color	| colored  list [=always/never/auto]
-ls -d	| list directories - with ' */'
-ls -F `add one char of */=>@` | to enteries
-ls -i	| list file's inode index number
-ls -l	| list with long format - show permissions
-ls -la	| list long format including hidden files
-ls -lh	| list long format with readable file size
-ls -ls	| list with long format with file size
-ls -r	| list in reverse order
-ls -R	| list recursively directory tree
-ls -s	| list file size
-ls -S	| sort by file size
-ls -t	| sort by time & date
-ls -X	| sort by extension name
+| option | description |
+| :--- | :--- |
 
-### List Files in a Long Listing Format
+
+ls -a \| list all files including hidden file starting with '.' ls --color \| colored list \[=always/never/auto\] ls -d \| list directories - with ' _/' ls -F \`add one char of_ /=&gt;@\` \| to enteries ls -i \| list file's inode index number ls -l \| list with long format - show permissions ls -la \| list long format including hidden files ls -lh \| list long format with readable file size ls -ls \| list with long format with file size ls -r \| list in reverse order ls -R \| list recursively directory tree ls -s \| list file size ls -S \| sort by file size ls -t \| sort by time & date ls -X \| sort by extension name
+
+#### List Files in a Long Listing Format
 
 The ls command's `-l` option prints a specified directory's contents in a long listing format. If no directory is specified then, by default, the contents of the current directory are listed.
 
@@ -387,9 +377,9 @@ drwxr-xr-x 2 root root 4096 Jun 11 20:42 alternatives
 ...
 ```
 
-The output first displays total, which indicates the total size in blocks of all the files in the listed directory. It then displays eight columns of information for each file in the listed directory. 
+The output first displays total, which indicates the total size in blocks of all the files in the listed directory. It then displays eight columns of information for each file in the listed directory.
 
-### List the Ten Most Recently Modified Files
+#### List the Ten Most Recently Modified Files
 
 The following will list up to ten of the most recently modified files in the current directory, using a long listing format `-l` and sorted by time `-t`.
 
@@ -397,7 +387,7 @@ The following will list up to ten of the most recently modified files in the cur
 ls -lt | head
 ```
 
-### List All Files Including Dotfiles
+#### List All Files Including Dotfiles
 
 The `-a` or `--all` option will list all files, including dotfiles
 
@@ -405,7 +395,7 @@ The `-a` or `--all` option will list all files, including dotfiles
 ls -a
 ```
 
-### List Files Without Using `ls`
+#### List Files Without Using `ls`
 
 Use the Bash shell's filename expansion and brace expansion capabilities to obtain the filenames:
 
@@ -433,7 +423,7 @@ for file in "${files[@]}"; do
 done
 ```
 
-### List Files in a Tree-Like Format
+#### List Files in a Tree-Like Format
 
 Use
 
@@ -477,7 +467,7 @@ tree github/dev117uday
 8 directories, 21 files
 ```
 
-### List Files Sorted by Size
+#### List Files Sorted by Size
 
 The ls command's -S option sorts the files in descending order of file size
 
@@ -499,9 +489,9 @@ total 444
 -rw-rw-rw- 1 root root 295303 Jul 28 19:19 apples.jpg
 ```
 
-# Redirection
+## Redirection
 
-#### Redirecting standard output
+**Redirecting standard output**
 
 * `>` redirect the standard output \(aka `STDOUT` \) of the current command into a file or another descriptor. These examples write the output of the ls command into the file `file.txt`
 
@@ -520,9 +510,9 @@ The target file is created if it doesn't exists, otherwise this file is truncate
 
   Note: the redirection is initialized by the executed shell and not by the executed command, therefore it is done before the command execution.
 
-### Append vs Truncate
+#### Append vs Truncate
 
-#### Truncate &gt;
+**Truncate &gt;**
 
 1. Create specified file if it does not exist.
 2. Truncate \(remove file's content\)
@@ -540,13 +530,13 @@ The target file is created if it doesn't exists, otherwise this file is truncate
 4. Create specified file if it does not exist.
 5. Append file \(writing at end of file\).
 
-#### Overwrite existing file
+**Overwrite existing file**
 
 ```text
 $ echo "first line" > file.txt
 ```
 
-#### Append a second line
+**Append a second line**
 
 ```text
 $ echo "second line" >> file.txt

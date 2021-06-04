@@ -75,5 +75,3 @@ class Logger2 {
 }
 ```
 
-
-

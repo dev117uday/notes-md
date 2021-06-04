@@ -1,6 +1,8 @@
-# Structure of Smart Contract
+# Contract
 
-## Basics
+## Structure of Smart Contract
+
+### Basics
 
 **SPDX license**
 
@@ -56,9 +58,7 @@ multi-line comment.
 */
 ```
 
-
-
-## Structure of a Contract
+### Structure of a Contract
 
 #### State Variables
 
@@ -124,7 +124,7 @@ contract Purchase {
 }
 ```
 
-# Understanding a Smart Contract
+## Understanding a Smart Contract
 
 ```text
 // SPDX-License-Identifier: GPL-3.0
@@ -138,10 +138,10 @@ pragma solidity >=0.7.0 <0.8.0;
 contract Owner {
 
     address private owner;
-    
+
     // event for EVM logging
     event OwnerSet(address indexed oldOwner, address indexed newOwner);
-    
+
     // modifier to check if caller is owner
     modifier isOwner() {
         // If the first argument of 'require' evaluates to 'false', execution terminates and all
@@ -152,7 +152,7 @@ contract Owner {
             require(msg.sender == owner, "Caller is not owner");
         _;
     }
-    
+
     /**
      * @dev Set contract deployer as owner
      */
@@ -180,7 +180,7 @@ contract Owner {
 }
 ```
 
-## Understanding a smart contract
+### Understanding a smart contract
 
 * First line specifies the license : in this case GPL-3.0
 * `pragma` is used to convey some message to compiler, like `once` in C++ to tell it to include this file onces. In this case, it is used to specify the range of versions of solidity compiler on which our code will work

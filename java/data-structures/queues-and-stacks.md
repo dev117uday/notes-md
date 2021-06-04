@@ -4,7 +4,7 @@ description: end of line
 
 # Queues & Stacks
 
-![Class Diagram](../.gitbook/assets/image%20%286%29.png)
+![Class Diagram](../../.gitbook/assets/image%20%286%29.png)
 
 ## Priority Queue
 
@@ -59,14 +59,14 @@ Here is another example of creating a Java `Deque` by creating an `ArrayDeque` i
 Deque deque = new ArrayDeque();
 ```
 
-| Method |  Brief description |
+| Method | Brief description |
 | :--- | :--- |
-|  `getFirst()` | Gets the first item of the head of the queue without removing it.  |
-| `getLast()` |  Gets the first item of the tail of the queue without removing it. |
-| `addFirst(E e)` |  Adds an item to the head of the queue  |
-| `addLast(E e)` |  Adds an item to the tail of the queue |
-| `removeFirst()` |  Removes the first item at the head of the queue |
-|  `removeLast()` |  Removes the first item at the tail of the queue |
+| `getFirst()` | Gets the first item of the head of the queue without removing it. |
+| `getLast()` | Gets the first item of the tail of the queue without removing it. |
+| `addFirst(E e)` | Adds an item to the head of the queue |
+| `addLast(E e)` | Adds an item to the tail of the queue |
+| `removeFirst()` | Removes the first item at the head of the queue |
+| `removeLast()` | Removes the first item at the tail of the queue |
 
 ### Adding Elements to Deque
 
@@ -136,19 +136,19 @@ import java.util.*;
 public class StackExample {
     public static void main(String args[]) {
         Stack st = new Stack();
-        
+
         System.out.println("stack: " + st);
         st.push(10);
         System.out.println("10 was pushed to the stack");
         System.out.println("stack: " + st);
         st.push(15);
-        
+
         System.out.println("15 was pushed to the stack");
         System.out.println("stack: " + st);
         st.push(80);
         System.out.println("80 was pushed to the stack");
         System.out.println("stack: " + st);
-        
+
         st.pop();
         System.out.println("80 was popped from the stack");
         System.out.println("stack: " + st);
@@ -187,7 +187,7 @@ queue.offer("fourth. element" );
 queue.offer("fifth. element" );
 
 while ( !queue.isEmpty() ) {
-	System.out.println( queue.poll() );
+    System.out.println( queue.poll() );
 }
 ```
 

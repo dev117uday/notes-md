@@ -4,7 +4,7 @@ description: They are BIG
 
 # BigDecimal and BigInteger
 
-**imports :** 
+**imports :**
 
 ```java
 import java.math.BigDecimal;
@@ -177,7 +177,7 @@ else{
 }
 ```
 
-In general, do not use use the == operator to compare Big Integers 
+In general, do not use use the == operator to compare Big Integers
 
 * `==` operator: compares references; i.e. whether two values refer to the same object 
 * `equals()` method: compares the content of two Big Integers.

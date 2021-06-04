@@ -4,9 +4,9 @@ description: Not Geo map
 
 # Map in Java
 
-## Hash Map 
+## Hash Map
 
-### Declaring Hash Map 
+### Declaring Hash Map
 
 ```text
 Map<KeyType, ValueType> myMap = new HashMap<KeyType, ValueType>();
@@ -137,7 +137,7 @@ map.remove("peter",40);
 
 ## Linked Hash Map
 
-`LinkedHashMap` class is Hash table and Linked list implementation of the Map interface, with predictable iteration order. It inherits `HashMap` class and implements the Map interface. 
+`LinkedHashMap` class is Hash table and Linked list implementation of the Map interface, with predictable iteration order. It inherits `HashMap` class and implements the Map interface.
 
 The important points about Java `LinkedHashMap` class are: A `LinkedHashMap` contains values based on the key. It contains only unique elements. It may have one null key and multiple null values. It is same as `HashMap` instead maintains insertion order.
 
@@ -151,15 +151,15 @@ public static void main(String arg[])
     lhm.put("Santosh", "B-Com");
     lhm.put("Asha", "Msc");
     lhm.put("Raghu", "M-Tech");
-    
+
     Set set = lhm.entrySet();
     Iterator i = set.iterator();
-    
+
     while (i.hasNext()) {
         Map.Entry me = (Map.Entry) i.next();
         System.out.println(me.getKey() + " : " + me.getValue());
     }
-    
+
     System.out.println("The Key Contains : " + lhm.containsKey("Shiva"));
     System.out.println("The value to the corresponding to key : " + lhm.get("Asha"));
 }
@@ -172,22 +172,22 @@ public static void main(String arg[])
 ```java
 public class WeakHashMapTest {
     public static void main(String[] args) {
-    
+
         Map hashMap= new HashMap();
         Map weakHashMap = new WeakHashMap();
-        
+
         String keyHashMap = new String("keyHashMap");
         String keyWeakHashMap = new String("keyWeakHashMap");
-        
+
         hashMap.put(keyHashMap, "Ankita");
         weakHashMap.put(keyWeakHashMap, "Atul");
         System.gc();
-        
+
         System.out.println("Before: hash map value:"+hashMap.get("keyHashMap")+" and weak hash map
         value:"+weakHashMap.get("keyWeakHashMap"));
         keyHashMap = null;
         keyWeakHashMap = null;
-        
+
         System.gc();
         System.out.println("After: hash map value:"+hashMap.get("keyHashMap")+" and weak hash map
         value:"+weakHashMap.get("keyWeakHashMap"));
@@ -197,12 +197,12 @@ public class WeakHashMapTest {
 
 ## Sorted Map
 
-**Key points** : 
+**Key points** :
 
 * Sorted Map interface extends Map. 
 * entries are maintained in an ascending key order. 
 
-**Methods of sorted Map** : 
+**Methods of sorted Map** :
 
 * `Comparator comparator( )`
 * `Object firstKey( )`
@@ -216,25 +216,25 @@ public static void main(String args[]) {
     // Create a hash map
     TreeMap tm = new TreeMap();
     // Put elements to the map
-    
+
     tm.put("Zara", new Double(3434.34));
     tm.put("Mahnaz", new Double(123.22));
     tm.put("Ayan", new Double(1378.00));
     tm.put("Daisy", new Double(99.22));
     tm.put("Qadir", new Double(-19.08));
-    
+
     // Get a set of the entries
     Set set = tm.entrySet();
     // Get an iterator
     Iterator i = set.iterator();
     // Display elements
-    
+
     while(i.hasNext()) {
         Map.Entry me = (Map.Entry)i.next();
         System.out.print(me.getKey() + ": ");
         System.out.println(me.getValue());
     }
-    
+
     System.out.println();
     // Deposit 1000 into Zara's account
     double balance = ((Double)tm.get("Zara")).doubleValue();
@@ -262,6 +262,4 @@ public class Main {
     }
 }
 ```
-
-
 

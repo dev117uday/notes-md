@@ -4,9 +4,9 @@ description: Get set Go
 
 # Set in Java
 
-![Class Diagram](../.gitbook/assets/image%20%285%29.png)
+![Class Diagram](../../.gitbook/assets/image%20%285%29.png)
 
-**import** 
+**import**
 
 ```java
 import java.util.Set;
@@ -42,10 +42,10 @@ Set<Integer> linkedHashSet = new LinkedHashSet<Integer>();
 
 ```text
 set.add(12); 
-set.add(13); 
+set.add(13);
 ```
 
-### Delete all the elements of a Set 
+### Delete all the elements of a Set
 
 ```java
 set.clear();
@@ -64,10 +64,4 @@ set.size();
 set.isEmpty();
 //Returns true if the set has no elements
 ```
-
-
-
-
-
-
 

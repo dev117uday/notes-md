@@ -12,7 +12,7 @@ final int someConstant = 10;
 
 ## Data Types
 
-![Data types in Java](../.gitbook/assets/image%20%281%29.png)
+![Data types in Java](../../.gitbook/assets/image%20%281%29.png)
 
 * These are Java's primitive datatypes
 * you can use `+` operator on datatypes smaller than int otherwise anything that gets promoted to `Integer`.
@@ -108,7 +108,7 @@ import java.util.StringTokenizer;
 
 **Difference between string on heap and Pool**
 
-![Strings on Heap vs Pool](../.gitbook/assets/image%20%282%29.png)
+![Strings on Heap vs Pool](../../.gitbook/assets/image%20%282%29.png)
 
 ### String intern\(\)
 
@@ -127,6 +127,6 @@ public class InternExample{
         // true because reference variables are 
         // pointing to same instance  
     }
-}  
+}
 ```
 

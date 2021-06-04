@@ -88,7 +88,7 @@ System.out.println(people[2]);
 // throws an ArrayIndexOutOfBoundsException.
 ```
 
-## Arrays to Stream 
+## Arrays to Stream
 
 ```java
 String[] arr = new String[] {"str1", "str2", "str3"};

@@ -149,7 +149,7 @@ WHERE
 
 #### Where clause operator
 
-![where clause operator](img/where_clause.png)
+![where clause operator](../../.gitbook/assets/where_clause.png)
 
 #### Non match
 

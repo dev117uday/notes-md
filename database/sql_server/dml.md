@@ -1,7 +1,8 @@
 # Data Manipulation
 
 **select**
-```
+
+```text
 SELECT
     city,
     COUNT (*)
@@ -19,7 +20,7 @@ ORDER BY
 
 **Order By**
 
-```
+```text
 SELECT
     first_name,
     last_name
@@ -33,7 +34,7 @@ ORDER BY
 
 The `OFFSET` and `FETCH` clauses are the options of the `ORDER BY` clause. They allow you to limit the number of rows to be returned by a query.
 
-```
+```text
 SELECT
     product_name,
     list_price
@@ -48,7 +49,7 @@ FETCH FIRST 10 ROWS ONLY;
 
 **Top**
 
-```
+```text
 SELECT TOP (expression) [PERCENT]
     [WITH TIES]
 FROM 
@@ -58,18 +59,20 @@ ORDER BY
 ```
 
 **DISTINCT**
-```
+
+```text
 SELECT 
-	DISTINCT 
+    DISTINCT 
        city, 
        state, 
        zip_code
 FROM 
-	sales.customers;
+    sales.customers;
 ```
 
 **Where**
-```
+
+```text
 SELECT
     product_id,
     product_name,
@@ -81,7 +84,7 @@ ORDER BY
     list_price DESC;
 ```
 
-```
+```text
 SELECT
     product_id,
     product_name,
@@ -94,7 +97,8 @@ ORDER BY
 ```
 
 **AND**
-```
+
+```text
 SELECT
     *
 FROM
@@ -107,7 +111,8 @@ ORDER BY
 ```
 
 **OR**
-```
+
+```text
 SELECT
     product_name,
     list_price
@@ -122,7 +127,7 @@ ORDER BY
 
 **IN**
 
-```
+```text
 SELECT
     product_name,
     list_price
@@ -142,7 +147,8 @@ ORDER BY
 ```
 
 **Between**
-```
+
+```text
 SELECT
     product_id,
     product_name,
@@ -154,3 +160,4 @@ WHERE
 ORDER BY
     list_price;
 ```
+

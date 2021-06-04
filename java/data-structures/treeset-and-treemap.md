@@ -68,7 +68,7 @@ System.out.println(treeSet.contains(15));
 // Prints false
 ```
 
-### Iteration 
+### Iteration
 
 ```java
 for (Integer i : treeSet) {

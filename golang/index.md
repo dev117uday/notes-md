@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Learning Golang](README.md)
+* [Learning Golang](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/golang/README.md)
 
 ## Miscellaneous
 

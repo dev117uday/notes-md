@@ -13,7 +13,7 @@ System.out.println("Hello World");
 System.out.print("Hello World");
 ```
 
-### Using System.console to read password 
+### Using System.console to read password
 
 ```java
 char[] password = System.console().readPassword();
@@ -21,13 +21,13 @@ char[] password = System.console().readPassword();
 
 ## Input
 
-import `Scanner` from : 
+import `Scanner` from :
 
 ```java
 import java.util.Scanner;
 ```
 
-### Simple Array input 
+### Simple Array input
 
 ```java
 import java.util.Scanner;

@@ -1,6 +1,8 @@
-# Solidity DataTypes
+# Solidity
 
-## Data types in Solidity
+## Solidity DataTypes
+
+### Data types in Solidity
 
 Solidity is a statically typed language, which means that the type of each variable \(state and local\) needs to be specified. Solidity provides several elementary types which can be combined to form complex types.
 
@@ -100,9 +102,10 @@ contract MappingUser {
     }
 }
 ```
-# Solidity Visibility
 
-## Getters\(\) and Visibility
+## Solidity Visibility
+
+### Getters\(\) and Visibility
 
 Solidity knows two kinds of function calls: internal ones that do not create an actual EVM call \(also called a “message call”\) and external ones that do. Because of that, there are four types of visibility for functions and state variables.
 
@@ -131,5 +134,4 @@ Solidity also contains pure functions, which means you're not even accessing any
 `view`
 
 It's only viewing the data but not modifying it:
-
 

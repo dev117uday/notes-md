@@ -1,46 +1,51 @@
 # Table of contents
 
-### Spring Boot
-  - [Spring Boot](spring-boot/README.md)
-  - [Model Class Example](spring-boot/model-class-example.md)
-  
-### Rust
-  - [Rust](rust/README.md)
+## Spring Boot
 
-### Networking
-  - [Introduction to CN](networking/intro.pdf)
-  - [TCP & IP](networking/tcp_ip.pdf)
-  - [Socket API](networking/socket-api.pdf)
-  - [Layered Architecture](networking/layered-arch.pdf)
+* [Spring Boot](spring-boot/)
+* [Model Class Example](spring-boot/model-class-example.md)
 
-### Databases
-  - [MongoDB](database/mongodb/mongodb.md)
-    - [Operations](database/mongodb/operations.md)
-    - [DB administration](database/mongodb/db-administration/README.md)
-    - [Mongo Query Language](database/mongodb/mongo-query-language-mql.md)
+## Rust
 
-  - [PostgreSQL](database/postgres/README.md)
-    - [PostgreSQL Queries](database/postgres/postgres_queries.md)
-    - [PostgreSQL Joins](database/postgres/postgres_joins.md)
-  
-  - [SQL Server](database/sql_server/README.md)
-    - [Data Organization](database/sql_server/ddl.md)
-    - [Data Manipulation](database/sql_server/dml.md)
+* [Rust](rust.md)
 
-### [Blockchain](blockchain/README.md)
-  - [Smart Contract 101](blockchain/contract.md)
-  - [Solidity](blockchain/solidity.md)
-  - [Custom ERC20 token](blockchain/custom-erc20.md)
-  - [Block 101](blockchain/block-101.md)
+## Networking
 
-### Web
-  - [React : FreeCodeCamp](web/react-fcc.md)
-  - [Express.js : FreeCodeCamp](web/node-express-fcc.md)
-  - [Redis](web/redis.md)
+* [Introduction to CN](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/networking/intro.pdf)
+* [TCP & IP](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/networking/tcp_ip.pdf)
+* [Socket API](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/networking/socket-api.pdf)
+* [Layered Architecture](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/networking/layered-arch.pdf)
 
-### Tools and Tech
-  - [Learning shell](shell/getting_started.md)
-  - [Docker](tools/docker.md)
-  - [Git version Control](tools/git-github.md)
-  - [Crypto 101](tools/crypto.md)
+## Databases
+
+* [MongoDB](database/mongodb/mongodb.md)
+  * [Operations](database/mongodb/operations.md)
+  * [DB administration](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/database/mongodb/db-administration/README.md)
+  * [Mongo Query Language](database/mongodb/mongo-query-language-mql.md)
+* [PostgreSQL](database/postgres/)
+  * [PostgreSQL Queries](database/postgres/postgres_queries.md)
+  * [PostgreSQL Joins](database/postgres/postgres_joins.md)
+* [SQL Server](database/sql_server/)
+  * [Data Organization](database/sql_server/ddl.md)
+  * [Data Manipulation](database/sql_server/dml.md)
+
+## [Blockchain](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/blockchain/README.md)
+
+* [Smart Contract 101](blockchain/contract.md)
+* [Solidity](blockchain/solidity.md)
+* [Custom ERC20 token](blockchain/custom-erc20.md)
+* [Block 101](blockchain/block-101.md)
+
+## Web
+
+* [React : FreeCodeCamp](web/react-fcc.md)
+* [Express.js : FreeCodeCamp](web/node-express-fcc.md)
+* [Redis](web/redis.md)
+
+## Tools and Tech
+
+* [Learning shell](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/shell/getting_started.md)
+* [Docker](tools/docker.md)
+* [Git version Control](tools/git-github.md)
+* [Crypto 101](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/tools/crypto.md)
 

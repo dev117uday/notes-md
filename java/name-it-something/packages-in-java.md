@@ -9,14 +9,14 @@ import package.name.Class;   // Import a single class
 import package.name.*;   // Import the whole package
 ```
 
-### Import a Class
+## Import a Class
 
 ```java
 import java.util.Scanner;
 import java.util.*;
 ```
 
-### User-defined Packages
+## User-defined Packages
 
 ```java
 //save by A.java  
@@ -42,6 +42,4 @@ class B {
     }
 }
 ```
-
-
 

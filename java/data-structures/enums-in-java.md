@@ -70,7 +70,6 @@ class Main {
 
 ### Enums with methods
 
-
 ```java
 public enum MutableExample {
     A, B;
@@ -88,7 +87,6 @@ public enum MutableExample {
 }
 ```
 
-
 ```java
 class Main {
     public static void main(String[] args) {
@@ -101,7 +99,7 @@ class Main {
 }
 ```
 
-Enum constants are technically mutable, so a setter could be added to change the internal structure of an enum constant. However, this is considered very bad practice and should be avoided. Best practice is to make 
+Enum constants are technically mutable, so a setter could be added to change the internal structure of an enum constant. However, this is considered very bad practice and should be avoided. Best practice is to make
 
 Enum fields immutable, with final :
 
@@ -182,8 +180,6 @@ public class Main {
 ### Enum starting with number
 
 Java does not allow the name of enum to start with number like 100A, 25K. In that case, we can append the code with \_ \(underscore\) or any allowed pattern and make check of it.
-
-
 
 **Enum get very complicated**
 
