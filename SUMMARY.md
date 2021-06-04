@@ -62,6 +62,10 @@
   * [Docker](tools/docker.md)
   * [Git version Control](tools/git-github.md)
 * [Rust](rust.md)
+* [Dotnet](dotnet/README.md)
+  * [Dotnet CLI](dotnet/dotnet-cli.md)
+  * [.NET architecture](dotnet/.net-architecture.md)
+  * [C\#](dotnet/c.md)
 * [Spring Boot](spring-boot/README.md)
   * [Model Class Example](spring-boot/model-class-example.md)
 
