@@ -6,10 +6,6 @@ description: Find it out
 
 ## Queries
 
-```sql
-SELECT * FROM person;
-```
-
 **to select column from table**
 
 ```sql
@@ -29,6 +25,153 @@ SELECT gender FROM person WHERE gender = 'Female';
 SELECT * FROM person WHERE gender = 'Female'; 
 --to search whole table where gender = "female"
 SELECT * FROM person WHERE gender = 'Male' AND last_name='England';!
+```
+
+```sql
+SELECT * FROM person;
+```
+
+### ORDER BY clause
+```sql
+SELECT
+	contactLastname,
+	contactFirstname
+FROM
+	customers
+ORDER BY
+	contactLastname DESC,
+	contactFirstname ASC LIMIT 10;
+
+
+SELECT 
+    orderNumber, 
+    orderlinenumber, 
+    quantityOrdered * priceEach as final_price
+FROM
+    orderdetails
+ORDER BY 
+   final_price DESC LIMIT 10;
+
+
+SELECT 
+    orderNumber, 
+    status
+FROM
+    orders
+ORDER BY 
+    FIELD(status,
+        'In Process',
+        'On Hold',
+        'Cancelled',
+        'Resolved',
+        'Disputed',
+        'Shipped') LIMIT 10;
+```        
+
+### WHERE clause
+
+#### WHERE with order by
+```sql
+SELECT 
+    lastName, 
+    firstName, 
+    jobTitle, 
+    officeCode
+FROM
+    employees
+WHERE
+    jobtitle = 'Sales Rep' OR 
+    officeCode = 1
+ORDER BY 
+    officeCode , 
+    jobTitle;
+
+------ WHERE with between
+
+SELECT 
+    firstName, 
+    lastName, 
+    officeCode
+FROM
+    employees
+WHERE
+    officeCode BETWEEN 1 AND 3
+ORDER BY officeCode;
+
+------ WHERE with LIKE
+
+SELECT 
+    firstName, 
+    lastName
+FROM
+    employees
+WHERE
+    lastName LIKE '%son'
+ORDER BY firstName;
+
+------ WHERE with IN 
+
+SELECT 
+    firstName, 
+    lastName, 
+    officeCode
+FROM
+    employees
+WHERE
+    officeCode IN (1 , 2, 3)
+ORDER BY 
+    officeCode;
+```
+
+### DISTINCT 
+```sql
+SELECT DISTINCT state
+FROM customers;
+
+SELECT 
+    DISTINCT state
+FROM
+    customers
+WHERE
+    country = 'USA';
+
+--- AND operator
+
+SELECT 1 = 1 or 1 / 0 ;
+```
+
+### IN operator
+```sql
+SELECT 
+    officeCode, 
+    city, 
+    phone, 
+    country
+FROM
+    offices
+WHERE
+    country IN ('USA' , 'France');
+
+CREATE TABLE members (
+    member_id INT AUTO_INCREMENT,
+    name VARCHAR(100),
+    PRIMARY KEY (member_id)
+);
+
+CREATE TABLE committees (
+    committee_id INT AUTO_INCREMENT,
+    name VARCHAR(100),
+    PRIMARY KEY (committee_id)
+);
+
+INSERT INTO members(name)
+VALUES('John'),('Jane'),('Mary'),('David'),('Amelia');
+
+INSERT INTO committees(name)
+VALUES('John'),('Mary'),('Amelia'),('Joe');
+
+SELECT * FROM members;
+SELECT * FROM committees;
 ```
 
 ### Operators

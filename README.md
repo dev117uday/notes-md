@@ -22,7 +22,7 @@ description: 'Some Usefull, some abandoned'
 
 ## Databases
 
-* [MongoDB](./)
+* [MongoDB]()
   * [Operations](database/mongodb/operations.md)
   * [DB administration](database/mongodb/db-admin.md)
   * [Mongo Query Language](database/mongodb/mql.md)
