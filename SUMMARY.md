@@ -49,6 +49,7 @@
   * [Golang Garbage Collector 101](golang/golang-garbage-collector-101.md)
   * [Go Syntax](golang/go-syntax.md)
 * [Web](web/README.md)
+  * [Svelte](web/svelte.md)
   * [Redis](web/redis.md)
   * [React : FreeCodeCamp](web/react-fcc.md)
   * [Express.js : FreeCodeCamp](web/node-express-fcc.md)
