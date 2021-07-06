@@ -6,7 +6,19 @@ description: Find it out
 
 ## Queries
 
-**to select column from table**
+### Select 
+
+The `SELECT` statement has the following clauses:
+
+- Select distinct rows using **DISTINCT** operator.
+- Sort rows using **ORDER BY** clause.
+- Filter rows using **WHERE** clause.
+- Select a subset of rows from a table using **LIMIT** or **FETCH** clause.
+- Group rows into groups using **GROUP BY** clause.
+- Filter groups using **HAVING** clause.
+- Join with other tables using joins such as INNER JOIN, LEFT JOIN, FULL OUTER JOIN, CROSS JOIN clauses.
+- Perform set operations using **UNION**, **INTERSECT**, and **EXCEPT**.
+
 
 ```sql
 SELECT first_name,second_name FROM person;
@@ -18,18 +30,36 @@ SELECT first_name,second_name FROM person;
 | DESC | Descending |
 
 ```sql
+SELECT * FROM person;
+
 SELECT * FROM person ORBER BY dob ASC|DESC;
 SELECT DISTINCT gender FROM person;
+
+-- to select one column with condtion
 SELECT gender FROM person WHERE gender = 'Female'; 
---to search in one col
+
+-- to select all row with condition on one column
 SELECT * FROM person WHERE gender = 'Female'; 
---to search whole table where gender = "female"
+
 SELECT * FROM person WHERE gender = 'Male' AND last_name='England';!
 ```
 
+### Column Alias
+
 ```sql
-SELECT * FROM person;
-```
+SELECT 
+   first_name || ' ' || last_name as name,
+   email
+FROM 
+   customer;
+
+-- with spaces
+SELECT
+    first_name || ' ' || last_name "full name"
+FROM
+    customer;
+
+```   
 
 ### ORDER BY clause
 ```sql
@@ -67,6 +97,31 @@ ORDER BY
         'Disputed',
         'Shipped') LIMIT 10;
 ```        
+
+**Using PostgreSQL ORDER BY clause to sort rows by multiple columns**
+
+The following statement selects the first name and last name from the customer table and sorts the rows by the first name in ascending order and last name in descending order:
+```sql
+SELECT
+	first_name,
+	last_name
+FROM
+	customer
+ORDER BY
+	first_name ASC,
+	last_name DESC;
+```
+
+
+| First Name | Last Name |
+| :--- | :--- |
+| Kelly | Torres |
+| Kelly | Knott |
+
+In this example, the ORDER BY clause sorts rows by values in the first name column first. And then it sorts the sorted rows by values in the last name column.
+
+As you can see clearly from the output, two customers with the same first name Kelly have the last name sorted in descending order.
+
 
 ### WHERE clause
 

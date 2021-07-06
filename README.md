@@ -27,6 +27,7 @@ description: 'Some Usefull, some abandoned'
   * [DB administration](database/mongodb/db-admin.md)
   * [Mongo Query Language](database/mongodb/mql.md)
 * [PostgreSQL](database/postgres/)
+  * [DDL](database/postgres/ddl.md)
   * [PostgreSQL Queries](database/postgres/postgres_queries.md)
   * [PostgreSQL Joins](database/postgres/postgres_joins.md)
 * [SQL Server](database/sql_server/)

@@ -33,6 +33,7 @@
   * [Cassandra : Scylla](database/cassandra-scylla/README.md)
     * [CQL](database/cassandra-scylla/cql.md)
   * [PostgreSQL](database/postgres/README.md)
+    * [DDL](database/postgres/ddl.md)
     * [PostgreSQL Joins](database/postgres/postgres_joins.md)
     * [PostgreSQL Queries](database/postgres/postgres_queries.md)
   * [Mongodb](database/mongodb/README.md)
