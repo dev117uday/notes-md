@@ -31,6 +31,7 @@
     * [Data Definition](database/sql_server/ddl.md)
     * [Data Manipulation](database/sql_server/dml.md)
   * [Cassandra : Scylla](database/cassandra-scylla/README.md)
+    * [Data Modeling](database/cassandra-scylla/data-modeling.md)
     * [CQL](database/cassandra-scylla/cql.md)
   * [PostgreSQL](database/postgres/README.md)
     * [DDL](database/postgres/ddl.md)
