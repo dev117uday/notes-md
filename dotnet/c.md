@@ -17,6 +17,28 @@
 
   members. However, unlike classes, structs are value types and don't typically require heap allocation. struct types don't support user-specified inheritance, and all struct types implicitly inherit from type object .
 
+### Concepts
+
+* `namespaces`
+  * to organise the code at big modules, project level
+  * alias namespace using : `using PATB = ProjectA.TeamB`
+* `string`
+  * use `@` in-front of a string to print the whole string as it is.
+* Types in C\#
+  * Value type : `int`,`float`,`double`
+  * Reference type : `interface`,`Class`
+  * by default value types are non nullable \(something will be default\), to make them nullable use `?`
+  * ex : declare `bool` with `null`, because they cant be `false` or `true`  without any decision
+  * ex : if a value is null and you have to assign it to another variable some default value and at the same time want the value store in a variable if not null use the `??` operator
+  * use : `int availableTickets = ticketsSold ?? 100;`
+* Methods
+  * to pass variable as value, just pass, to pass variable by reference, use `ref` keyword in both places
+  * you can use the `out` in c\# to return multiple variables
+  * use `params` keyword to make arguments optional
+  * to override a function that is present in parent class, use the `virtual` keyword in parent class,and use `override` in the child class
+  * use the `new` keyword to override the parent class methods from the child class
+  * you can use the `base` keyword to call the function from the parent class
+
 ### Accessibility 
 
 Each member of a class has an associated accessibility, which controls the regions of program text that can access the member. There are six possible forms of accessibility. The access modifiers are summarized below.
