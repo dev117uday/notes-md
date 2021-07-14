@@ -1,6 +1,7 @@
 # Database
 
-- Cassandra (Scylla)
-- MongoDB
-- PostgreSQL
-- SQL Server
+* Cassandra \(Scylla\)
+* MongoDB
+* PostgreSQL
+* SQL Server
+

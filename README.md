@@ -6,12 +6,12 @@ description: 'Some Usefull, some abandoned'
 
 ## Spring Boot
 
-* [Spring Boot](spring-boot/)
-* [Model Class Example](spring-boot/model-class-example.md)
+* [Spring Boot](web/spring-boot/)
+* [Model Class Example](web/spring-boot/model-class-example.md)
 
 ## Rust
 
-* [Rust](rust.md)
+* [Rust](languages/rust.md)
 
 ## Networking
 
@@ -22,7 +22,7 @@ description: 'Some Usefull, some abandoned'
 
 ## Databases
 
-* [MongoDB]()
+* [MongoDB](./)
   * [Operations](database/mongodb/operations.md)
   * [DB administration](database/mongodb/db-admin.md)
   * [Mongo Query Language](database/mongodb/mql.md)

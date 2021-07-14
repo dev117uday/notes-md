@@ -41,7 +41,6 @@ sudo docker exec -it postgres_learn bash
 psql -U postgres
 ```
 
-
 #### Change password of user
 
 ```sql
@@ -67,6 +66,7 @@ ALTER USER dev WITH SUPERUSER;
 ```sql
 DROP USER user;
 ```
+
 !! use only lower or only upper casing, also try to use upper case with command and lowercase with names
 
 ### Benefits of Relational Databases
@@ -124,3 +124,4 @@ psql -h localhost -p 5432 -U postgres test
     hello
 */
 ```
+
