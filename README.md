@@ -23,16 +23,16 @@ description: 'Some Usefull, some abandoned'
 ## Databases
 
 * [MongoDB](./)
-  * [Operations](database/mongodb/operations.md)
-  * [DB administration](database/mongodb/db-admin.md)
-  * [Mongo Query Language](database/mongodb/mql.md)
-* [PostgreSQL](database/postgres/)
-  * [DDL](database/postgres/ddl.md)
-  * [PostgreSQL Queries](database/postgres/postgres_queries.md)
-  * [PostgreSQL Joins](database/postgres/postgres_joins.md)
-* [SQL Server](database/sql_server/)
-  * [Data Organization](database/sql_server/ddl.md)
-  * [Data Manipulation](database/sql_server/dml.md)
+  * [Operations]()
+  * [DB administration]()
+  * [Mongo Query Language]()
+* [PostgreSQL]()
+  * [DDL]()
+  * [PostgreSQL Queries]()
+  * [PostgreSQL Joins]()
+* [SQL Server]()
+  * [Data Organization]()
+  * [Data Manipulation]()
 
 ## [Blockchain](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/blockchain/README.md)
 
@@ -45,7 +45,7 @@ description: 'Some Usefull, some abandoned'
 
 * [React : FreeCodeCamp](web/react-fcc.md)
 * [Express.js : FreeCodeCamp](web/node-express-fcc.md)
-* [Redis](web/redis.md)
+* [Redis]()
 
 ## Tools and Tech
 
