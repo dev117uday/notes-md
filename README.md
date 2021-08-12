@@ -4,53 +4,56 @@ description: 'Some Usefull, some abandoned'
 
 # Table of contents
 
-## Spring Boot
-
-* [Spring Boot](web/spring-boot/)
-* [Model Class Example](web/spring-boot/model-class-example.md)
-
-## Rust
-
-* [Rust](languages/rust.md)
-
-## Networking
-
-* [Introduction to CN](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/networking/intro.pdf)
-* [TCP & IP](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/networking/tcp_ip.pdf)
-* [Socket API](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/networking/socket-api.pdf)
-* [Layered Architecture](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/networking/layered-arch.pdf)
-
-## Databases
-
-* [MongoDB](./)
-  * [Operations]()
-  * [DB administration]()
-  * [Mongo Query Language]()
-* [PostgreSQL]()
-  * [DDL]()
-  * [PostgreSQL Queries]()
-  * [PostgreSQL Joins]()
-* [SQL Server]()
-  * [Data Organization]()
-  * [Data Manipulation]()
-
-## [Blockchain](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/blockchain/README.md)
-
-* [Smart Contract 101](blockchain/contract.md)
-* [Solidity](blockchain/solidity.md)
-* [Custom ERC20 token](blockchain/custom-erc20.md)
-* [Block 101](blockchain/block-101.md)
-
-## Web
-
-* [React : FreeCodeCamp](web/react-fcc.md)
-* [Express.js : FreeCodeCamp](web/node-express-fcc.md)
-* [Redis]()
-
-## Tools and Tech
-
-* [Learning shell](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/shell/getting_started.md)
-* [Docker](tools/docker.md)
-* [Git version Control](tools/git-github.md)
-* [Crypto 101](https://github.com/dev117uday/notes-md/tree/614574bb655fe89d060225eaf845cfc98ce01903/tools/crypto.md)
+* [Table of contents](README.md)
+* [FrameWorks](web/README.md)
+  * [Spring Boot](web/spring-boot/README.md)
+    * [Model Class Example](web/spring-boot/model-class-example.md)
+  * [Svelte](web/svelte.md)
+  * [React : FreeCodeCamp](web/react-fcc.md)
+  * [Express.js : FreeCodeCamp](web/node-express-fcc.md)
+* [Blockchain](blockchain/README.md)
+  * [Solidity](blockchain/solidity.md)
+  * [Block 101](blockchain/block-101.md)
+  * [Custom ERC20 token](blockchain/custom-erc20.md)
+  * [Contract](blockchain/contract.md)
+* [Tools and Tech](tools/README.md)
+  * [Shell programming](tools/shell.md)
+  * [Docker](tools/docker.md)
+  * [Git version Control](tools/git-github.md)
+* [Languages](languages/README.md)
+  * [Java](languages/java/README.md)
+    * [Object Oriented Programming](languages/java/object-oriented-programming/README.md)
+      * [Object Class Methods and Constructor](languages/java/object-oriented-programming/object-class-methods-andconstructor.md)
+      * [Immutable Class & Objects](languages/java/object-oriented-programming/immutable-class-and-objects.md)
+      * [Constructors](languages/java/object-oriented-programming/constructors.md)
+      * [Visibility](languages/java/object-oriented-programming/visibility.md)
+    * [Data & Data Types](languages/java/data-and-data-types/README.md)
+      * [BigDecimal and BigInteger](languages/java/data-and-data-types/bigdecimal-and-biginteger.md)
+    * [Useful Stuff Java](languages/java/name-it-something/README.md)
+      * [Annotations](languages/java/name-it-something/annotations.md)
+      * [Comparators](languages/java/name-it-something/comparators.md)
+      * [Packages in Java](languages/java/name-it-something/packages-in-java.md)
+    * [Data Structures](languages/java/data-structures/README.md)
+      * [Map in Java](languages/java/data-structures/map-in-java.md)
+      * [Array in Java](languages/java/data-structures/array-in-java.md)
+      * [Collections in Java](languages/java/data-structures/collections-in-java.md)
+      * [Enums in Java](languages/java/data-structures/enums-in-java.md)
+      * [Linked List in Java](languages/java/data-structures/linked-list-in-java.md)
+      * [List in Java](languages/java/data-structures/list-in-java.md)
+      * [Queues & Stacks](languages/java/data-structures/queues-and-stacks.md)
+      * [Set in Java](languages/java/data-structures/set-in-java.md)
+      * [TreeSet and TreeMap](languages/java/data-structures/treeset-and-treemap.md)
+    * [Articles to refer to](languages/java/articles-to-refer-to.md)
+    * [Keywords in Java](languages/java/keywords-in-java.md)
+    * [IO in Java](languages/java/io-in-java.md)
+  * [Golang](languages/golang/README.md)
+    * [Competitive Programming in Go](languages/golang/competitive-programming-in-go.md)
+    * [Testing simple web server](languages/golang/testing-simple-web-server.md)
+    * [Learning Go - 1](languages/golang/learning-go.md)
+    * [Iota basic example](languages/golang/iota.md)
+    * [Which is faster : Maps, slices](languages/golang/which-is-faster-maps-slices.md)
+    * [Compilation](languages/golang/compilation.md)
+    * [Golang Garbage Collector 101](languages/golang/golang-garbage-collector-101.md)
+    * [Go Syntax](languages/golang/go-syntax.md)
+  * [Rust](languages/rust.md)
 
