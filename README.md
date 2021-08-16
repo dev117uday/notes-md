@@ -44,7 +44,7 @@ description: 'Some Usefull, some abandoned'
       * [Set in Java](java/data-structures/set-in-java.md)
       * [TreeSet and TreeMap](java/data-structures/treeset-and-treemap.md)
     * [Articles to refer to](java/articles-to-refer-to.md)
-    * [Keywords in Java](java/keywords-in-java.md)
+    * [Keywords in Java](java/name-it-something/keywords-in-java.md)
     * [IO in Java](java/io-in-java.md)
   * [Golang](golang/)
     * [Competitive Programming in Go](golang/competitive-programming-in-go.md)

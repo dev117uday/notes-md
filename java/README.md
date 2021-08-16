@@ -23,7 +23,7 @@ description: messy
   * [Packages in Java](name-it-something/packages-in-java.md)
   * [Annotations](name-it-something/annotations.md)
   * [Comparators](name-it-something/comparators.md)
-* [Keywords in Java](keywords-in-java.md)
+* [Keywords in Java](name-it-something/keywords-in-java.md)
 * [Object Oriented Programming](object-oriented-programming/)
   * [Immutable Class & Objects](object-oriented-programming/immutable-class-and-objects.md)
   * [Object Class Methods and Constructor](object-oriented-programming/object-class-methods-andconstructor.md)

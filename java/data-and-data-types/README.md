@@ -36,8 +36,7 @@ int low = Integer.MIN_VALUE;
 * `s.indexOf('i')`
 * `split(";")`
 * `join()`
-* `reverse()`
-* `toString()`
+* `toString()`  Dont use with strings
 * **String** is a final and **immutable** class
 * To **create** a **mutable string** in **java**, **Java** has two **classes** 
   * StringBuffer and 
@@ -57,8 +56,11 @@ int low = Integer.MIN_VALUE;
 
 ```java
 StringBuilder sb = new StringBuilder();
+
 sb.append("One=").append(one).append(", Color=red")
+
 System.out.print(sb);
+
 // Prints "One=1, Colour=red" 
 // followed by an ASCII newline.
 String result = sb.toString();
