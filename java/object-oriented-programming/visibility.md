@@ -50,3 +50,22 @@ public class MyClass {
 }
 ```
 
+## Public Visibility
+
+Visible to the class, package, and subclass
+
+```java
+public class Test{
+    public int number = 2;
+        public Test(){
+    }
+}
+
+public class Other{
+    public static void main(String[] args){
+        Test t = new Test();
+        System.out.println(t.number);
+    }
+}
+```
+

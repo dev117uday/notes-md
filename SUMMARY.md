@@ -35,6 +35,7 @@
     * [Immutable Class & Objects](java/object-oriented-programming/immutable-class-and-objects.md)
     * [Constructors](java/object-oriented-programming/constructors.md)
     * [Visibility](java/object-oriented-programming/visibility.md)
+    * [Generics](java/object-oriented-programming/generics.md)
   * [Useful Stuff Java](java/name-it-something/README.md)
     * [Keywords in Java](java/name-it-something/keywords-in-java.md)
     * [Annotations](java/name-it-something/annotations.md)
