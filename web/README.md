@@ -1,6 +1,11 @@
 # FrameWorks
 
-* Redis
-* React \(i dont like it\)
-* Expree.js
+* Spring Boot
+* React.js
+* Express.js
+* Svelte.js
+
+
+
+
 
