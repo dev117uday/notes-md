@@ -2,7 +2,7 @@
 description: i dont like react anymore
 ---
 
-# React : FreeCodeCamp
+# React
 
 ## React tutorial - FreeCodeCamp
 

@@ -2,7 +2,7 @@
 description: express is slow
 ---
 
-# Express.js : FreeCodeCamp
+# Express.js
 
 ## Basic Node and Express
 
