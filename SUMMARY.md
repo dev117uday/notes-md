@@ -21,6 +21,8 @@
 * [C\#](c/README.md)
   * [Keywords](c/keywords.md)
   * [Programming Paradigms](c/programming-paradigms.md)
+  * [Collections](c/collections/README.md)
+    * [List](c/collections/list.md)
 * [Dotnet](dotnet.md)
 * [Java](java/README.md)
   * [Data & Data Types](java/data-and-data-types/README.md)

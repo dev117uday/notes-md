@@ -7,7 +7,6 @@
 ### Task asynchronous Programming Model 
 
 * **Don't block, await instead**
-* \*\*\*\*
 
 
 
