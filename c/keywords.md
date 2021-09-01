@@ -6,7 +6,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
 
 
 
-| Keyword | Definition |
+| Keyword | Description |
 | :--- | :--- |
 | abstract | The `abstract` modifier indicates that the thing being modified has a missing or incomplete implementation. An abstract class cannot be instantiated |
 | async | Use the `async` modifier to specify that a method is asynchronous. just like JavaScript `async` await but better. |
@@ -27,7 +27,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
 
 ### Access Modifier Keywords
 
-| Access Modifiers | Usage |
+| Keyword | Description |
 | :--- | :--- |
 | public | Allows any part of the program to access the type and its members. |
 | private | Restricts other parts of the program from accessing the type and its members.  |
@@ -43,8 +43,8 @@ Modifier keywords are specific keywords that indicate who can modify types and t
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Keywords</th>
-      <th style="text-align:left"></th>
+      <th style="text-align:left">Keyword</th>
+      <th style="text-align:left">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -266,6 +266,211 @@ Modifier keywords are specific keywords that indicate who can modify types and t
         </p>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left">throw/try/catch</td>
+      <td style="text-align:left">
+        <p><code>try { </code>
+        </p>
+        <p><code>  throw new NullReferenceException(&quot;Student object is null.&quot;); </code>
+        </p>
+        <p><code>} catch(Exception ex) { </code>
+        </p>
+        <p><code>  Console.WriteLine(ex.Message ); </code>
+        </p>
+        <p><code>} finally {</code>
+        </p>
+        <p><code>  Console.WriteLine(&quot;Done with try catch&quot;)</code>
+        </p>
+        <p><code>}</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/throw">https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/throw</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">checked</td>
+      <td style="text-align:left">The <code>checked</code> keyword is used to explicitly enable overflow checking
+        for integral-type arithmetic operations and conversions.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p><code>try { </code>
+        </p>
+        <p><code>  int ten = 10;</code>
+        </p>
+        <p><code>  Console.WriteLine(checked(2147483647 + ten));</code>
+        </p>
+        <p><code>} catch (Exception e) { Console.WriteLine(e.Message); </code>
+        </p>
+        <p><code>}</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">unchecked</td>
+      <td style="text-align:left">The unchecked keyword is used to suppress overflow-checking for integral-type
+        arithmetic operations and conversions. It will let the integer overflow
+        its value</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">fixed</td>
+      <td style="text-align:left">The <code>fixed</code> statement prevents the garbage collector from relocating
+        a movable variable. The <code>fixed</code> statement is only permitted in
+        an <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/unsafe">unsafe</a> context.
+        You can also use the <code>fixed</code> keyword to create <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/unsafe-code#fixed-size-buffers">fixed size buffers</a>.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/fixed-statement">https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/fixed-statement</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">lock</td>
+      <td style="text-align:left">The <code>lock</code> statement acquires the mutual-exclusion lock for a
+        given object, executes a statement block, and then releases the lock. While
+        a lock is held, the thread that holds the lock can again acquire and release
+        the lock. Any other thread is blocked from acquiring the lock and waits
+        until the lock is released.</td>
+    </tr>
   </tbody>
 </table>
+
+### Method Parameter Keyword
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Keyword</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">params</td>
+      <td style="text-align:left">you can specify a <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/method-parameters">method parameter</a> that
+        takes a variable number of arguments. The parameter type must be a single-dimensional
+        array.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&lt;code&gt;&lt;/code&gt;</td>
+      <td style="text-align:left">
+        <p><code>public static void UseParams(params int[] list) { </code>
+        </p>
+        <p><code>  for (int i = 0; i &lt; list.Length; i++) { </code>
+        </p>
+        <p><code>    Console.Write(list[i] + &quot; &quot;); </code>
+        </p>
+        <p><code>  } </code>
+        </p>
+        <p><code>  Console.WriteLine(); </code>
+        </p>
+        <p><code>}</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">ref</td>
+      <td style="text-align:left">The <code>ref</code> keyword indicates that a value is passed by reference.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"><code>void SomeFunction(ref int num)</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">out</td>
+      <td style="text-align:left">The <code>out</code> keyword causes arguments to be passed by reference.
+        It makes the formal parameter an alias for the argument, which must be
+        a variable. In other words, any operation on the parameter is made on the
+        argument.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p><code>int initializeInMethod;</code>
+        </p>
+        <p><code>OutArgExample(out initializeInMethod); </code>
+        </p>
+        <p><code>void OutArgExample(out int number) { </code>
+        </p>
+        <p><code>  number = 44; </code>
+        </p>
+        <p><code>}</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### Namespace Keywords
+
+| Keyword | Description |
+| :--- | :--- |
+| . operator |  |
+| :: operator |  |
+| extern alias |  |
+| using |  |
+
+### Operator Keywords
+
+| Keyword | Description |
+| :--- | :--- |
+| as |  |
+| await |  |
+| is |  |
+| new |  |
+| sizeof |  |
+| typeof |  |
+| stackalloc |  |
+
+### Base Keyword
+
+| Keyword | Description |
+| :--- | :--- |
+| this |  |
+| base |  |
+
+### Literal keywords
+
+| Keyword | Description |
+| :--- | :--- |
+| false |  |
+| true |  |
+| value |  |
+| void |  |
+| null |  |
+
+### Contextual keyword
+
+| Keyword | Description |
+| :--- | :--- |
+| var |  |
+| dynamic |  |
+| global |  |
+| set |  |
+| value |  |
+| add |  |
+
+### Query Keyword
+
+| Keyword | Description |
+| :--- | :--- |
+| where |  |
+| select |  |
+| group |  |
+| into |  |
+| orderby |  |
+| join |  |
+| let |  |
+| in |  |
+| on |  |
+| equals |  |
+| by |  |
+| ascending |  |
+| descending |  |
+| from |  |
 
