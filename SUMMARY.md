@@ -6,6 +6,8 @@
     * [Model Class Example](web/spring-boot/model-class-example.md)
   * [Svelte](web/svelte.md)
   * [React](web/react-fcc.md)
+  * [BlazorWASM](web/blazorwasm-1/README.md)
+    * [Routing Blazorwasm](web/blazorwasm-1/routing-blazorwasm.md)
   * [Express.js](web/node-express-fcc.md)
 * [Blockchain](blockchain/README.md)
   * [Solidity](blockchain/solidity.md)
