@@ -9,7 +9,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
 | Keyword | Description |
 | :--- | :--- |
 | abstract | The `abstract` modifier indicates that the thing being modified has a missing or incomplete implementation. An abstract class cannot be instantiated |
-| async | Use the `async` modifier to specify that a method is asynchronous. just like JavaScript `async` await but better. |
+| async | Use the `async` modifier to specify that a method is asynchronous. just like node.js `async` await but better. |
 | const | You use the `const` keyword to declare a constant field or a constant local |
 | [event](https://www.tutorialsteacher.com/csharp/csharp-event) | The `event` keyword is used to declare an event in a publisher class. |
 | `extern` | The `extern` modifier is used to declare a method that is implemented externally |
@@ -408,69 +408,190 @@ Modifier keywords are specific keywords that indicate who can modify types and t
 
 ### Namespace Keywords
 
-| Keyword | Description |
-| :--- | :--- |
-| . operator |  |
-| :: operator |  |
-| extern alias |  |
-| using |  |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Keyword</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">. operator</td>
+      <td style="text-align:left">to acess methods of object</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">:: operator</td>
+      <td style="text-align:left">Use the namespace alias qualifier <code>::</code> to access a member of
+        an aliased namespace. You can use the <code>::</code> qualifier only between
+        two identifiers. The left-hand identifier can be any of the following aliases</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">extern alias</td>
+      <td style="text-align:left">To reference two versions of assemblies that have the same fully-qualified
+        type names.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p><code>extern alias GridV1;</code>
+        </p>
+        <p><code>extern alias GridV2; </code>
+        </p>
+        <p><code>using Class1V1 = GridV1::Namespace.Class1;</code>
+        </p>
+        <p><code>using Class1V2 = GridV2::Namespace.Class1;</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">using</td>
+      <td style="text-align:left">
+        <p></p>
+        <ul>
+          <li>The <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement">using statement</a> defines
+            a scope at the end of which an object will be disposed.</li>
+          <li>The <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive">using directive</a> creates
+            an alias for a namespace or imports types defined in other namespaces.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Operator Keywords
 
-| Keyword | Description |
-| :--- | :--- |
-| as |  |
-| await |  |
-| is |  |
-| new |  |
-| sizeof |  |
-| typeof |  |
-| stackalloc |  |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Keyword</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">as</td>
+      <td style="text-align:left">The <b>as</b> operator is used to perform conversion between compatible
+        reference types or Nullable types. This operator returns the object when
+        they are compatible with the given type and <em><b>return null if the conversion is not possible</b></em> instead
+        of raising an exception</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p><code>object obj = &quot;hello&quot;; </code>
+        </p>
+        <p><code>string str = obj as string;</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">await</td>
+      <td style="text-align:left">wait for async method to return or convert Task&lt;T&gt; to T</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">is</td>
+      <td style="text-align:left">The <code>is</code> operator checks if the result of an expression is compatible
+        with a given type</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">new</td>
+      <td style="text-align:left">The <code>new</code> operator creates a new instance of a type.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">sizeof</td>
+      <td style="text-align:left">The <code>sizeof</code> operator returns the number of bytes occupied by
+        a variable of a given type.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.geeksforgeeks.org/typeof-operator-keyword-in-c-sharp/">typeof</a>
+      </td>
+      <td style="text-align:left">The <b>typeof </b>is an operator keyword which is used to get a type at
+        the compile-time.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">stackalloc</td>
+      <td style="text-align:left">
+        <p>A <code>stackalloc</code> expression allocates a block of memory on the
+          stack. A stack allocated memory block created during the method execution
+          is automatically discarded when that method returns. You cannot explicitly
+          free the memory allocated with <code>stackalloc</code>
+        </p>
+        <p>&lt;code&gt;&lt;/code&gt;<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc"><code>https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc</code></a>&lt;code&gt;&lt;/code&gt;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Base Keyword
 
 | Keyword | Description |
 | :--- | :--- |
-| this |  |
-| base |  |
+| this | The `this` keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method. |
+| base | The `base` keyword is used to access members of the base class from within a derived class |
 
 ### Literal keywords
 
-| Keyword | Description |
-| :--- | :--- |
-| false |  |
-| true |  |
-| value |  |
-| void |  |
-| null |  |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Keyword</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">false</td>
+      <td style="text-align:left"><code>not true</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">true</td>
+      <td style="text-align:left"><code>not false</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">value</td>
+      <td style="text-align:left"><code>value</code> is used in the <code>set</code> accessor in <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties">property</a> and
+        <a
+        href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/">indexer</a>declarations</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p><code>public virtual int Number </code>
+        </p>
+        <p><code>{ </code>
+        </p>
+        <p><code>  get { return num; } </code>
+        </p>
+        <p><code>  set { num = value; } </code>
+        </p>
+        <p><code>}</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">void</td>
+      <td style="text-align:left">You use <code>void</code> as the return type of a <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods">method</a> (or
+        a <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions">local function</a>)
+        to specify that the method doesn&apos;t return a value.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">null</td>
+      <td style="text-align:left">one that does not refer to any object. null is <b>the default value of reference-type variables</b>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Contextual keyword
 
 | Keyword | Description |
 | :--- | :--- |
-| var |  |
-| dynamic |  |
-| global |  |
-| set |  |
-| value |  |
-| add |  |
-
-### Query Keyword
-
-| Keyword | Description |
-| :--- | :--- |
-| where |  |
-| select |  |
-| group |  |
-| into |  |
-| orderby |  |
-| join |  |
-| let |  |
-| in |  |
-| on |  |
-| equals |  |
-| by |  |
-| ascending |  |
-| descending |  |
-| from |  |
+| var | used to declare implicit type variables |
+| _**dynamic**_ | The type is a static type, but an object of type dynamic bypasses static type checking. In most cases, it functions like it has type object |
+| global | global refers to the global namespace, it can be used to solve problems whereby you may redefine types |
+|  | `global :: System.Console.WriteLine("hello world");` |
+| set | object initializer \| goes along with get |
 
