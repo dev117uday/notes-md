@@ -22,6 +22,7 @@
   * [Git version Control](tools/git-github.md)
 * [C\#](c/README.md)
   * [Keywords](c/keywords.md)
+  * [DataTypes](c/datatypes.md)
   * [Programming Paradigms](c/programming-paradigms.md)
   * [Collections](c/collections/README.md)
     * [List](c/collections/list.md)
