@@ -284,3 +284,77 @@ public class Program
 }
 ```
 
+## Stack
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+public class Program
+{
+	public static void Main()
+	{
+		Stack<int> myStack = new Stack<int>();
+		myStack.Push(1);
+		myStack.Push(2);
+		myStack.Push(3);
+		myStack.Push(4);
+
+		foreach (var item in myStack)
+			Console.Write(item + ",");
+		//prints 4,3,2,1, 
+
+		Console.WriteLine();
+
+		int[] arr = new int[] { 1, 2, 3, 4 };
+		Stack<int> myStack2 = new Stack<int>(arr);
+
+		foreach (var item in myStack2)
+			Console.Write(item + ",");
+
+		Console.WriteLine();
+	}
+}
+```
+
+### Stack&lt;T&gt; Properties and Methods:
+
+| Property | Usage |
+| :--- | :--- |
+| Count | Returns the total count of elements in the Stack. |
+
+| Method | Usage |
+| :--- | :--- |
+| Push\(T\) | Inserts an item at the top of the stack. |
+| Peek\(\) | Returns the top item from the stack. |
+| Pop\(\) | Removes and returns items from the top of the stack. |
+| Contains\(T\) | Checks whether an item exists in the stack or not. |
+| Clear\(\) | Removes all items from the stack. |
+
+## Queue
+
+```csharp
+Queue<int> callerIds = new Queue<int>();
+callerIds.Enqueue(1);
+callerIds.Enqueue(2);
+callerIds.Enqueue(3);
+callerIds.Enqueue(4);
+
+foreach(var id in callerIds)
+    Console.Write(id); //prints 1234
+```
+
+### Queue&lt;T&gt; Properties and Methods
+
+| Property | Usage |
+| :--- | :--- |
+| Count | Returns the total count of elements in the Queue. |
+
+| Method | Usage |
+| :--- | :--- |
+| Enqueue\(T\) | Adds an item into the queue. |
+| Dequeue | Returns an item from the beginning of the queue and removes it from the queue. |
+| Peek\(T\) | Returns an first item from the queue without removing it. |
+| Contains\(T\) | Checks whether an item is in the queue or not |
+| Clear\(\) | Removes all the items from the queue. |
+
