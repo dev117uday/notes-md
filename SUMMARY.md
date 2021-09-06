@@ -24,7 +24,6 @@
   * [Keywords](c/keywords.md)
   * [Everything Data in C\#](c/datatypes.md)
   * [OOPS in C\#](c/oops-in-c.md)
-  * [Programming Paradigms](c/programming-paradigms.md)
   * [Collections](c/collections.md)
 * [Dotnet](dotnet.md)
 * [Java](java/README.md)
