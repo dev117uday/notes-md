@@ -233,3 +233,37 @@ class FileInfo : IFile, IBinaryFile
 }
 ```
 
+## Tuples in C\#
+
+```csharp
+Tuple<int, string, string> person = 
+     new Tuple <int, string, string>(1, "Steve", "Jobs");
+```
+
+A tuple can only include a maximum of eight elements. It gives a compiler error when you try to include more than eight elements.
+
+```csharp
+var numbers = Tuple.Create(1, 2, 3, 4, 5, 6, 7, 8);    
+```
+
+```csharp
+var person = Tuple.Create(1, "Steve", "Jobs");
+Console.Write(person.Item1 + " "); 
+// returns 1
+Console.Write(person.Item2 + " "); 
+// returns "Steve"
+Console.Write(person.Item3 + " "); 
+// returns "Jobs"
+
+var numbers = Tuple.Create("One", 2, 3, "Four", 5, "Six", 7, 8);
+
+Console.Write(numbers.Item1 + " "); 
+// returns "One"
+Console.Write(numbers.Item2 + " "); 
+
+// returns 7
+Console.Write(numbers.Rest + " "); 
+// returns (8)
+Console.Write(numbers.Rest.Item1 + " "); // returns 8
+```
+
