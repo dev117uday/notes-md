@@ -1,4 +1,4 @@
-# Routing Blazorwasm
+# BlazorWASM
 
 ## Routing the BlazorWASM
 
@@ -57,7 +57,7 @@
 }
 ```
 
-![](../../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 ### multiple parameters in route
 
@@ -174,6 +174,136 @@ public class DataAccess : IDataAccess
     public DataAccess(HttpClient http)
     {
         ...
+    }
+}
+```
+
+## Overview
+
+### Markup
+
+```text
+@page "/markup"
+
+<h1 style="font-style:@headingFontStyle">@headingText</h1>
+
+@code {
+    private string headingFontStyle = "italic";
+    private string headingText = "Put on your new Blazor!";
+}
+```
+
+### Nested Component
+
+```text
+<h1 style="font-style:@headingFontStyle">Heading Example</h1>
+
+@code {
+    private string headingFontStyle = "italic";
+}
+
+@page "/heading-example"
+
+<Heading />
+```
+
+#### With Namespace
+
+```text
+<BlazorSample.Components.ProductDetail />
+```
+
+### Partial Class Component
+
+```text
+// Pages/CounterPartialClass.razor
+@page "/counter-partial-class"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+// Pages/CounterPartialClass.razor.cs
+namespace BlazorSample.Pages
+{
+    public partial class CounterPartialClass
+    {
+        private int currentCount = 0;
+
+        void IncrementCount()
+        {
+            currentCount++;
+        }
+    }
+}
+```
+
+### Component Parameter
+
+```text
+@Title
+@Body.Text
+
+@code {
+    [Parameter]
+    public string Title { get; set; } = "Set By Child";
+
+    [Parameter]
+    public PanelBody Body = "Set By Child";;
+}
+
+// ----- from parent
+
+<ParameterChild />
+<ParameterChild Title="Set by Parent" Body="Set by Parent" />
+```
+
+When assigning a C\# member to a component parameter, prefix the member with the @ symbol and never prefix the parameter's HTML attribute.
+
+* Correct:
+
+```text
+<ParameterChild Title="@title" />
+```
+
+* Incorrect:
+
+  ```text
+  <ParameterChild @Title="title" />
+  ```
+
+### Overwritten parameters
+
+```text
+<div @onclick="Toggle" class="card bg-light mb-3" style="width:30rem">
+    <div class="card-body">
+        <h2 class="card-title">Toggle (<code>Expanded</code> = @Expanded)</h2>
+
+        @if (Expanded)
+        {
+            <p class="card-text">Hey Guys</p>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public bool Expanded { get; set; }
+
+    private void Toggle()
+    {
+        Expanded = !Expanded;
+    }
+    protected override void OnInitialized()
+    {
+        expanded = Expanded;
+    }
+
+    private void Toggle()
+    {
+        expanded = !expanded;
     }
 }
 ```
