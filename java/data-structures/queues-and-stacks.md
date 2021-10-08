@@ -4,7 +4,7 @@ description: end of line
 
 # Queues & Stacks
 
-![Class Diagram](https://github.com/dev117uday/notes-md/tree/98c2402e12da0ee715fd9e3642096d7e7ebf63ec/.gitbook/assets/image%20%286%29.png)
+![Class Diagram](/.gitbook/assets/image%20%286%29.png)
 
 ## Priority Queue
 

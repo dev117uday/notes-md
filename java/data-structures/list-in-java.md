@@ -4,7 +4,7 @@ description: Just like shopping list
 
 # List in Java
 
-![Class Diagram \(click to zoom\)](https://github.com/dev117uday/notes-md/tree/98c2402e12da0ee715fd9e3642096d7e7ebf63ec/.gitbook/assets/image%20%284%29.png)
+![Class Diagram \(click to zoom\)](/.gitbook/assets/image%20%284%29.png)
 
 [read more here](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)
 
