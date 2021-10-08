@@ -8,7 +8,7 @@ description: Its sweet
 
 ### Min/Max Int and Uint
 
-```text
+```go
 const MaxUint = ^uint(0)
 const MinUint = 0
 
@@ -18,7 +18,7 @@ const MinInt = -MaxInt - 1
 
 ### 2d-vector-input.go
 
-```text
+```go
 package main
 
 import (
@@ -50,7 +50,7 @@ func main() {
 
 ### custom-vector-input.go
 
-```text
+```go
 package main
 
 import (
@@ -75,7 +75,7 @@ func main() {
 
 ### integer-input.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -89,7 +89,7 @@ func main() {
 
 ### map-slice.go
 
-```text
+```go
 package main
 
 import "fmt"
@@ -109,7 +109,7 @@ func main() {
 
 ### string-input.go
 
-```text
+```go
 package main
 
 import (
@@ -129,7 +129,7 @@ func main() {
 
 ### vector-input-integer.go
 
-```text
+```go
 package main
 
 import "fmt"

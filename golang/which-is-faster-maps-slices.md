@@ -101,7 +101,7 @@ func main() {
 
 What will be important in the presented output is not the exact numbers but the time difference between the four different approaches.
 
-```text
+```go
 $ time go run main.go 
 
 Using plain slices    

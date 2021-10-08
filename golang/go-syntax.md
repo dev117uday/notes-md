@@ -4,7 +4,7 @@
 
 * Named return
 
-```text
+```go
 func add(x , y int) (p int) {
   p = x+y            
   // Notice you dont have to use := to initialise p 
@@ -15,7 +15,7 @@ func add(x , y int) (p int) {
 
 func main\(\){ fmt.Println\("Sum is : ",add\(3,4\)\) }
 
-```text
+```go
 - Data Types
 ```go
 byte        alias for uint8
@@ -155,7 +155,7 @@ func main() {
 
 But the call to recover will never happen in this case, because the call to panic imme‐ diately stops execution of the function. Instead, we have to pair it with defer :
 
-```text
+```go
 package main
 import "fmt"
 func main() {

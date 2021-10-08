@@ -2,13 +2,13 @@
 
 * to generate object file go :
 
-```text
+```sh
 $ go tool compile main.go
 ```
 
 * to generate assmebly :
 
-```text
+```sh
 $ go tool compile -S main.go
 ```
 

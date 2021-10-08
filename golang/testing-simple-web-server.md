@@ -15,7 +15,7 @@ description: Testing web server 101
 * inorder to test the handler, we call it by passing http.ResponseWriter and \*http.Request
 * to create a new Request
 
-```text
+```go
 req, err := http.NewRequest(
     http.MethodGet,                 // defining method of HTTP request
     "http://localhost:8080/",       // Url to hit
@@ -30,13 +30,13 @@ if err != nil {
 
 * to **record the response from the writer**
 
-```text
+```go
 rec := httptest.NewRecorder()
 ```
 
 * to verify
 
-```text
+```go
 // calling the function
 helloWorldEndPoint(rec, req)
 
@@ -53,7 +53,7 @@ if !strings.Contains(rec.Body.String(), "hello world") {
 
 **full code server.go**
 
-```text
+```go
 package main
 
 import (
@@ -79,7 +79,7 @@ func helloWorldEndPoint(writer http.ResponseWriter, request *http.Request) {
 
 **full code main\_test.go**
 
-```text
+```go
 package main
 
 import (

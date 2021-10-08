@@ -8,7 +8,7 @@ description: Take a look at GC running visually
 
 A simple program that creates a byte array of 100000000 elements and lets print the memory allocations.
 
-```text
+```go
 package main
 
 import (
@@ -51,7 +51,7 @@ Take a loot at : [https://golang.org/pkg/runtime/](https://golang.org/pkg/runtim
 
 ## func [ReadMemStats](https://golang.org/src/runtime/mstats.go?s=16363:16393#L438) <a id="ReadMemStats"></a>
 
-```text
+```go
 func ReadMemStats(m *MemStats)
 ```
 
@@ -61,7 +61,7 @@ The returned memory allocator statistics are up to date as of the call to ReadMe
 
 ## func [GC](https://golang.org/src/runtime/mgc.go?s=39268:39277#L1054) [¶](https://golang.org/pkg/runtime/#GC) <a id="GC"></a>
 
-```text
+```go
 func GC()
 ```
 
@@ -69,13 +69,13 @@ GC runs a garbage collection and blocks the caller until the garbage collection 
 
 Run this program using the following flag :
 
-```text
+```go
 $ GODEBUG=gctrace=1 go run gc.go
 ```
 
 Output i receive \[ don't get scared, will clean up \] :
 
-```text
+```go
 // some other output //
 
 gc 3 @0.029s 5%: 0.020+2.8+0.009 ms clock, 0.081+0.12/2.7/0.19+0.036 ms cpu, 13->15->10 MB, 15 MB goal, 4 P
@@ -95,7 +95,7 @@ gc 2 @0.021s 0%: 0.014+0.11+0.003 ms clock, 0.058+0.068/0.050/0.049+0.012 ms cpu
 
 Let look at the second run :
 
-```text
+```go
 -----
 gc 1 @0.001s 3%: 0.035+0.20+0.002 ms clock, 0.14+0.041/0.037/0.10+0.010 ms cpu, 95->95->0 MB, 96 MB goal, 4 P
 mem.Alloc: 100081456

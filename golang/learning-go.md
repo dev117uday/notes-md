@@ -21,7 +21,7 @@ description: This is a short summary of effective_go - 1
 ## Getters & Setters
 
 * Go doesn't provide automatic support for **getters** and **setters**. There's nothing wrong with providing **getters** and **setters** yourself, and it's often appropriate to do so.
-* ```text
+* ```go
   owner := obj.Owner()
   if owner != user {
       obj.SetOwner(user)
@@ -40,7 +40,7 @@ description: This is a short summary of effective_go - 1
 
 ### Indentation
 
-* ```text
+* ```go
   if i < f() {
       g()
   }
@@ -57,7 +57,7 @@ description: This is a short summary of effective_go - 1
 * **If**
 * In Go a simple `if` looks like this:
 
-```text
+```go
 if x > 0 {
     return y
 }
@@ -65,7 +65,7 @@ if x > 0 {
 
 * Mandatory braces encourage writing simple `if` statements on multiple lines. It's good style to do so anyway, especially when the body contains a control statement such as a `return` or `break`. Since `if` and `switch` accept an initialisation statement, it's common to see one used to set up a local variable.
 
-```text
+```go
 if err := file.Chmod(0664); err != nil {
     log.Print(err)
     return err
@@ -76,13 +76,13 @@ if err := file.Chmod(0664); err != nil {
 
 * The last example in the previous section demonstrates a detail of how the `:=` short declaration form works. The declaration that calls `os.Open` reads,
 
-```text
+```go
 f, err := os.Open(name)
 ```
 
 * This statement declares two variables, `f` and `err`. A few lines later, the call to `f.Stat` reads,
 
-```text
+```go
 d, err := f.Stat()
 ```
 
@@ -97,7 +97,7 @@ d, err := f.Stat()
 
 * If you're looping over an array, slice, string, or map, or reading from a channel, a `range` clause can manage the loop.
 
-```text
+```go
 for key, value := range oldMap {
     newMap[key] = value
 }
@@ -105,7 +105,7 @@ for key, value := range oldMap {
 
 * If you only need the first item in the range \(the key or index\), drop the second:
 
-```text
+```go
 for key := range m {
     if key.expired() {
         delete(m, key)
@@ -115,7 +115,7 @@ for key := range m {
 
 * If you only need the second item in the range \(the value\), use the _blank identifier_, an underscore, to discard the first:
 
-```text
+```go
 sum := 0
 for _, value := range array {
     sum += value
@@ -127,7 +127,7 @@ for _, value := range array {
 * Go's `switch` is more general than C's.
 * It's therefore possible—and idiomatic—to write an `if`-`else`-`if`-`else` chain as a `switch`.
 
-```text
+```go
 func unhex(c byte) byte {
     switch {
     case '0' <= c && c <= '9':
@@ -143,7 +143,7 @@ func unhex(c byte) byte {
 
 * There is no automatic fall through, but cases can be presented in comma-separated lists.
 
-```text
+```go
 func shouldEscape(c byte) bool {
     switch c {
     case ' ', '?', '&', '=', '#', '+', '%':
@@ -157,7 +157,7 @@ func shouldEscape(c byte) bool {
 
 * A switch can also be used to discover the dynamic type of an interface variable
 
-```text
+```go
 var t interface{}
 t = functionOfSomeType()
 switch t := t.(type) {
@@ -178,7 +178,7 @@ case *int:
 
 ### Multiple return values
 
-```text
+```go
 func squareRoot (num int) (n float, err error)
 // or
 func squareRoot (num int) (float, error)
@@ -191,7 +191,7 @@ func squareRoot (num int) (float, error)
 
 * Go's `defer` statement schedules a function call \(the _deferred_ function\) to be run immediately before the function exits.
 
-```text
+```go
 func fileContent (filename string) (string, error) {
     f, err := os.Open(filename)
     if err != nil {
@@ -208,7 +208,7 @@ func fileContent (filename string) (string, error) {
   * Second, it means that the close sits near the open, which is much clearer than placing it at the end of the function.
 * For Example : 
 
-```text
+```go
 for i := 0; i < 5; i++ {
     defer fmt.Printf("%d ", i)
 }
@@ -217,7 +217,7 @@ for i := 0; i < 5; i++ {
 * Deferred functions are executed in LIFO order, so this code will cause `4 3 2 1 0` to be printed when the function returns
 * A more plausible example is a simple way to trace function execution through the program. We could write a couple of simple tracing routines like this:
 
-```text
+```go
 func trace(s string)   { fmt.Println("entering:", s) }
 func untrace(s string) { fmt.Println("leaving:", s) }
 

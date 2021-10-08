@@ -27,7 +27,7 @@ Here we rely on the fact that expressions are implicitly repeated in a paren­th
 
 Start from one To start a list of constants at 1 instead of 0, you can use iota in an arithmetic expression.
 
-```text
+```go
 const (
     C1 = iota + 1
     C2
@@ -38,7 +38,7 @@ fmt.Println(C1, C2, C3) // "1 2 3"
 
 Skip value You can use the blank identifier to skip a value in a list of constants.
 
-```text
+```go
 const (
     C1 = iota + 1
     _
@@ -55,7 +55,7 @@ fmt.Println(C1, C3, C4) // "1 3 4"
 * give the type a String function.
 * type Direction int
 
-```text
+```go
 const (
     North Direction = iota
     East
@@ -70,7 +70,7 @@ func (d Direction) String() string {
 
 In use:
 
-```text
+```go
 var d Direction = North
 fmt.Print(d)
 switch d {
