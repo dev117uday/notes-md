@@ -243,7 +243,7 @@ public static void main(String args[]) {
 }
 ```
 
-### Hashtable
+## Hashtable
 
 ```java
 import java.util.*;
@@ -262,4 +262,6 @@ public class Main {
     }
 }
 ```
+
+![](../../.gitbook/assets/image%20%288%29.png)
 
