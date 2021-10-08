@@ -4,24 +4,24 @@ description: Not Geo map
 
 # Map in Java
 
-## Hash Map
+##  Hash Map
 
 ### Declaring Hash Map
 
-```text
+```java
 Map<KeyType, ValueType> myMap = new HashMap<KeyType, ValueType>();
 ```
 
 ### Adding values
 
-```text
+```java
 myMap.put("key1", 1);
 myMap.put("key2", 2);
 ```
 
 ### Getting values from Hash Map
 
-```text
+```java
 myMap.get("key1");
 //return 1 (class Integer)
 
@@ -34,7 +34,7 @@ myMap.containsValue(varValue);
 
 ### Check if keys exists
 
-```text
+```java
 Map<String, String> num = new HashMap<>();
 num.put("one", "first");
 if (num.containsKey("one")) {
@@ -44,7 +44,7 @@ if (num.containsKey("one")) {
 
 ### get Or Default
 
-```text
+```java
 Map<Integer, String> map = new HashMap<>();
 map.put(1, "First element");
 map.get(1);  // => First element
@@ -54,13 +54,14 @@ map.getOrDefault(2, "Default element");  // => Default element
 
 ### Iterating over hashMap
 
-```text
-map.forEach((key, value) -> System.out.println("Key: "+key+ " :: Value: "+value));
+```java
+map.forEach((key, value) -> 
+   System.out.println("Key: "+key+ " :: Value: "+value));
 ```
 
 **FASTER WAY**
 
-```text
+```java
 Iterator<Integer> it = map.keySet().iterator();
 
 while (it.hasNext()) {
@@ -71,7 +72,7 @@ while (it.hasNext()) {
 
 **ONLY KEYS**
 
-```text
+```java
 for (String key : repMap.keySet()) {
     System.out.println(key);
 }
@@ -79,7 +80,7 @@ for (String key : repMap.keySet()) {
 
 **ONLY VALUES**
 
-```text
+```java
 for (Integer value : repMap.values()) {
     System.out.println(value);
 }
@@ -87,7 +88,7 @@ for (Integer value : repMap.values()) {
 
 **BOTH KEYS AND VALUES**
 
-```text
+```java
 for (Map.Entry<String, Integer> entry : repMap.entrySet()) {
     System.out.printf("%s = %d\n", entry.getKey(), entry.getValue());
 }
@@ -130,7 +131,7 @@ map.putIfAbsent("kelly", 50);
 
 ### remove
 
-```text
+```java
 map.remove("peter",40); 
 // {john=30, paul=40}
 ```

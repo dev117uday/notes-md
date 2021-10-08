@@ -45,7 +45,7 @@ SortedMap<String, Object> map2 = new TreeMap<>(map);
 
 ### Iterating over List
 
-```text
+```java
 List<String> names
 = new ArrayList<>(Arrays.asList("Clementine", "Duran", "Mike"));
 

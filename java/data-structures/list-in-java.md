@@ -35,7 +35,7 @@ List<T> myLinkedList = new LinkedList<>();
 
 ### Positional Access Operations
 
-```text
+```java
 add(T type)
 add(int index, T type)
 remove(Object o)

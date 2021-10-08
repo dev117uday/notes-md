@@ -29,7 +29,7 @@ Object[] dArt = new Object[] { new Object(),
     "We love Stack", new Integer(3) };
 ```
 
-* Copying Array
+### Copying Array
 
 ```java
 int[] a = { 4, 1, 3, 2 };
