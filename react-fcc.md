@@ -12,7 +12,7 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 For instance, because JSX is a syntactic extension of JavaScript, you can actually write JavaScript directly within JSX. To do this, you simply include the code you want to be treated as JavaScript within curly braces: `{ 'this is treated as JavaScript code' }`. Keep this in mind, since it's used in several future challenges.
 
-#### JSX
+## JSX
 
 ```jsx
 const JSX = <h1>Hello JSX</h1>;
@@ -22,7 +22,7 @@ const JS = <div>
       </div>
 ```
 
-#### Comment
+## Comment
 
 ```jsx
 const JSX = (
@@ -34,7 +34,7 @@ const JSX = (
 );
 ```
 
-#### Render HTML Elements to the DOM
+## Render HTML Elements to the DOM
 
 So far, you've learned that JSX is a convenient tool to write readable HTML within JavaScript. With React, we can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM.
 
@@ -53,7 +53,7 @@ const JSX = (
 ReactDOM.render(JSX,document.getElementById("challenge-node"))
 ```
 
-#### Define an HTML Class in JSX
+## Define an HTML Class in JSX
 
 Now that you're getting comfortable writing JSX, you may be wondering how it differs from HTML.
 
@@ -71,7 +71,7 @@ const JSX = (
 );
 ```
 
-#### Self-Closing JSX Tags
+## Self-Closing JSX Tags
 
 ```jsx
 const JSX = (
@@ -83,7 +83,7 @@ const JSX = (
 );
 ```
 
-#### Create a Stateless Functional Component
+## Create a Stateless Functional Component
 
 Components are the core of React. Everything in React is a component and here you will learn how to create one.
 
@@ -101,7 +101,7 @@ const MyComponent = function() {
 }
 ```
 
-#### Create a React Component
+## Create a React Component
 
 The other way to define a React component is with the ES6 `class` syntax. In the following example, `Kitten` extends `React.Component`:
 
@@ -129,7 +129,7 @@ The other way to define a React component is with the ES6 `class` syntax. In the
   };
 ```
 
-#### React to Render Nested Components
+## React to Render Nested Components
 
 ```jsx
 const TypesOfFruit = () => {
@@ -203,7 +203,7 @@ class TypesOfFood extends React.Component {
 };
 ```
 
-#### Pass Props to a Stateless Functional Component
+## Pass Props to a Stateless Functional Component
 
 In React, you can pass props, or properties, to child components. Say you have an `App` component which renders a child component called `Welcome` which is a stateless functional component
 
@@ -231,7 +231,7 @@ class Calendar extends React.Component {
 };
 ```
 
-#### Pass an Array as Props
+## Pass an Array as Props
 
 ```jsx
 const List = (props) => {
@@ -260,7 +260,7 @@ class ToDo extends React.Component {
 };
 ```
 
-#### Default props
+## Default props
 
 ```jsx
 const ShoppingCart = (props) => {
@@ -277,7 +277,7 @@ ShoppingCart.defaultProps = {
 }
 ```
 
-#### Overiding Default props
+## Overiding Default props
 
 ```jsx
 const Items = (props) => {
@@ -297,7 +297,7 @@ class ShoppingCart extends React.Component {
 };
 ```
 
-#### Use PropTypes to Define the Props You Expect
+## Use PropTypes to Define the Props You Expect
 
 **Importing**
 
@@ -330,7 +330,7 @@ class ShoppingCart extends React.Component {
 };
 ```
 
-#### Access Props Using this.props
+## Access Props Using this.props
 
 The ES6 class component uses a slightly different convention to access props.
 
@@ -367,7 +367,7 @@ class ResetPassword extends React.Component {
 };
 ```
 
-#### Review Using Props with Stateless Functional Components
+## Review Using Props with Stateless Functional Components
 
 A _stateless functional component_ is any function you write which accepts props and returns JSX. A _stateless component_, on the other hand, is a class that extends `React.Component`, but does not use internal state \(covered in the next challenge\). Finally, a _stateful component_ is a class component that does maintain its own internal state. You may see stateful components referred to simply as components or React components.
 
@@ -406,7 +406,7 @@ Camper.propTypes = {
 }
 ```
 
-#### Create a Stateful Component
+## Create a Stateful Component
 
 One of the most important topics in React is `state`. State consists of any data your application needs to know about, that can change over time. You want your apps to respond to state changes and present an updated UI when necessary. React offers a nice solution for the state management of modern web applications.
 
@@ -418,7 +418,7 @@ this.state = {
 }
 ```
 
-#### Render State in the User Interface
+## Render State in the User Interface
 
 Once you define a component's initial state, you can display any part of it in the UI that is rendered. If a component is stateful, it will always have access to the data in `state` in its `render()` method. You can access the data with `this.state`.
 
@@ -446,7 +446,7 @@ class MyComponent extends React.Component {
 };
 ```
 
-#### Render State in the User Interface Another Way
+## Render State in the User Interface Another Way
 
 There is another way to access `state` in a component. In the `render()` method, before the `return` statement, you can write JavaScript directly. For example, you could declare functions, access data from `state` or `props`, perform computations on this data, and so on. Then, you can assign any data to variables, which you have access to in the `return` statement.
 
@@ -471,7 +471,7 @@ class MyComponent extends React.Component {
 
 ### this.state Section { important }
 
-#### Set State with this.setState
+## Set State with this.setState
 
 There is also a way to change the component's `state`. React provides a method for updating component `state` called `setState`. You call the `setState` method within your component class like so: `this.setState()`, passing in an object with key-value pairs. The keys are your state properties and the values are the updated state data. For instance, if we were storing a `username` in state and wanted to update it, it would look like this:
 
@@ -506,7 +506,7 @@ class MyComponent extends React.Component {
 };
 ```
 
-#### Bind 'this' to a Class Method
+## Bind 'this' to a Class Method
 
 In addition to setting and updating `state`, you can also define methods for your component class. A class method typically needs to use the `this` keyword so it can access properties on the class \(such as `state` and `props`\) inside the scope of the method. There are a few ways to allow your class methods to access `this`.
 
@@ -537,7 +537,7 @@ class MyComponent extends React.Component {
 };
 ```
 
-#### Use State to Toggle an Element
+## Use State to Toggle an Element
 
 Sometimes you might need to know the previous state when updating the state. However, state updates may be asynchronous - this means React may batch multiple `setState()` calls into a single update. This means you can't rely on the previous value of `this.state` or `this.props` when calculating the next value. So, you should not use code like this:
 
