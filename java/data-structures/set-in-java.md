@@ -4,7 +4,7 @@ description: Get set Go
 
 # Set in Java
 
-![Class Diagram](../../.gitbook/assets/image%20%285%29.png)
+![Class Diagram](https://github.com/dev117uday/notes-md/tree/98c2402e12da0ee715fd9e3642096d7e7ebf63ec/.gitbook/assets/image%20%285%29.png)
 
 **import**
 

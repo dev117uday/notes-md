@@ -54,8 +54,6 @@
   * [C\#](languages/c/README.md)
     * [Keywords](languages/c/keywords.md)
     * [Everything Data in C\#](languages/c/datatypes.md)
-    * [OOPS in C\#](languages/c/oops-in-c/README.md)
-      * [Exception](languages/c/oops-in-c/exception.md)
+    * [OOPS in C\#](languages/c/oops-in-c.md)
     * [Collections](languages/c/collections.md)
-  * [Rust](languages/rust.md)
 

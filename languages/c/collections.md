@@ -6,7 +6,7 @@
 
 ## List
 
-![](../../.gitbook/assets/image.png)
+![](https://github.com/dev117uday/notes-md/tree/98c2402e12da0ee715fd9e3642096d7e7ebf63ec/.gitbook/assets/image.png)
 
 ```csharp
 using System;
@@ -87,7 +87,7 @@ public class Program
 
 ## SortedList
 
-![](../../.gitbook/assets/image%20%2811%29.png)
+![](https://github.com/dev117uday/notes-md/tree/98c2402e12da0ee715fd9e3642096d7e7ebf63ec/.gitbook/assets/image%20%2811%29.png)
 
 ```csharp
 using System;
@@ -141,7 +141,7 @@ public class Program
 
 ## Dictionary
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](https://github.com/dev117uday/notes-md/tree/98c2402e12da0ee715fd9e3642096d7e7ebf63ec/.gitbook/assets/image%20%2812%29.png)
 
 ```csharp
 using System;
