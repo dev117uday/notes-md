@@ -1,8 +1,6 @@
 # Everything Data in C\#
 
-![](../.gitbook/assets/image%20%2810%29.png)
-
-
+![](../../.gitbook/assets/image%20%2810%29.png)
 
 | Type | Description | Range | Suffix |
 | :--- | :--- | :--- | :--- |
@@ -22,8 +20,6 @@
 | object | Base type of all other types. |  |  |
 | string | A sequence of Unicode characters |  |  |
 | DateTime | Represents date and time | 0:00:00am 1/1/01 to 11:59:59pm 12/31/9999 |  |
-
-
 
 | Alias | .NET Type | Type |
 | :--- | :--- | :--- |
@@ -180,7 +176,7 @@ interface IFile
     void ReadFile();
     void WriteFile(string text);
 }
-    
+
 class FileInfo : IFile
 {
     void IFile.ReadFile()
@@ -243,7 +239,7 @@ Tuple<int, string, string> person =
 A tuple can only include a maximum of eight elements. It gives a compiler error when you try to include more than eight elements.
 
 ```csharp
-var numbers = Tuple.Create(1, 2, 3, 4, 5, 6, 7, 8);    
+var numbers = Tuple.Create(1, 2, 3, 4, 5, 6, 7, 8);
 ```
 
 ```csharp

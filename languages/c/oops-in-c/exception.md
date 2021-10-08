@@ -1,8 +1,6 @@
 # Exception
 
-![](../../.gitbook/assets/image%20%2813%29.png)
-
-
+![](../../../.gitbook/assets/image%20%2813%29.png)
 
 | Exception Class | Description |
 | :--- | :--- |
@@ -22,8 +20,6 @@
 | [StackOverflowException](https://docs.microsoft.com/en-us/dotnet/api/system.stackoverflowexception?view=netframework-4.8) | Raised when a stack in memory overflows. |
 | [TimeoutException](https://docs.microsoft.com/en-us/dotnet/api/system.timeoutexception?view=netframework-4.8) | The time interval allotted to an operation has expired. |
 
-
-
 ```csharp
 try
 {
@@ -39,7 +35,7 @@ finally
 }
 ```
 
-### Multiple Exception Handling
+## Multiple Exception Handling
 
 ```csharp
 Console.Write("Please enter a number to divide 100: ");
@@ -70,7 +66,7 @@ catch(Exception  ex)
 }
 ```
 
-### Custom Exception handling
+## Custom Exception handling
 
 ```csharp
 class Student
@@ -92,7 +88,7 @@ class InvalidStudentNameException : Exception
 }
 ```
 
-### Multilevel inheritance
+## Multilevel inheritance
 
 ```csharp
 static void Main(string[] args)
@@ -132,6 +128,4 @@ static void Method2()
     } 
 }
 ```
-
-
 

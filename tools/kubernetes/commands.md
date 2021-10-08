@@ -1,6 +1,6 @@
 # Commands
 
-### Commands Kubenetes
+## Commands Kubenetes
 
 * minikube = mc
 * minikube kubectl = mkc

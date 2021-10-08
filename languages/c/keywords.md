@@ -1,10 +1,8 @@
 # Keywords
 
-### Modifier Keywords
+## Modifier Keywords
 
 Modifier keywords are specific keywords that indicate who can modify types and type members. Modifiers allow or prevent certain parts of programs from being modified by other parts.
-
-
 
 | Keyword | Description |
 | :--- | :--- |
@@ -25,20 +23,18 @@ Modifier keywords are specific keywords that indicate who can modify types and t
 | virtual | The `virtual` keyword is used to modify a method, property, indexer, or event declaration and allow for it to be overridden in a derived class. |
 | volatile | The `volatile` keyword indicates that a field might be modified by multiple threads that are executing at the same time. The compiler, the runtime system, and even hardware may rearrange reads and writes to memory locations for performance reasons |
 
-### Access Modifier Keywords
+## Access Modifier Keywords
 
 | Keyword | Description |
 | :--- | :--- |
 | public | Allows any part of the program to access the type and its members. |
-| private | Restricts other parts of the program from accessing the type and its members.  |
+| private | Restricts other parts of the program from accessing the type and its members. |
 | internal | Allows other program code in the same assembly to access the type or its members. This is default access modifiers if no modifier is specified. |
 | protected | Allows codes in the same class or a class that derives from that class to access the type or its members. |
 | [protected internal](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected-internal) | The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived `class` in another assembly. |
 | [private protected](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private-protected) | The type or member can be accessed only within its declaring assembly, by code in the same `class` or in a type that is derived from that `class` |
 
-### Statement Keywords
-
-
+## Statement Keywords
 
 <table>
   <thead>
@@ -50,7 +46,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
   <tbody>
     <tr>
       <td style="text-align:left">if</td>
-      <td style="text-align:left"><code> if ( condition ) {}</code>
+      <td style="text-align:left"> <code>if ( condition ) {}</code>
       </td>
     </tr>
     <tr>
@@ -66,13 +62,13 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left">case</td>
       <td style="text-align:left">
-        <p><code>switch(expression) { </code>
+        <p><code>switch(expression) {</code>
         </p>
-        <p><code>   case x: // code block break; </code>
+        <p> <code>case x: // code block break;</code>
         </p>
-        <p><code>   case y: // code block break; </code>
+        <p> <code>case y: // code block break;</code>
         </p>
-        <p><code>   default: // code block break; </code>
+        <p> <code>default: // code block break;</code>
         </p>
         <p><code>}</code>
         </p>
@@ -81,9 +77,9 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left">do</td>
       <td style="text-align:left">
-        <p><code>do { </code>
+        <p><code>do {</code>
         </p>
-        <p><code>   // code block to be executed </code>
+        <p> <code>// code block to be executed</code>
         </p>
         <p><code>} while (condition);</code>
         </p>
@@ -92,9 +88,9 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left">for</td>
       <td style="text-align:left">
-        <p><code>for (statement 1; statement 2; statement 3) { </code>
+        <p><code>for (statement 1; statement 2; statement 3) {</code>
         </p>
-        <p><code>   // code block to be executed </code>
+        <p> <code>// code block to be executed</code>
         </p>
         <p><code>}</code>
         </p>
@@ -103,11 +99,11 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left">foreach</td>
       <td style="text-align:left">
-        <p><code>var fibNumbers = new List { 0, 1, 1, 2, 3, 5, 8, 13 }; </code>
+        <p><code>var fibNumbers = new List { 0, 1, 1, 2, 3, 5, 8, 13 };</code>
         </p>
-        <p><code>foreach (int element in fibNumbers) { </code>
+        <p><code>foreach (int element in fibNumbers) {</code>
         </p>
-        <p><code>    Console.Write($&quot;{element} &quot;); </code>
+        <p> <code>Console.Write($&quot;{element} &quot;);</code>
         </p>
         <p><code>}</code>
         </p>
@@ -115,19 +111,19 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     </tr>
     <tr>
       <td style="text-align:left">in</td>
-      <td style="text-align:left"><code>The in keyword causes arguments to be passed by reference but ensures the argument is not modified </code>
+      <td style="text-align:left"><code>The in keyword causes arguments to be passed by reference but ensures the argument is not modified</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">Example : in</td>
       <td style="text-align:left">
-        <p><code>int readonlyArgument = 44; </code>
+        <p><code>int readonlyArgument = 44;</code>
         </p>
-        <p><code>void InArgExample(in int number) { </code>
+        <p><code>void InArgExample(in int number) {</code>
         </p>
-        <p><code>    // Uncomment the following line to see error CS8331 </code>
+        <p> <code>// Uncomment the following line to see error CS8331</code>
         </p>
-        <p><code>    //number = 19; </code>
+        <p> <code>//number = 19;</code>
         </p>
         <p><code>}</code>
         </p>
@@ -138,7 +134,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
       <td style="text-align:left">
         <p><code>while(condition) {</code>
         </p>
-        <p><code>    //code block </code>
+        <p> <code>//code block</code>
         </p>
         <p><code>}</code>
         </p>
@@ -147,11 +143,11 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left">break</td>
       <td style="text-align:left">
-        <p><code>for (int i = 0; i &lt; 10; i++) { </code>
+        <p><code>for (int i = 0; i &lt; 10; i++) {</code>
         </p>
-        <p><code>   if (i == 4) { break; } </code>
+        <p> <code>if (i == 4) { break; }</code>
         </p>
-        <p><code>   Console.WriteLine(i); </code>
+        <p> <code>Console.WriteLine(i);</code>
         </p>
         <p><code>}</code>
         </p>
@@ -162,9 +158,9 @@ Modifier keywords are specific keywords that indicate who can modify types and t
       <td style="text-align:left">
         <p><code>for (int i = 0; i &lt; 10; i++) {</code>
         </p>
-        <p><code>   if (i == 4) { continue; } </code>
+        <p> <code>if (i == 4) { continue; }</code>
         </p>
-        <p><code>   Console.WriteLine(i); </code>
+        <p> <code>Console.WriteLine(i);</code>
         </p>
         <p><code>}</code>
         </p>
@@ -184,19 +180,19 @@ Modifier keywords are specific keywords that indicate who can modify types and t
       <td style="text-align:left">
         <p><b>Never ending loop</b>
         </p>
-        <p><code>static void Main(string[] args) { </code>
+        <p><code>static void Main(string[] args) {</code>
         </p>
-        <p><code>  SomeLabel: </code>
+        <p> <code>SomeLabel:</code>
         </p>
-        <p><code>    for (int i = 0; i &lt; 10; i++) </code>
+        <p> <code>for (int i = 0; i &lt; 10; i++)</code>
         </p>
-        <p><code>      { </code>
+        <p> <code>{</code>
         </p>
-        <p><code>        if (i == 5) { </code>
+        <p> <code>if (i == 5) {</code>
         </p>
-        <p><code>          Console.WriteLine(&quot;Exiting&quot;); </code>
+        <p> <code>Console.WriteLine(&quot;Exiting&quot;);</code>
         </p>
-        <p><code>          goto SomeLabel; </code>
+        <p> <code>goto SomeLabel;</code>
         </p>
         <p><code>}</code>
         </p>
@@ -209,21 +205,21 @@ Modifier keywords are specific keywords that indicate who can modify types and t
         </p>
         <p><code>static void Main(string[] args) {</code>
         </p>
-        <p><code>  for (int i = 0; i &lt; 10; i++) { </code>
+        <p> <code>for (int i = 0; i &lt; 10; i++) {</code>
         </p>
-        <p><code>    if (i == 5) { </code>
+        <p> <code>if (i == 5) {</code>
         </p>
-        <p><code>      Console.WriteLine(&quot;Exiting&quot;); </code>
+        <p> <code>Console.WriteLine(&quot;Exiting&quot;);</code>
         </p>
-        <p><code>      goto SomeLabel; </code>
+        <p> <code>goto SomeLabel;</code>
         </p>
-        <p><code>    }</code>
+        <p> <code>}</code>
         </p>
-        <p><code>  } </code>
+        <p> <code>}</code>
         </p>
-        <p><code>SomeLabel: </code>
+        <p><code>SomeLabel:</code>
         </p>
-        <p><code>  Console.WriteLine(&quot;Done&quot;); </code>
+        <p> <code>Console.WriteLine(&quot;Done&quot;);</code>
         </p>
         <p><code>}</code>
         </p>
@@ -244,23 +240,23 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p><code>static void Main(string[] args) { </code>
+        <p><code>static void Main(string[] args) {</code>
         </p>
-        <p><code> foreach (var item in func(2,4)) { </code>
+        <p> <code>foreach (var item in func(2,4)) {</code>
         </p>
-        <p><code>  Console.WriteLine(item); </code>
+        <p> <code>Console.WriteLine(item);</code>
         </p>
-        <p><code> } </code>
+        <p> <code>}</code>
         </p>
         <p><code>}</code>
         </p>
-        <p><code>public static IEnumerable func(int start, int end) { </code>
+        <p><code>public static IEnumerable func(int start, int end) {</code>
         </p>
-        <p><code> for (int i = start; i &lt; end; i++) { </code>
+        <p> <code>for (int i = start; i &lt; end; i++) {</code>
         </p>
-        <p><code>  yield return i+5; </code>
+        <p> <code>yield return i+5;</code>
         </p>
-        <p><code> } </code>
+        <p> <code>}</code>
         </p>
         <p><code>}</code>
         </p>
@@ -269,17 +265,17 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left">throw/try/catch</td>
       <td style="text-align:left">
-        <p><code>try { </code>
+        <p><code>try {</code>
         </p>
-        <p><code>  throw new NullReferenceException(&quot;Student object is null.&quot;); </code>
+        <p> <code>throw new NullReferenceException(&quot;Student object is null.&quot;);</code>
         </p>
-        <p><code>} catch(Exception ex) { </code>
+        <p><code>} catch(Exception ex) {</code>
         </p>
-        <p><code>  Console.WriteLine(ex.Message ); </code>
+        <p> <code>Console.WriteLine(ex.Message );</code>
         </p>
         <p><code>} finally {</code>
         </p>
-        <p><code>  Console.WriteLine(&quot;Done with try catch&quot;)</code>
+        <p> <code>Console.WriteLine(&quot;Done with try catch&quot;)</code>
         </p>
         <p><code>}</code>
         </p>
@@ -298,13 +294,13 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p><code>try { </code>
+        <p><code>try {</code>
         </p>
-        <p><code>  int ten = 10;</code>
+        <p> <code>int ten = 10;</code>
         </p>
-        <p><code>  Console.WriteLine(checked(2147483647 + ten));</code>
+        <p> <code>Console.WriteLine(checked(2147483647 + ten));</code>
         </p>
-        <p><code>} catch (Exception e) { Console.WriteLine(e.Message); </code>
+        <p><code>} catch (Exception e) { Console.WriteLine(e.Message);</code>
         </p>
         <p><code>}</code>
         </p>
@@ -339,7 +335,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
   </tbody>
 </table>
 
-### Method Parameter Keyword
+## Method Parameter Keyword
 
 <table>
   <thead>
@@ -358,15 +354,15 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left">&lt;code&gt;&lt;/code&gt;</td>
       <td style="text-align:left">
-        <p><code>public static void UseParams(params int[] list) { </code>
+        <p><code>public static void UseParams(params int[] list) {</code>
         </p>
-        <p><code>  for (int i = 0; i &lt; list.Length; i++) { </code>
+        <p> <code>for (int i = 0; i &lt; list.Length; i++) {</code>
         </p>
-        <p><code>    Console.Write(list[i] + &quot; &quot;); </code>
+        <p> <code>Console.Write(list[i] + &quot; &quot;);</code>
         </p>
-        <p><code>  } </code>
+        <p> <code>}</code>
         </p>
-        <p><code>  Console.WriteLine(); </code>
+        <p> <code>Console.WriteLine();</code>
         </p>
         <p><code>}</code>
         </p>
@@ -393,11 +389,11 @@ Modifier keywords are specific keywords that indicate who can modify types and t
       <td style="text-align:left">
         <p><code>int initializeInMethod;</code>
         </p>
-        <p><code>OutArgExample(out initializeInMethod); </code>
+        <p><code>OutArgExample(out initializeInMethod);</code>
         </p>
-        <p><code>void OutArgExample(out int number) { </code>
+        <p><code>void OutArgExample(out int number) {</code>
         </p>
-        <p><code>  number = 44; </code>
+        <p> <code>number = 44;</code>
         </p>
         <p><code>}</code>
         </p>
@@ -406,7 +402,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
   </tbody>
 </table>
 
-### Namespace Keywords
+## Namespace Keywords
 
 <table>
   <thead>
@@ -436,7 +432,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
       <td style="text-align:left">
         <p><code>extern alias GridV1;</code>
         </p>
-        <p><code>extern alias GridV2; </code>
+        <p><code>extern alias GridV2;</code>
         </p>
         <p><code>using Class1V1 = GridV1::Namespace.Class1;</code>
         </p>
@@ -447,7 +443,6 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left">using</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li>The <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement">using statement</a> defines
             a scope at the end of which an object will be disposed.</li>
@@ -459,7 +454,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
   </tbody>
 </table>
 
-### Operator Keywords
+## Operator Keywords
 
 <table>
   <thead>
@@ -479,7 +474,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p><code>object obj = &quot;hello&quot;; </code>
+        <p><code>object obj = &quot;hello&quot;;</code>
         </p>
         <p><code>string str = obj as string;</code>
         </p>
@@ -506,7 +501,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left"><a href="https://www.geeksforgeeks.org/typeof-operator-keyword-in-c-sharp/">typeof</a>
       </td>
-      <td style="text-align:left">The <b>typeof </b>is an operator keyword which is used to get a type at
+      <td style="text-align:left">The <b>typeof</b> is an operator keyword which is used to get a type at
         the compile-time.</td>
     </tr>
     <tr>
@@ -523,14 +518,14 @@ Modifier keywords are specific keywords that indicate who can modify types and t
   </tbody>
 </table>
 
-### Base Keyword
+## Base Keyword
 
 | Keyword | Description |
 | :--- | :--- |
 | this | The `this` keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method. |
 | base | The `base` keyword is used to access members of the base class from within a derived class |
 
-### Literal keywords
+## Literal keywords
 
 <table>
   <thead>
@@ -559,13 +554,13 @@ Modifier keywords are specific keywords that indicate who can modify types and t
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p><code>public virtual int Number </code>
+        <p><code>public virtual int Number</code>
         </p>
-        <p><code>{ </code>
+        <p><code>{</code>
         </p>
-        <p><code>  get { return num; } </code>
+        <p> <code>get { return num; }</code>
         </p>
-        <p><code>  set { num = value; } </code>
+        <p> <code>set { num = value; }</code>
         </p>
         <p><code>}</code>
         </p>
@@ -585,7 +580,7 @@ Modifier keywords are specific keywords that indicate who can modify types and t
   </tbody>
 </table>
 
-### Contextual keyword
+## Contextual keyword
 
 | Keyword | Description |
 | :--- | :--- |

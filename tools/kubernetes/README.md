@@ -1,7 +1,5 @@
 # Kubernetes
 
-
-
 ### Node and Pod
 
 ### Node

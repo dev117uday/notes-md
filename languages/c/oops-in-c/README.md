@@ -106,7 +106,7 @@ class KeyValuePair<TKey, TValue>
 class DataStore<T>
 {
     private T[] _data = new T[10];
-    
+
     public void AddOrUpdate(int index, T item)
     {
         if(index >= 0 && index < 10)
@@ -156,8 +156,6 @@ DataStore<char> store = new DataStore<char>();
 DataStore<MyStruct> store = new DataStore<MyStruct>(); 
 
 // compile-time error 
-DataStore<string> store = new DataStore<string>(); 
+DataStore<string> store = new DataStore<string>();
 ```
-
-
 
