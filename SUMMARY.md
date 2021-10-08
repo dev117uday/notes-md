@@ -7,8 +7,6 @@
   * [Block 101](blockchain/block-101.md)
   * [Custom ERC20 token](blockchain/custom-erc20.md)
   * [Contract](blockchain/contract.md)
-* [Spring Boot](spring-boot/README.md)
-  * [Model Class Example](spring-boot/model-class-example.md)
 * [Tools and Tech](tools/README.md)
   * [Kubernetes](tools/kubernetes.md)
   * [Shell programming](tools/shell.md)
