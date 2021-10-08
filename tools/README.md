@@ -1,8 +1,11 @@
 # Tools and Tech
 
-# Topics Covered
+## Tools and Tech
 
-- Git and Github
-- Docker
-- Shell programming
-- Kubenetes
+## Topics Covered
+
+* Git and Github
+* Docker
+* Shell programming
+* Kubenetes
+
