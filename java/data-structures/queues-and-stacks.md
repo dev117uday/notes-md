@@ -4,7 +4,7 @@ description: end of line
 
 # Queues & Stacks
 
-![Class Diagram](/.gitbook/assets/image%20%286%29.png)
+![Class Diagram](../../.gitbook/assets/image%20%286%29.png)
 
 ## Priority Queue
 

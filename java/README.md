@@ -7,8 +7,8 @@ description: messy
 ## Core Java <a id="concepts-in-java"></a>
 
 * [IO in Java](io-in-java.md)
-* [Data & Data Types](data-and-data-types/)
-  * [BigDecimal and BigInteger](data-and-data-types/bigdecimal-and-biginteger.md)
+* [Data & Data Types](data-and-data-types.md)
+  * [BigDecimal and BigInteger]()
 * [Data Structures](data-structures/)
   * [Enums in Java](data-structures/enums-in-java.md)
   * [Collections in Java](data-structures/collections-in-java.md)
