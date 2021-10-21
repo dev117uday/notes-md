@@ -46,4 +46,5 @@
   * [Compilation](golang/compilation.md)
   * [Golang Garbage Collector 101](golang/golang-garbage-collector-101.md)
   * [Go Syntax](golang/go-syntax.md)
-
+* [Spring Boot](spring-boot/README.md)
+  * [Model Class Example](spring-boot/model-class-example.md)
