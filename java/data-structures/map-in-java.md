@@ -4,7 +4,24 @@ description: Not Geo map
 
 # Map in Java
 
-##  Hash Map
+## &#x20;Hash Map
+
+### Available Methods
+
+```java
+.put()
+.get()
+.containsKey()
+.containsValue()
+.getOrDefault()
+.forEach() // to iterate over
+.keySet()  // for all keys
+.values()  // for all values
+.replace()
+.replaceAll((key,value) -> value+10)
+.putIfAbsent()
+.remove()
+```
 
 ### Declaring Hash Map
 
@@ -59,17 +76,6 @@ map.forEach((key, value) ->
    System.out.println("Key: "+key+ " :: Value: "+value));
 ```
 
-**FASTER WAY**
-
-```java
-Iterator<Integer> it = map.keySet().iterator();
-
-while (it.hasNext()) {
-    Integer key = it.next();
-    sum += key + map.get(key);
-}
-```
-
 **ONLY KEYS**
 
 ```java
@@ -83,14 +89,6 @@ for (String key : repMap.keySet()) {
 ```java
 for (Integer value : repMap.values()) {
     System.out.println(value);
-}
-```
-
-**BOTH KEYS AND VALUES**
-
-```java
-for (Map.Entry<String, Integer> entry : repMap.entrySet()) {
-    System.out.printf("%s = %d\n", entry.getKey(), entry.getValue());
 }
 ```
 
@@ -166,7 +164,7 @@ public static void main(String arg[])
 }
 ```
 
-## Weak Hash Map
+## Weakhashmap
 
 **Weak References** : The objects that are referenced only by weak references are garbage collected eagerly; the GC won’t wait until it needs memory in that case.
 
@@ -198,19 +196,23 @@ public class WeakHashMapTest {
 
 ## Sorted Map
 
+// not that useful
+
 **Key points** :
 
-* Sorted Map interface extends Map. 
-* entries are maintained in an ascending key order. 
+* Sorted Map interface extends Map.&#x20;
+* Entries are maintained in an ascending key order.&#x20;
 
 **Methods of sorted Map** :
 
-* `Comparator comparator( )`
-* `Object firstKey( )`
-* `SortedMap headMap(Object end)`
-* `Object lastKey( )`
-* `SortedMap subMap(Object start, Object end)`
-* `SortedMap tailMap(Object start)`
+```java
+Comparator comparator( )
+Object firstKey( )
+SortedMap headMap(Object end)
+Object lastKey( )
+SortedMap subMap(Object start, Object end)
+SortedMap tailMap(Object start)
+```
 
 ```java
 public static void main(String args[]) {
@@ -246,6 +248,8 @@ public static void main(String args[]) {
 
 ## Hashtable
 
+// not that useful
+
 ```java
 import java.util.*;
 
@@ -264,5 +268,4 @@ public class Main {
 }
 ```
 
-![](../../.gitbook/assets/image%20%288%29.png)
-
+![](<../../.gitbook/assets/image (8).png>)
