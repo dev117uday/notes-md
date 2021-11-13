@@ -4,11 +4,11 @@ description: messy
 
 # Java
 
-## Core Java <a id="concepts-in-java"></a>
+## Core Java <a href="concepts-in-java" id="concepts-in-java"></a>
 
 * [IO in Java](io-in-java.md)
 * [Data & Data Types](data-and-data-types.md)
-  * [BigDecimal and BigInteger]()
+  * [BigDecimal and BigInteger](broken-reference)
 * [Data Structures](data-structures/)
   * [Enums in Java](data-structures/enums-in-java.md)
   * [Collections in Java](data-structures/collections-in-java.md)
@@ -30,4 +30,3 @@ description: messy
   * [Constructors](object-oriented-programming/constructors.md)
   * [Visibility](object-oriented-programming/visibility.md)
 * [Articles to refer to](articles-to-refer-to.md)
-
