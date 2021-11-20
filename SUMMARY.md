@@ -4,7 +4,6 @@
 * [React](react-fcc.md)
 * [Blockchain](blockchain/README.md)
   * [Solidity](blockchain/solidity.md)
-  * [Block 101](blockchain/block-101.md)
   * [Custom ERC20 token](blockchain/custom-erc20.md)
   * [Contract](blockchain/contract.md)
 * [Tools and Tech](tools/README.md)
