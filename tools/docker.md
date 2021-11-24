@@ -8,85 +8,69 @@ Image naming structure : `remote_location/username/image_name` | ex : `docker.io
 
 ## Docker basic commands
 
-```bash
-# remove container 
-docker rm -vf $(docker ps -a -q)
+* remove container
+  * `docker rm -vf $(docker ps -a -q)`
+* remove all images
+  * `docker rmi -f $(docker images -a -q)`
+* runs the container from image, gets it from the docker hub
+* if not found locally
+  * `docker run [image]`
+* to list info of containers, -a for more
+  * `docker ps [-a]`
+* stop running container
+  * `docker stop [container]`
+* remove container
+  * `docker rm [container]`
+* list all images
+  * `docker images`
+* remove the image, note all container running of this image
+* should be removed first
+  * `docker rmi [image name]`
+* to download image from remote, not run it immediately
+  * `docker pull`
+* docker stop is no process is running, sleep will delay the stop process\`
+  * `docker run [container] sleep 5`
+* to execute a process inside a docker container
+  * `docker exec [container] [command to run]`
+* to run the docker in de-attach mode, that means it will be in put in background
+  * `docker run -d [container]`
+* to attach to the output of the container
+  * `docker attach [container]`
+  * `docker run [container]:[version]`
+* to interact with the terminal of the container, only input
+  * `docker run -i [container]`
+* to interact with the terminal of the container, both input and output
+  * `docker run -it [container]`
+* to attach you system's port to the port open inside the container
+  * `docker run -p 80:5000 [container]`
+* create new volume
+  * `docker volume create data_volume`
+* to save persistent data on disk for it to not get deleted in case the container is deleted
+  * path to directory on your system : ex : `/opt/datadir`
+  * path to directory on the container : ex : `/var/lib/mysql`&#x20;
 
-# remove all iamges 
-docker rmi -f $(docker images -a -q)
-
-# runs the container from image, gets it from the docker hub 
-# if not found locally
-docker run [image]
-
-# to list info of containers, -a for more
-docker ps [-a]
-
-# stop running container
-docker stop [container]
-
-# remove container
-docker rm [container]
-
-# list all images
-docker images
-
-# remove the image, note all container running of this image 
-# should be removed first
-docker rmi [image name]
-
-# to download image from remote, not run it immediately
-docker pull
-
-# docker stop is no process is running, sleep will delay the stop process
-docker run [container] sleep 5
-
-# to execute a process inside a docker container
-docker exec [container] [command to run]
-
-# to run the docker in deattach mode, that means it will be in put in background
-docker run -d [container]
-
-# to attach to the output of the container 
-docker attach [container]
-
-docker run [container]:[version]
-
-# to interact with the terminal of the container, only input
-docker run -i [container]
-
-# to interact with the terminal of the container, both input and output
-docker run -it [container]
-
-# to attach you system's port to the port open inside the container
-docker run -p 80:5000 [container]
-
-# create new volume 
-docker volume create data_volume
-
-# to save persistent data on disk for it to not get deleted in case 
-# the container is deleted
-## path to directory on your system : ex : /opt/datadir
-## path to directory on the container : ex : /var/lib/mysql
+```
 docker run -v \
   [path to directory on your system]:[path to directory on the container] \
  [container]
 
 docker run -v [volume name]:[path to directory on the container] [container]
+
 # or
+
 docker run \
 	--mount type=bind,source=[volume],target=[volume insider container] \
 	[container name]
-
-# to get info about a container in json format
-docker inspect [container]
-
-# to get loggin info
-docker logs [container]
-
-# to specify environment variable when running a container
-docker run -e [ENV_KEY]=[ENV_VALUE] [container]
 ```
+
+* to get info about a container in JSON format
+  * `docker inspect [container]`
+* to get logging info
+  * `docker logs [container]`
+* to specify environment variable when running a container
+  * `docker run -e [ENV_KEY]=[ENV_VALUE] [container]`
+
+
 
 ![](<../.gitbook/assets/Untitled (2).png>)
 
