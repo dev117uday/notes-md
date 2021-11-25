@@ -47,6 +47,7 @@
   * [Go Syntax](golang/go-syntax.md)
 * [Spring Boot](spring-boot/README.md)
   * [Working with Database](spring-boot/working-with-database.md)
+  * [Important Annotations](spring-boot/important-annotations.md)
   * [Controller in Spring Boot](spring-boot/controller-in-spring-boot.md)
     * [Response Entity Exception Handling](spring-boot/controller-in-spring-boot/response-entity-exception-handling.md)
   * [Service Layer in Spring Boot](spring-boot/service-layer-in-spring-boot.md)
