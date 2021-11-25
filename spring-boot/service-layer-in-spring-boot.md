@@ -8,11 +8,11 @@
 
 ### `@Bean`
 
-* Annotation used in Spring can store the `method` result as a Spring bean.
+_In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container._
 
 ### `@Service`
 
-@Service annotates classes at the service layer.
+Service Components are the class file which contains @Service annotation. These class files are used to write business logic in a different layer, between `@RestController` class and `@Repository`&#x20;
 
 ### `@Repository`
 
