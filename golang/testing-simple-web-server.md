@@ -10,7 +10,7 @@ description: Testing web server 101
 * write a func matching `func TestXxx(*testing.T)`  where Xxx does not start with a lowercase letter. The function name serves to identify the test routine.
 * To run the test : `go test`
 
-**Testing**
+## Testing
 
 * inorder to test the handler, we call it by passing http.ResponseWriter and \*http.Request
 * to create a new Request
@@ -28,13 +28,13 @@ if err != nil {
 }
 ```
 
-* to **record the response from the writer**
+## To record the response from the writer
 
 ```go
 rec := httptest.NewRecorder()
 ```
 
-* to verify
+## To verify
 
 ```go
 // calling the function
@@ -51,7 +51,7 @@ if !strings.Contains(rec.Body.String(), "hello world") {
 }
 ```
 
-**full code server.go**
+## Full code server.go
 
 ```go
 package main
@@ -77,7 +77,7 @@ func helloWorldEndPoint(writer http.ResponseWriter, request *http.Request) {
 }
 ```
 
-**full code main\_test.go**
+## Full code main_test.go
 
 ```go
 package main

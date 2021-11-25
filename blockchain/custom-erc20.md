@@ -1,6 +1,6 @@
 # Custom ERC20 token
 
-```text
+```js
 pragma solidity ^0.4.19;
 
 contract ERC20Basic {

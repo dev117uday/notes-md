@@ -52,7 +52,7 @@ Only expressions of type address and contract-type can be converted to the type 
 
 **balance and transfer** It is possible to query the balance of an address using the property balance and to send Ether (in units of wei) to a payable address using the transfer function:
 
-```
+```js
 address payable x = address(0x123);
 address myAddress = address(this);
 if (x.balance < 10 && myAddress.balance >= 10) x.transfer(10);
@@ -62,13 +62,13 @@ The transfer function fails if the balance of the current contract is not large 
 
 #### Enums
 
-```
+```js
 enum ActionChoices { GoLeft, GoRight, GoStraight, SitStill }
 ```
 
 #### Structs
 
-```
+```js
 struct Campaign {
         address payable beneficiary;
         uint fundingGoal;
@@ -82,7 +82,7 @@ struct Campaign {
 
 Mapping types use the syntax `mapping(_KeyType => _ValueType)` and variables of mapping type are declared using the syntax `mapping(_KeyType => _ValueType) _VariableName`. The `_KeyType` can be any built-in value type, `bytes`, `string`, or any contract or enum type. Other user-defined or complex types, such as mappings, structs or array types are not allowed. `_ValueType` can be any type, including mappings, arrays and structs.
 
-```
+```js
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.4.0 <0.9.0;
 

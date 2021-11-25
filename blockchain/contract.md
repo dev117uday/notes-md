@@ -38,7 +38,7 @@ Solidity supports import statements to help modularise your code that are simila
 
 At a global level, you can use import statements of the following form:
 
-```text
+```js
 import "filename";
 import * as symbolName from "filename";
 import "filename" as symbolName;
@@ -49,7 +49,7 @@ import {symbol1 as alias, symbol2} from "filename";
 
 Single-line comments \(`//`\) and multi-line comments \(`/*...*/`\) are possible.
 
-```text
+```js
 // This is a single-line comment.
 
 /*
@@ -64,7 +64,7 @@ multi-line comment.
 
 State variables are variables whose values are permanently stored in contract storage.
 
-```text
+```js
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.4.0 <0.9.0;
 
@@ -81,7 +81,7 @@ contract SimpleStorage {
 
 Functions are the executable units of code. Functions are usually defined inside a contract, but they can also be defined outside of contracts.
 
-```text
+```js
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >0.7.0 <0.9.0;
 
@@ -102,7 +102,7 @@ function helper(uint x) pure returns (uint) {
 
 Function modifiers can be used to amend the semantics of functions in a declarative way Overloading, that is, having the same modifier name with different parameters, is not possible. Like functions, modifiers can be overridden.
 
-```text
+```js
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.4.22 <0.9.0;
 
@@ -126,7 +126,7 @@ contract Purchase {
 
 ## Understanding a Smart Contract
 
-```text
+```js
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity >=0.7.0 <0.8.0;
