@@ -9,20 +9,21 @@ description: Git it
 * version : `git --version`
 * git directory \[ Linux \] : `which git` 
 
-**Setting your user name and email :**
+### Setting your user name and email :
 
 * You need to set who you are _before_ creating any commit. That will allow commits to have the right author name and email associated to them.
-* ```text
-  $ git config --global user.name "Your Name"
-  $ git config --global user.email mail@example.com
-  ```
-* Remove a global identity :
-  * ```text
-    $ git config --global --remove-section user.name
-    $ git config --global --remove-section user.email
-    ```
+```s
+$ git config --global user.name "Your Name"
+$ git config --global user.email mail@example.com
+```
 
-**Basic Commands**
+* Remove a global identity :
+```s
+$ git config --global --remove-section user.name
+$ git config --global --remove-section user.email
+```
+
+### Basic Commands
 
 * Create an empty Git repository: `git init`
   * This creates a hidden folder, .git , which contains the plumbing needed for Git to work.
@@ -70,10 +71,10 @@ description: Git it
 * If a remote branch has been deleted, your local repository has to be told to prune the reference to it
   * `git fetch [remote-name] --prune`
 * Updating from Upstream Repository
-  * ```text
-    git fetch remote-name
-    git merge remote-name/branch-name
-    ```
+```s
+git fetch remote-name
+git merge remote-name/branch-name
+```
   * The pull command combines a fetch and a merge : `git pull`
   * `git pull --rebase remote-name branch-name`
 * Syntax for pushing to a remote branch :
@@ -87,133 +88,133 @@ description: Git it
 
 ### Differences
 
-1. To see new changes made
+- To see new changes made
 
-```text
+```s
 git diff
 ```
 
-1. To see difference between two files :
+- To see difference between two files :
 
-```text
+```s
 diff code1.js code2.js
 ```
 
-1. or use **-u** to show more detailed view of diff
+- Or use **-u** to show more detailed view of diff
 
-```text
+```s
 diff -u code1.js code2.js
 ```
 
-1. to generate differences between two file in another file
+- To generate differences between two file in another file
 
-```text
+```s
 diff code1.js code2.js > change.diff
-// or
+# or
 diff -u code1.js code2.js > change.diff
 ```
 
-1. To see staged changes
+- To see staged changes
 
-   ```text
-   git diff --staged
-   ```
+```s
+git diff --staged
+```
 
 ### Patch
 
-1. In order to patch the changes
+- In order to patch the changes
 
-   ```text
-   patch code1.js < change.diff
-   ```
+```s
+patch code1.js < change.diff
+```
 
-   **Logging details about commits**
+### Logging details about commits
 
-2. To commit all files without going through git add
+- To commit all files without going through git add
 
-```bash
+```s
 git commit -a -m "commit message"
 ```
 
-1. To get more details about the project 
+- To get more details about the project 
 
-```text
+```s
 git log -p
 ```
 
-1. to see patch file to another commit, we use commit id
+- to see patch file to another commit, we use commit id
 
-```text
+```s
 git show b09ddf8a0000055f50386f1aa938f4b8a7b43b0c
 ```
 
-1. to get stats about your commits
+- to get stats about your commits
 
-```text
+```s
 git log --stat
 ```
 
-1. to see details while adding
+- to see details while adding
 
-   ```text
-   git add -p
-   ```
+```s
+git add -p
+```
 
-2. to see details on last n commit \(example of 2\)
+- to see details on last n commit \(example of 2\)
 
-   ```text
-   git log -p -2
-   ```
+```s
+git log -p -2
+```
 
 ### File Management
 
-1. to rename file that is being tracked by git
+- to rename file that is being tracked by git
 
-```text
+```s
 git mv old_file_name new_file_name
 ```
 
-1. to delete a file use : 
+- to delete a file use : 
 
-```text
+```s
 git rm file_to_be_delete
 ```
 
-1. to revert change of a file, use : 
+- to revert change of a file, use : 
 
-```text
+```s
 git checkout file_name
 ```
 
-1. to remove a file from being tracked by git, use : 
+- to remove a file from being tracked by git, use : 
 
-```text
+```s
 git reset HEAD file_name
 ```
 
-1. to change the commit msg/ or to overwrite last commit:
+- to change the commit msg/ or to overwrite last commit:
 
-```text
+```s
 git commit --amend
 ```
 
-1. to revert HEAD :
+- to revert HEAD :
 
-```text
+```s
 git revert HEAD
 ```
 
-1. to see details on last n commit \(example of 2\)
+- to see details on last n commit \(example of 2\)
 
-   ```text
-   git log -p -2
-   ```
+```s
+git log -p -2
+```
 
--2 to see the last two commit, becoz revert doesnt delete the faulty commit, it roles back head while keeping the fault.
+- To see the last two commit, becoz revert doesnt delete the faulty commit, it roles back head while keeping the fault.
 
 To create a new branch :
 
-```text
+```s
 git branch name_of_new_branch
 ```
 
