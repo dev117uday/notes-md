@@ -89,132 +89,70 @@ git merge remote-name/branch-name
 ### Differences
 
 - To see new changes made
-
-```s
-git diff
-```
+  - `git diff`
 
 - To see difference between two files :
-
-```s
-diff code1.js code2.js
-```
+  - `diff code1.js code2.js`
 
 - Or use **-u** to show more detailed view of diff
-
-```s
-diff -u code1.js code2.js
-```
+  - `diff -u code1.js code2.js`
 
 - To generate differences between two file in another file
-
-```s
-diff code1.js code2.js > change.diff
-# or
-diff -u code1.js code2.js > change.diff
-```
+  - `diff code1.js code2.js > change.diff`
 
 - To see staged changes
-
-```s
-git diff --staged
-```
+  - `git diff --staged`
 
 ### Patch
 
 - In order to patch the changes
-
-```s
-patch code1.js < change.diff
-```
+  - `patch code1.js < change.diff`
 
 ### Logging details about commits
 
 - To commit all files without going through git add
-
-```s
-git commit -a -m "commit message"
-```
+  - `git commit -a -m "commit message"`
 
 - To get more details about the project 
-
-```s
-git log -p
-```
+  - `git log -p`
 
 - to see patch file to another commit, we use commit id
-
-```s
-git show b09ddf8a0000055f50386f1aa938f4b8a7b43b0c
-```
+  - `git show b09ddf8a0000055f50386f1aa938f4b8a7b43b0c`
 
 - to get stats about your commits
-
-```s
-git log --stat
-```
+  - `git log --stat`
 
 - to see details while adding
-
-```s
-git add -p
-```
+  - `git add -p`
 
 - to see details on last n commit \(example of 2\)
-
-```s
-git log -p -2
-```
+  - `git log -p -2`
 
 ### File Management
 
 - to rename file that is being tracked by git
-
-```s
-git mv old_file_name new_file_name
-```
+  - `git mv old_file_name new_file_name`
 
 - to delete a file use : 
-
-```s
-git rm file_to_be_delete
-```
+  - `git rm file_to_be_delete`
 
 - to revert change of a file, use : 
-
-```s
-git checkout file_name
-```
+  - `git checkout file_name`
 
 - to remove a file from being tracked by git, use : 
-
-```s
-git reset HEAD file_name
-```
+  - `git reset HEAD file_name`
 
 - to change the commit msg/ or to overwrite last commit:
-
-```s
-git commit --amend
-```
+  - `git commit --amend`
 
 - to revert HEAD :
-
-```s
-git revert HEAD
-```
+  - `git revert HEAD`
 
 - to see details on last n commit \(example of 2\)
-
-```s
-git log -p -2
-```
+  - `git log -p -2`
 
 - To see the last two commit, becoz revert doesnt delete the faulty commit, it roles back head while keeping the fault.
 
 To create a new branch :
-
-```s
-git branch name_of_new_branch
-```
+  - `git branch name_of_new_branch`
 
