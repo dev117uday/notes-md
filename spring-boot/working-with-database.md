@@ -3,6 +3,7 @@
 ## Configuration for PostgreSQL
 
 ```java
+// FOR JDBC
 app:
   datasource:
     main:
@@ -11,6 +12,20 @@ app:
       username: amigoscode
       password: password
       pool-size: 30
+      
+// FOR JPA
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/learnjpa
+    username: username
+    password: Password
+
+  jpa:
+   hibernate.ddl-auto: update
+   show-sql: true
+   properties:
+     hibernate:
+       dialect: org.hibernate.dialect.PostgreSQLDialect
 ```
 
 ## Configuring HikariDataSource

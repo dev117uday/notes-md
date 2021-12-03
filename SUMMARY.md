@@ -35,6 +35,7 @@
     * [Annotations](java/keywords-in-java/annotations.md)
     * [Comparators](java/keywords-in-java/comparators.md)
     * [Packages in Java](java/keywords-in-java/packages-in-java.md)
+  * [Miscellaneous](java/miscellaneous.md)
   * [Articles to refer to](java/articles-to-refer-to.md)
 * [Golang](golang/README.md)
   * [Competitive Programming in Go](golang/competitive-programming-in-go.md)
