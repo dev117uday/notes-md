@@ -65,3 +65,11 @@ public class MovieRowMapper implements RowMapper<Movie> {
 	}
 }
 ```
+
+### Miscellaneous&#x20;
+
+#### For flyway migration
+
+* If you are using Flyway for db migration, create a folder `db/migrations` inside resource folder
+  * Name the migration `V[number]__[name of migration].sql`
+  * asa
