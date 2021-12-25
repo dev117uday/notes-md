@@ -54,3 +54,4 @@
     * [Response Entity Exception Handling](spring-boot/controller-in-spring-boot/response-entity-exception-handling.md)
   * [Service Layer in Spring Boot](spring-boot/service-layer-in-spring-boot.md)
   * [Model Class Example](spring-boot/model-class-example.md)
+  * [Working with Redis](spring-boot/working-with-redis.md)
