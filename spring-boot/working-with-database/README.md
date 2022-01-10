@@ -8,17 +8,17 @@ app:
   datasource:
     main:
       driver-class-name: org.postgresql.Driver
-      jdbc-url: jdbc:postgresql://localhost:5431/amigoscode
-      username: amigoscode
-      password: password
-      pool-size: 30
+      jdbc-url: jdbc:postgresql://[host]:[port]/[db name]
+      username: [username]
+      password: [password]
+      pool-size: [pool size]
       
 // FOR JPA
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/learnjpa
+    url: jdbc:postgresql://[host]:[port]/[db name]
     username: username
-    password: Password
+    password: [password]
 
   jpa:
    hibernate.ddl-auto: update
@@ -51,16 +51,16 @@ public class DataSouceConfig {
 }
 ```
 
-## MovieRowMapper
+## RowMapper\<T>&#x20;
 
 ```java
-public class MovieRowMapper implements RowMapper<Movie> {
+public class TRowMapper implements RowMapper<T> {
 
 	@Override
-	public Movie mapRow(ResultSet rs, int rowNum) throws SQLException {
+	public T mapRow(ResultSet rs, int rowNum) throws SQLException {
 		return new Movie(
-			rs.getInt("id"), rs.getString("name"), List.of(),
-			LocalDate.parse(rs.getString("release_date"))
+			rs.getInt("id"), rs.getString("column_name"), List.of(),
+			LocalDate.parse(rs.getString("column_name"))
 		);
 	}
 }
@@ -72,4 +72,3 @@ public class MovieRowMapper implements RowMapper<Movie> {
 
 * If you are using Flyway for db migration, create a folder `db/migrations` inside resource folder
   * Name the migration `V[number]__[name of migration].sql`
-  * asa

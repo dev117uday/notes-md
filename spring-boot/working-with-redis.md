@@ -86,4 +86,70 @@ redisTemplate.opsForHash().delete(HASH_KEY, id);
 @CachePut(key = "#{id}", value = "HASH_KEY")
 ```
 
-\-- how to set timeout limit
+### RedisTemplate for Pub/Sub
+
+```java
+@Bean
+public RedisTemplate<String,Object> template() {
+	RedisTemplate<String, Object> template = new RedisTemplate<>();
+	template.setConnectionFactory(connectionFactory());
+	template.setValueSerializer(new GenericToStringSerializer<Object>(Object.class));
+	return template;
+}
+
+@Bean
+public ChannelTopic topic() {
+	return new ChannelTopic("pubsub:dev117uday");
+}
+
+@Bean
+public MessageListenerAdapter messageListenerAdapter() {
+	return new MessageListenerAdapter(new Receiver());
+}
+
+@Bean
+public RedisMessageListenerContainer redisMessageListenerContainer( ) {
+	RedisMessageListenerContainer container = new RedisMessageListenerContainer();
+	container.setConnectionFactory(connectionFactory());
+	container.addMessageListener(messageListenerAdapter(), topic());
+	return container;
+}
+```
+
+### Redis Stream Publisher template
+
+```java
+Gson gson = new Gson();
+var json = gson.toJson(new Users("1", "1", "1"));		
+redisTemplate.convertAndSend(topic.getTopic(), json );
+```
+
+### Redis Stream Subscriber template
+
+```java
+public class RedisReceiver implements MessageListener {
+
+	Logger logger = LoggerFactory.getLogger(RedisReceiver.class);
+
+	@Override
+	public void onMessage(Message message, byte[] pattern) {
+		try {
+			var messageString = getObject(message.getBody());
+			Gson gson = new Gson();
+			var user = gson.fromJson((String) messageString, Users.class);
+			logger.info("Consumed event {}", user.toString());
+		} catch (ClassNotFoundException | IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private static Object getObject(byte[] byteArr) throws IOException, ClassNotFoundException {
+		ByteArrayInputStream bis = new ByteArrayInputStream(byteArr);
+		ObjectInput in = new ObjectInputStream(bis);
+		return in.readObject();
+	}
+
+}
+
+```

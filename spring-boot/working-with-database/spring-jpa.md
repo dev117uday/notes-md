@@ -2,12 +2,12 @@
 
 ```java
 @Repository
-public interface CourseRepository extends JpaRepository<Course, Long> {
+public interface TRepository extends JpaRepository<T, Long> {
 
 }
 ```
 
-
+### Example Repository
 
 ```java
 @Repository
@@ -37,8 +37,6 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 		nativeQuery = true
 	)
 	Integer updatStudentEmailIdByFirstName(String firstName, String emailId);
-
-
 }
 
 ```

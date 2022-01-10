@@ -9,7 +9,8 @@ private AnotherClass anotherClass;
 // another class
 
 @AttributeOverrides({
-		@AttributeOverride(name = "something [in db]", column = @Column(name = "something_field		")),
+		@AttributeOverride(name = "something [in db]", 
+		column = @Column(name = "something_field")),
 })
 public class AnotherClass {
 	private String somethingField;
@@ -37,7 +38,7 @@ private CourseMaterial courseMaterial;
 private Course course;
 ```
 
-### ManyToOne
+### `OneToMany` & `ManyToOne`
 
 ```java
 // one teacher can teach many course
@@ -54,7 +55,7 @@ private List<Course> courses;
 private Teacher teacher;
 ```
 
-### ManyToMany
+### `ManyToMany`
 
 ```java
 // many students can take many courses

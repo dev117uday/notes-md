@@ -46,7 +46,6 @@
   * [Go Things](golang/go-syntax.md)
 * [Spring Boot](spring-boot/README.md)
   * [Working with Database](spring-boot/working-with-database/README.md)
-    * [Page 1](spring-boot/working-with-database/page-1.md)
     * [Modelling](spring-boot/working-with-database/modelling.md)
     * [Spring JPA](spring-boot/working-with-database/spring-jpa.md)
   * [Important Annotations](spring-boot/important-annotations.md)
