@@ -44,8 +44,3 @@
   * [Maps vs slices](golang/which-is-faster-maps-slices.md)
   * [Golang Garbage Collector 101](golang/golang-garbage-collector-101.md)
   * [Go Things](golang/go-syntax.md)
-* [Spring Boot](spring-boot/README.md)
-  * [Important Annotations](spring-boot/important-annotations.md)
-  * [Controller in Spring Boot](spring-boot/controller-in-spring-boot/README.md)
-    * [Response Entity Exception Handling](spring-boot/controller-in-spring-boot/response-entity-exception-handling.md)
-  * [Service Layer in Spring Boot](spring-boot/service-layer-in-spring-boot.md)
