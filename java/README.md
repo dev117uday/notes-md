@@ -4,7 +4,7 @@ description: messy
 
 # Java
 
-## Core Java <a href="concepts-in-java" id="concepts-in-java"></a>
+## Core Java <a href="#concepts-in-java" id="concepts-in-java"></a>
 
 * [IO in Java](io-in-java.md)
 * [Data & Data Types](data-and-data-types.md)
@@ -19,7 +19,7 @@ description: messy
   * [Queues & Stacks](data-structures/queues-and-stacks.md)
   * [Map in Java](data-structures/map-in-java.md)
   * [TreeSet and TreeMap](data-structures/treeset-and-treemap.md)
-* [Useful Stuff Java](name-it-something.md)
+* [Useful Stuff Java](name-it-something/)
   * [Packages in Java](keywords-in-java/packages-in-java.md)
   * [Annotations](keywords-in-java/annotations.md)
   * [Comparators](keywords-in-java/comparators.md)

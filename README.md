@@ -34,7 +34,7 @@
     * [Constructors](java/object-oriented-programming/constructors.md)
     * [Visibility](java/object-oriented-programming/visibility.md)
     * [Generics](java/object-oriented-programming/generics.md)
-  * [Useful Stuff Java](java/name-it-something.md)
+  * [Useful Stuff Java](java/name-it-something/)
   * [Keywords in Java](java/keywords-in-java/)
     * [Annotations](java/keywords-in-java/annotations.md)
     * [Comparators](java/keywords-in-java/comparators.md)
