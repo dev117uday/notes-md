@@ -66,3 +66,6 @@
       * [Observer DP](software-design/design-patterns/behavioral-design-pattern/observer-dp.md)
     * [Structural Design Pattern](software-design/design-patterns/structural-design-pattern/README.md)
       * [Facade DP](software-design/design-patterns/structural-design-pattern/facade-dp.md)
+* [Cloud](cloud/README.md)
+  * [Google Cloud Platform](cloud/google-cloud-platform/README.md)
+    * [GCP Core Infra](cloud/google-cloud-platform/gcp-core-infra.md)
