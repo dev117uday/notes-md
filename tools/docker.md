@@ -2,7 +2,7 @@
 
 ![](../.gitbook/assets/Untitled.png)
 
-![](<../.gitbook/assets/Untitled (1).png>)
+![](<../.gitbook/assets/Untitled (1) (1).png>)
 
 Image naming structure : `remote_location/username/image_name` | ex : `docker.io/nginx/nginx`
 
@@ -72,7 +72,7 @@ docker run \
 
 
 
-![](<../.gitbook/assets/Untitled (2).png>)
+![](<../.gitbook/assets/Untitled (2) (1).png>)
 
 #### Steps to create your own images
 
@@ -111,7 +111,7 @@ ENTYRPOINT [instruction to start the process]
 
 ## Networking in Docker
 
-![](<../.gitbook/assets/Untitled (3).png>)
+![](<../.gitbook/assets/Untitled (3) (1).png>)
 
 There are 3 network in docker
 
@@ -139,4 +139,4 @@ docker network ls
 
 Docker host contains a internal DNS resolver for different containers to communicate to each other. In place of URL, just add the name of the container you want to communicate to.
 
-![](<../.gitbook/assets/Untitled (5) (1).png>)
+![](<../.gitbook/assets/Untitled (5) (2).png>)
