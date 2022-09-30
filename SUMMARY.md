@@ -49,3 +49,4 @@
   * [Linux Commands Part 1 - 4](linux/linux-commands-part-1-4.md)
   * [Linux Commands Part 5 - 8](linux/linux-commands-part-5-8.md)
   * [Linux Commands Part 9 - 10](linux/linux-commands-part-9-10.md)
+* [Software Design](software-design.md)
