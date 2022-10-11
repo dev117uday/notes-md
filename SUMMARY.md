@@ -69,3 +69,4 @@
 * [Cloud](cloud/README.md)
   * [Google Cloud Platform](cloud/google-cloud-platform/README.md)
     * [GCP Core Infra](cloud/google-cloud-platform/gcp-core-infra.md)
+    * [Architecting with GCE](cloud/google-cloud-platform/architecting-with-gce.md)
