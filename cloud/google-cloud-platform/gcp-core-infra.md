@@ -134,7 +134,7 @@ Q8 : Which way of accessing Google Cloud lets you control services through the c
 
 <figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
 
 ![Untitled](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 24.png>)
 
@@ -147,6 +147,18 @@ Let's say, you have a workload that doesn't require a human to sit and wait for 
 ![Untitled](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 26.png>)
 
 ![Untitled](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 27.png>)
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>preemptible virtual machine</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption><p>spot virtual machine</p></figcaption></figure>
+
+
 
 ![Untitled](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 28.png>)
 
