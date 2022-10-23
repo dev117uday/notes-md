@@ -1,7 +1,9 @@
 # Table of contents
 
 * [Table of contents](README.md)
-* [React](react-fcc.md)
+* [React.Js](react.js/README.md)
+  * [React Hooks](react.js/react-hooks.md)
+  * [React : Using Classes](react.js/react-fcc.md)
 * [Blockchain](blockchain/README.md)
   * [Solidity](blockchain/solidity.md)
   * [Custom ERC20 token](blockchain/custom-erc20.md)
