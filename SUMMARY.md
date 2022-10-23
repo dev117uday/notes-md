@@ -46,6 +46,7 @@
   * [Learning Go : Part 1](golang/learning-go.md)
   * [Maps vs slices](golang/which-is-faster-maps-slices.md)
   * [Golang Garbage Collector 101](golang/golang-garbage-collector-101.md)
+  * [Things Golang do differently](golang/things-golang-do-differently.md)
   * [Go Things](golang/go-syntax.md)
 * [Linux](linux/README.md)
   * [Linux Commands Part 1 - 4](linux/linux-commands-part-1-4.md)
