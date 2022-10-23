@@ -7,7 +7,7 @@
 * Access Modifier
 *
 
-    <figure><img src="../.gitbook/assets/Untitled (1) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/Untitled (1) (2) (2) (2).png" alt=""><figcaption></figcaption></figure>
 * Inheritance: the usual
   * types:
     * Single Inheritance: single parent: single child
