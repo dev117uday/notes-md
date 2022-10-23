@@ -1,4 +1,4 @@
-![](Pasted%20image%2020221017131705.png)
+![](./assets/Pasted%20image%2020221017131705.png)
 
 ## Cloud IAM
 
@@ -38,7 +38,3 @@ IAM objects
 ### Cloud VPN
 
 ![](./assets/Pasted%20image%2020221017194903.png)
-
-
-
-
