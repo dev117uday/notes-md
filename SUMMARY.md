@@ -75,7 +75,7 @@
     * [Architecting with GCE](cloud/google-cloud-platform/architecting-with-gce.md)
     * [Core Services](cloud/google-cloud-platform/core-services.md)
 
-* [Spring Basics](README.md)
+* [Spring Basics](spring-basics/README.md)
   * [Spring Beans](spring-basics/spring-beans.md)
   * [Important Annotations](spring-basics/important-annotations.md)
   * [Maven Things](spring-basics/maven-things.md)
