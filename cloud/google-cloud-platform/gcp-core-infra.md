@@ -156,7 +156,7 @@ Let's say, you have a workload that doesn't require a human to sit and wait for 
 
 <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>preemptible virtual machine</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption><p>spot virtual machine</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>spot virtual machine</p></figcaption></figure>
 
 
 

@@ -4,7 +4,7 @@ description: spring data jpa is better !
 
 # JDBC
 
-![](../.gitbook/assets/jdbc.png)
+![](../../.gitbook/assets/jdbc.png)
 
 ### pom.xml
 
@@ -91,7 +91,7 @@ List<T> movies = jdbcTemplate.query(sql, new TRowMapper(), id);
 return movies.stream().findFirst();
 ```
 
-### `RowMapper<T>`&#x20;
+### `RowMapper<T>`
 
 ```java
 public class TRowMapper implements RowMapper<T> {
