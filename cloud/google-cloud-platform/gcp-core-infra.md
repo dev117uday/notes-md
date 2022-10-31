@@ -168,15 +168,27 @@ Q8 : Which way of accessing Google Cloud lets you control services through the c
 
 ![type of VPC](gcp-core-infra-img/gcp-core-infra-20.png)
 
-### What is vpc
+### Virtual Private Cloud Network ( VPC )
 
 ![what is vpc](gcp-core-infra-img/gcp-core-infra-21.png)
 
-### Info on VPC
-
 ![info on VPC](gcp-core-infra-img/gcp-core-infra-22.png)
 
-### What is compute engine
+A **virtual private cloud (VPC)** is a secure, isolated private cloud hosted within a public cloud. VPC customers can run code, store data, host websites, and do anything else they could do in an ordinary private cloud, but the private cloud is hosted remotely by a public cloud provider. (Not all private clouds are hosted in this fashion.) VPC's combine the scalability and convenience of public cloud computing with the data isolation of private cloud computing.
+
+You can 
+
+- segment your networks
+
+- use firewall rules to restrict access to instances
+
+- create static routes to forward traffic to specific destinations.
+
+![](images/image-20210103012024708.png)
+
+### Compute Engine
+
+- Compute Engine lets you create and run virtual machines on Google infrastructure. 
 
 ![what is compute engine](gcp-core-infra-img/gcp-core-infra-23.png)
 
@@ -200,6 +212,7 @@ Let's say, you have a workload that doesn't require a human to sit and wait for 
 
 ![autoscale vs manual scale](gcp-core-infra-img/gcp-core-infra-26.png)
 
+
 ### VM upper limit
 
 ![vm upper limit](gcp-core-infra-img/gcp-core-infra-27.png)
@@ -213,6 +226,26 @@ Let's say, you have a workload that doesn't require a human to sit and wait for 
 <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>preemptible virtual machine</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>spot virtual machine</p></figcaption></figure>
+
+
+### App Engine
+
+- The App Engine platform manages the hardware and networking infrastructure required to run your code. To deploy an application on App Engine, you just hand App Engine your code and the App Engine service takes care of the rest. 
+
+- App Engine provides you with a built-in services that many web applications need. App engine will scale your application automatically in response to the amount of traffic it receives. App Engine is especially suited for applications where the workload is highly variable or unpredictable like web applications and mobile backend. 
+- App Engine offers two environments: standard and flexible.
+
+![image-20210107010843408](images/image-20210107010843408.png)
+
+- Standard is the simpler. It offers a simpler deployment experience than the Flexible environment and fine-grained auto-scale.  Low utilisation applications might be able to run at no charge. Google provides App Engine SDK's in several languages, so that you can test your application locally before you upload it to the real App Engine service. The SDK's also provide simple commands for deployment.
+
+- In App Engine SE, you use a runtime provided by Google. App Engine Standard Environment provides runtimes for specific versions of Java, Python, PHP and Go. The runtimes also include libraries that support App Engine APIs. The Standard Environment also enforces restrictions on your code by making it run in a so-called "Sandbox." That's a software construct that's independent of the hardware, operating system, or physical location of the server it runs on.
+
+![image-20210107011113713](images/image-20210107011113713.png)
+
+- App Engine flexible environment lets you specify the container your App Engine runs in. App Engine manages these Compute Engine machines for you. They're health checked, healed as necessary, and you get to choose which geographical region they run in, and critical backward-compatible updates to their operating systems are automatically applied. All this so that you can just focus on your code. 
+
+![image-20210107011202378](images/image-20210107011202378.png)
 
 
 
@@ -302,6 +335,53 @@ Let's say, you have a workload that doesn't require a human to sit and wait for 
 
 ![storage options](gcp-core-infra-img/gcp-core-infra-48.png)
 
+### Database & Storage :
+
+![image-20210103022816378](images/image-20210103022816378.png)
+
+![image-20210103023014178](images/image-20210103023014178.png)
+
+- **Cloud Bigtable** uses the interface of the open source database **Apache HBase**.
+- **Cloud Dataproc** offers the open source big data environment **Hadoop**, as a managed service.
+- **Cloud storage** allows you to save data and files.
+- **Cloud SQL** is a fully managed service that makes it easy to set up, manage, and administer relational databases: PostgreSQL, MySQL, and SQL Server.
+- **Cloud Spanner** is a NewSQL database developed by Google.
+- **Cloud Datastore** is a highly scalable, fully managed NoSQL database service.
+
+### Compute : 
+
+- **Google Stackdriver** lets customers monitor workload across multiple cloud providers.
+- **Compute Engine** lets you create and run virtual machines on Google infrastructure. 
+- **Kubernetes Engine** secure and managed Kubernetes service.
+- **App Engine** fully managed application runtime. Standard & Flexible.
+- **Cloud Endpoint** Develop, deploy, protect, and monitor your APIs with Cloud Endpoints.
+- **Cloud Functions** Scalable pay-as-you-go (FaaS) to run your code with zero server management.
+
+### Code & Monitoring
+
+- **Cloud Source Repository** Fully featured Git Repo hosted on GCP
+
+![image-20210107014046277](images/image-20210107014046277.png)
+
+![image-20210107014354503](images/image-20210107014354503.png)
+
+
+
+### Google Cloud Big Data Platform
+
+![image-20210107014606939](images/image-20210107014606939.png)
+
+- **Cloud Dataflow** fully managed streaming analytics service that minimizes latency, processing time, and cost through autoscaling and batch processing.
+- **Big Query**  serverless, highly scalable, and cost-effective data warehouse designed to help you turn big data into informed business decisions.
+- **Cloud Pub/Sub** Messaging and ingestion for event-driven systems and streaming analytics.
+- **Cloud DataLab** easily explore, visualize, analyze, and transform data using familiar languages, such as Python and SQL
+
+### Google Cloud Machine Learning Platform
+
+![image-20210107015846097](images/image-20210107015846097.png)
+
+
+
 ### Cloud SQL
 
 ![Cloud SQL](gcp-core-infra-img/gcp-core-infra-49.png)
@@ -325,6 +405,77 @@ Let's say, you have a workload that doesn't require a human to sit and wait for 
 ### Type database to choose
 
 ![type database to choose](gcp-core-infra-img/gcp-core-infra-54.png)
+
+
+
+### Google Cloud Storage
+
+![](images/big_table.png)
+
+What's object storage? It's not the same as file storage, in which you manage your data as a hierarchy of folders. It's not the same as block storage, in which your operating system manages your data as chunks of disk. Instead, object storage stores arbitrary bunch of bytes with a unique key. often in the form of URLs which means object storage interacts nicely with Web technologies. It's a fully managed scalable service.
+
+Use case 
+
+- serving website content
+
+- storing data for archival and disaster recovery
+
+- distributing large data objects to your end users via Direct Download.
+
+It is comprised of buckets you create and configure and use to hold your storage objects. The storage objects are immutable, you create new versions every time you update. Data in-transit is encrypted using HTTPS. 
+
+### Cloud Storage classes
+
+![](images/image-20210103014201867.png)
+
+![](images/image-20210103014340390.png)
+
+## Cloud Bigtable
+
+![](images/Cloud_Bigtable.png)
+
+Cloud Bigtable is Google's NoSQL, big data database service.
+
+Your databases in Bigtable are sparsely populated tables that can scale to billions of rows and thousands of columns allowing you to store petabytes of data. GCP fully manages the surface. It's ideal for data that has a single lookup key. 
+
+Some applications developers think of Bigtable as a persistent hash table. Cloud Bigtable is ideal for storing large amounts of data with very low latency. It supports high throughput, both read and write,
+
+Use cases : 
+
+- Internet of Things
+
+- user analytics
+- financial data analysis. 
+
+![](images/image-20210103015836826.png)
+
+## Cloud SQL & Cloud Spanner
+
+![](images/image-20210103021631899.png)
+
+![](images/sql-spanner.png)
+
+- Cloud SQL offers both MySQL and PostgreSQL database engines as a fully managed service, that are capable of handling terabytes of storage. 
+
+- Cloud SQL provides several replica services like read, failover, and external replicas. It can replicate data between multiple zones with automatic failover. It also helps you backup your data with either on-demand or scheduled backups. It can also scale both vertically by changing the machine type, and horizontally via read replicas. 
+
+- Cloud SQL instances include network firewalls, and customer data is encrypted when on Google's internal networks, and when stored in database tables, temporary files, and backups. 
+
+- They are accessible by other GCP services and even external services. You can authorise Compute Engine instances for access Cloud SQL instances and configure the Cloud SQL instance to be in the same zone as your virtual machine. 
+
+- Cloud SQL also supports other applications and tools that you might be used to, like SQL WorkBench, Toad, and other external applications using standard MySQL drivers. 
+
+If Cloud SQL does not fit your requirements because you need horizontal scalability, consider using ***\*Cloud Spanner\****. It offers transactional consistency at a global scale, schema, SQL, and automatic synchronous replication for high availability. And, it can provide petabytes of capacity. Consider using Cloud Spanner if you have outgrown any relational database, or sharding your databases for throughput high performance, need transactional consistency, global data and strong consistency, or just want to consolidate your database.
+
+- Use cases include : 
+  - financial applications
+  - inventory applications.
+
+## Cloud DataStore
+
+![](images/Cloud_Datastore.png)
+
+Cloud Datastore highly scalable NoSQL database. One of its main use cases is to store structured data from App Engine apps. It is a from a fully-managed service, Cloud Datastore automatically handles sharding and replication, providing you with a highly available and durable database that scales automatically to handle load. Unlike Cloud Bigtable, it also offers transactions that affect multiple database rows, and it lets you do SQL-like queries. 
 
 ### What is a container
 
