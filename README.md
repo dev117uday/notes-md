@@ -8,7 +8,7 @@
   * [Contract](blockchain/contract.md)
 * [Tools and Tech](tools/)
   * [Kubernetes](tools/kubernetes.md)
-  * [Shell programming](tools/shell.md)
+  * [Shell programming](linux/shell.md)
   * [Docker](tools/docker.md)
   * [Git version Control](tools/git-github.md)
 * [Java](java/)

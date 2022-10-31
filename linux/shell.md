@@ -1,14 +1,12 @@
 # Shell programming
 
-## Getting Started
-
-### Getting Started with Shell Programming
+## Getting Started with Shell Programming
 
 #### 1.1 Hello  World
 
 **Printing Hello World**
 
-```text
+```
 echo "Hello World"
 echo hello world
 ```
@@ -17,76 +15,70 @@ echo hello world
 
 **Non-interactive shell**
 
-* Create a file with `.sh` extension using
+*   Create a file with `.sh` extension using
 
-  ```text
-  touch try.sh
-  ```
+    ```
+    touch try.sh
+    ```
+*   Make the script executable
 
-* Make the script executable
+    ```
+    chmod +x try.sh
+    ```
 
-  ```text
-  chmod +x try.sh
-  ```
+    `+x` makes the file executable
+*   open the file in nano by
 
-  `+x` makes the file executable
+    ```
+    nano try.sh
+    ```
 
-* open the file in nano by
+    Or you can use vim, sublime, VScode or any other text editor you like.
+*   Inside the file, add
 
-  ```text
-  nano try.sh
-  ```
+    ```
+    #!/bin/bash
+    echo "Hello World"
+    ```
 
-  Or you can use vim, sublime, VScode or any other text editor you like.
+    Line 1: The first line of the script must start with the character sequence #!, referred to as shebang
 
-* Inside the file, add
+    * The shebang instructs the operating system to run /bin/bash, the Bash shell, passing it the script's path as an argument
+*   Run the file using
 
-  ```text
-  #!/bin/bash
-  echo "Hello World"
-  ```
+    ```
+    ./try.sh
+    ```
 
-  Line 1: The first line of the script must start with the character sequence \#!, referred to as shebang1. The
+    OR you can use any of the following
 
-  shebang instructs the operating system to run /bin/bash, the Bash shell, passing it the script's path as an
-
-  argument
-
-* Run the file using
-
-  ```text
-  ./try.sh
-  ```
-
-  OR you can use any of the following
-
-  ```text
-  ./hello-world.sh 
-  /bin/bash hello-world.sh
-  bash hello-world.sh 
-  sh hello-world.sh
-  ```
+    ```
+    ./hello-world.sh 
+    /bin/bash hello-world.sh
+    bash hello-world.sh 
+    sh hello-world.sh
+    ```
 
 **Note** : Forgetting to apply execute permission on the file, i.e., `chmod +x hello-world.sh`, resulting in the output of `./hello-world.sh`: `Permission denied`
 
 #### 1.2 Hello World using Variables
 
 * Create a new file called `hello.sh`
-* Add
+*   Add
 
-  ```text
-  #!/bin/bash
-  whom_variable="World"
-  printf "Hello, %s\n" "$whom_variable"
-  ```
+    ```
+    #!/bin/bash
+    whom_variable="World"
+    printf "Hello, %s\n" "$whom_variable"
+    ```
 
-  **Note :** spaces cannot be used around the `=` assignment operator
+    **Note :** spaces cannot be used around the `=` assignment operator
 
 #### 1.3 Hello World with User Input
 
 **1.3.1 Reading from console**
 
-```text
+```
 echo "Who are you?"
 read name
 echo "Hello, $name.
@@ -96,7 +88,7 @@ echo "Hello, $name.
 
 **1.3.2 Formatting String**
 
-```text
+```
 echo "What are you doing?"
 read action
 echo "You are ${action}ing."
@@ -104,41 +96,40 @@ echo "You are ${action}ing."
 
 #### 1.4 Importance of Quoting in String
 
-There are two types of quoting: \
+There are two types of quoting: \\
 
-* **Weak**: uses double quotes: `"` \
+* **Weak**: uses double quotes: `"` \\
 * **Strong**: uses single quotes: `'`
-* If you want to bash to expand your argument, you can use **Weak Quoting**:
+*   If you want to bash to expand your argument, you can use **Weak Quoting**:
 
-  ```text
-  #!/bin/bash
-  world="World"
-  echo "Hello $world"
-  #> Hello World
-  ```
+    ```
+    #!/bin/bash
+    world="World"
+    echo "Hello $world"
+    #> Hello World
+    ```
+*   If you don't want to bash to expand your argument, you can use **Strong Quoting**:
 
-* If you don't want to bash to expand your argument, you can use **Strong Quoting**:
-
-  ```text
-  world="World"
-  echo 'Hello $world'
-  #> Hello $world
-  ```
+    ```
+    world="World"
+    echo 'Hello $world'
+    #> Hello $world
+    ```
 
 #### 1.5  Hello World in "Debug" mode
 
 To see which line is running, you can use Debug mode
 
 * Create a new file with simple echo hello world
-* Run the Script using
+*   Run the Script using
 
-  ```text
-  $ bash -x hello.sh
-  ```
+    ```
+    $ bash -x hello.sh
+    ```
 
-  you will get the following output :
+    you will get the following output :
 
-```text
+```
 $ echo Hello World
 $ Hello World
 ```
@@ -153,7 +144,7 @@ $ Hello World
 
 This is the primary purpose of `cat` is to concatenate files.
 
-```text
+```
 cat text1.txt text2.txt > text3.txt
 ```
 
@@ -161,7 +152,7 @@ This will add the contents of `text1.txt` and `text2.txt` to a new files called 
 
 **Printing the Contents of a File**
 
-```text
+```
 cat file.txt
 ```
 
@@ -169,65 +160,65 @@ will print the contents of a file.
 
 If the file contains non-ASCII characters, you can display those characters symbolically with `cat -v` . This can be quite useful for situations where control characters would otherwise be invisible.
 
-Very often, for interactive use, you are better off using an interactive pager like `less` or `more` , though. \( `less` is far more powerful than `more` and it is advised to use `less` more often than `more`\)
+Very often, for interactive use, you are better off using an interactive pager like `less` or `more` , though. ( `less` is far more powerful than `more` and it is advised to use `less` more often than `more`)
 
-```text
+```
 less file.txt
 ```
 
 In case the content needs to be listed backwards from its end the command tac can be used:
 
-```text
+```
 tac file.txt
 ```
 
 If you want to print the contents with line numbers, then use `-n` with cat:
 
-```text
+```
 cat -n file.txt
 ```
 
 **Write to a file**
 
-```text
+```
 cat >file
 ```
 
 It will let you write the text on terminal which will be saved in a file named file.
 
-```text
+```
 cat >>file
 ```
 
 will do the same, except it will append the text to the end of the file.
 
-**N.B:** `Ctrl+D` to end writing text on terminal \(Linux\)
+**N.B:** `Ctrl+D` to end writing text on terminal (Linux)
 
 **Read from standard input**
 
-```text
+```
 cat < file.txt
 ```
 
 Output is same as cat file.txt , but it reads the contents of the file from standard input instead of directly from the file.
 
-```text
+```
 printf "first line\nSecond line\n" | cat -n
 ```
 
-The echo command before \| outputs two lines. The cat command acts on the output to add line numbers.
+The echo command before | outputs two lines. The cat command acts on the output to add line numbers.
 
 **Display line numbers with output**
 
 Use the --number flag to print line numbers before each line. Alternatively, `-n` does the same thing.
 
-```text
+```
 cat --number file
 ```
 
 To skip empty lines when counting lines, use the `--number -nonblank` , or simply `-b` .
 
-```text
+```
 cat -b file
 ```
 
@@ -237,7 +228,7 @@ Shell aliases are a simple way to create new commands or to wrap existing comman
 
 #### Create an Alias
 
-```text
+```
 alias word='command'
 ```
 
@@ -245,7 +236,7 @@ Invoking word will run `command`. Any arguments supplied to the alias are simply
 
 To include multiple commands in the same alias, you can string them together with **&&** . For example:
 
-```text
+```
 alias print_things='echo "foo" && echo "bar" && echo "baz"'
 ```
 
@@ -253,7 +244,7 @@ alias print_things='echo "foo" && echo "bar" && echo "baz"'
 
 To remove an existing alias, use:
 
-```text
+```
 unalias {alias_name}
 ```
 
@@ -261,7 +252,7 @@ unalias {alias_name}
 
 Sometimes you may want to bypass an alias temporarily, without disabling it. To work with a concrete example, consider this alias:
 
-```text
+```
 alias ls='ls --color=auto'
 ```
 
@@ -269,7 +260,7 @@ alias ls='ls --color=auto'
 
 Aliases are named shortcuts of commands, one can define and use in interactive bash instances. They are held in an associative array named BASH\_ALIASES. To use this var in a script, it must be run within an interactive shell
 
-```text
+```
 #!/bin/bash -li
 # note the -li above! -l makes this behave like a login shell
 # -i makes it behave like an interactive shell
@@ -285,7 +276,7 @@ done
 
 #### List all Aliases
 
-```text
+```
 alias -p
 ```
 
@@ -298,14 +289,14 @@ will list all the current aliases.
 * To create an job, just append a single & after the command: `$ sleep 10 &`
 * Or run immediately : `sleep 10`
 * To bring the Process to the foreground, the command fg is used together with % : `fg %`
-* Killing running jobs
+*   Killing running jobs
 
-  ```text
-  $ sleep 10 &
-  [1] 20024
-  $ kill %1
-  [1]+ Terminated                    sleep 10
-  ```
+    ```
+    $ sleep 10 &
+    [1] 20024
+    $ kill %1
+    [1]+ Terminated                    sleep 10
+    ```
 
 ## Navigating & Listing
 
@@ -354,10 +345,9 @@ A shortcut for the home directory is `cd ~`, so that could be used as well.
 ### Listing Files
 
 | option | description |
-| :--- | :--- |
+| ------ | ----------- |
 
-
-ls -a \| list all files including hidden file starting with '.' ls --color \| colored list \[=always/never/auto\] ls -d \| list directories - with ' _/' ls -F \`add one char of_ /=&gt;@\` \| to enteries ls -i \| list file's inode index number ls -l \| list with long format - show permissions ls -la \| list long format including hidden files ls -lh \| list long format with readable file size ls -ls \| list with long format with file size ls -r \| list in reverse order ls -R \| list recursively directory tree ls -s \| list file size ls -S \| sort by file size ls -t \| sort by time & date ls -X \| sort by extension name \|
+ls -a | list all files including hidden file starting with '.' ls --color | colored list \[=always/never/auto] ls -d | list directories - with ' _/' ls -F \`add one char of_ /=>@\` | to enteries ls -i | list file's inode index number ls -l | list with long format - show permissions ls -la | list long format including hidden files ls -lh | list long format with readable file size ls -ls | list with long format with file size ls -r | list in reverse order ls -R | list recursively directory tree ls -s | list file size ls -S | sort by file size ls -t | sort by time & date ls -X | sort by extension name |
 
 ### List Files in a Long Listing Format
 
@@ -493,55 +483,53 @@ total 444
 
 **Redirecting standard output**
 
-* `>` redirect the standard output \(aka `STDOUT` \) of the current command into a file or another descriptor. These examples write the output of the ls command into the file `file.txt`
+* `>` redirect the standard output (aka `STDOUT` ) of the current command into a file or another descriptor. These examples write the output of the ls command into the file `file.txt`
 
-```text
+```
 ls > file.txt
 > file.txt ls
 ```
 
 The target file is created if it doesn't exists, otherwise this file is truncated.
 
-* The default redirection descriptor is the standard output or 1 when none is specified. This command is equivalent to the previous examples with the standard output explicitly indicated:
+*   The default redirection descriptor is the standard output or 1 when none is specified. This command is equivalent to the previous examples with the standard output explicitly indicated:
 
-  ```text
-  ls 1>file.txt
-  ```
+    ```
+    ls 1>file.txt
+    ```
 
-  Note: the redirection is initialized by the executed shell and not by the executed command, therefore it is done before the command execution.
+    Note: the redirection is initialized by the executed shell and not by the executed command, therefore it is done before the command execution.
 
 #### Append vs Truncate
 
-**Truncate &gt;**
+**Truncate >**
 
 1. Create specified file if it does not exist.
-2. Truncate \(remove file's content\)
-3. Write to file
+2. Truncate (remove file's content)
+3.  Write to file
 
-   ```text
-   $ echo "first line" > file.txt
-   $ echo "second line" > file.txt
-   $ cat file.txt
-   second line
-   ```
+    ```
+    $ echo "first line" > file.txt
+    $ echo "second line" > file.txt
+    $ cat file.txt
+    second line
+    ```
 
-   **Append &gt;&gt;**
-
+    **Append >>**
 4. Create specified file if it does not exist.
-5. Append file \(writing at end of file\).
+5. Append file (writing at end of file).
 
 **Overwrite existing file**
 
-```text
+```
 $ echo "first line" > file.txt
 ```
 
 **Append a second line**
 
-```text
+```
 $ echo "second line" >> file.txt
 $ cat file.txt
 first line
 second line
 ```
-
