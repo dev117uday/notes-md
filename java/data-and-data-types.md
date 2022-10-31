@@ -12,11 +12,11 @@ final int someConstant = 10;
 
 ## Data Types
 
-![Data types in Java](../.gitbook/assets/image%20%281%29.png)
+![Data types in Java](<../.gitbook/assets/image (1) (1).png>)
 
 * These are Java's primitive datatypes
 * you can use `+` operator on datatypes smaller than int otherwise anything that gets promoted to `Integer`.
-* To get max and min value of data type :  
+* To get max and min value of data type : &#x20;
 
 ```java
 int high = Integer.MAX_VALUE;
@@ -29,7 +29,7 @@ int low = Integer.MIN_VALUE;
 
 * `equalsIgnoreCase`
 * `toLowerCase`
-* To check Strings in Java don't use "==" instead use : 
+* To check Strings in Java don't use "==" instead use :&#x20;
   * `str1.equals(str2)`
 * `charAt(0)`
 * `String.contains()`
@@ -38,8 +38,8 @@ int low = Integer.MIN_VALUE;
 * `join()`
 * `toString()`  Dont use with strings
 * **String** is a final and **immutable** class
-* To **create** a **mutable string** in **java**, **Java** has two **classes** 
-  * StringBuffer and 
+* To **create** a **mutable string** in **java**, **Java** has two **classes**&#x20;
+  * StringBuffer and&#x20;
   * **StringBuilder**
 
 ```java
@@ -112,9 +112,9 @@ import java.util.StringTokenizer;
 
 **Difference between string on heap and Pool**
 
-![Strings on Heap vs Pool](../.gitbook/assets/image%20%282%29.png)
+![Strings on Heap vs Pool](<../.gitbook/assets/image (2) (1).png>)
 
-### String intern\(\)
+### String intern()
 
 ```java
 public class InternExample{  
@@ -267,7 +267,7 @@ BigInteger valueFromDecimalString =
 ```
 
 * There are predefined constants for common values:
-* `BigInteger.ZERO` — value of "0". 
+* `BigInteger.ZERO` — value of "0".&#x20;
 * `BigInteger.ONE` — value of "1".
 * `BigInteger.TEN` — value of "10".
 
@@ -309,7 +309,7 @@ else{
 
 In general, do not use use the == operator to compare Big Integers
 
-* `==` operator: compares references; i.e. whether two values refer to the same object 
+* `==` operator: compares references; i.e. whether two values refer to the same object&#x20;
 * `equals()` method: compares the content of two Big Integers.
 
 ```java
@@ -320,4 +320,3 @@ if(reallyBig.compareTo(reallyBig1) == 0){
     //code when both are equal.
 }
 ```
-

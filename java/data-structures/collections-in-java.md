@@ -14,7 +14,7 @@ The **Collection in Java** is a framework that provides an architecture to store
 
 Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion.
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](<../../.gitbook/assets/image (3) (1).png>)
 
 A simple way to construct a List from individual data values is to use `java.utils.Arrays` method `Arrays.asList` :
 
@@ -144,4 +144,3 @@ List<String> anEmptyList = Collections.emptyList();
 Map<Integer, Date> anEmptyMap = Collections.emptyMap();
 Set<Number> anEmptySet = Collections.emptySet();
 ```
-

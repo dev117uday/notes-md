@@ -4,7 +4,7 @@ description: Just like shopping list
 
 # List in Java
 
-![Class Diagram \(click to zoom\)](../../.gitbook/assets/image%20%284%29.png)
+![Class Diagram (click to zoom)](<../../.gitbook/assets/image (4) (1).png>)
 
 [read more here](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)
 
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 ## Array List
 
-Array List is one of the inbuilt data structures in Java. It is a dynamic array \(where the size of the data structure not needed to be declared first\) for storing elements \(Objects\).
+Array List is one of the inbuilt data structures in Java. It is a dynamic array (where the size of the data structure not needed to be declared first) for storing elements (Objects).
 
 ### Creating a List
 
@@ -78,4 +78,3 @@ myArrayList.remove(index);
 numbersB.removeAll(numbersA);
     System.out.println("B cleared: " + numbersB);
 ```
-

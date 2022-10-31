@@ -4,7 +4,7 @@ description: Get set Go
 
 # Set in Java
 
-![Class Diagram](../../.gitbook/assets/image%20%285%29.png)
+![Class Diagram](<../../.gitbook/assets/image (5) (1).png>)
 
 **import**
 
@@ -40,7 +40,7 @@ Set<Integer> linkedHashSet = new LinkedHashSet<Integer>();
 
 ### Adding elements to a Set
 
-```text
+```
 set.add(12); 
 set.add(13);
 ```
@@ -57,11 +57,10 @@ set.remove(0);
 
 ### Check size
 
-```text
+```
 set.size(); 
 //Returns the number of elements in the collection
 
 set.isEmpty();
 //Returns true if the set has no elements
 ```
-

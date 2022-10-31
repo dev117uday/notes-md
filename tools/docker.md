@@ -139,4 +139,4 @@ docker network ls
 
 Docker host contains a internal DNS resolver for different containers to communicate to each other. In place of URL, just add the name of the container you want to communicate to.
 
-![](<../.gitbook/assets/Untitled (5) (1).png>)
+![](<../.gitbook/assets/Untitled (5) (2).png>)
