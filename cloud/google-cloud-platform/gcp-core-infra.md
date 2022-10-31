@@ -315,13 +315,13 @@ Let's say, you have a workload that doesn't require a human to sit and wait for 
 
 ### Object version in storage bucket
 
-![object version in storage bucket](gcp-core-infra-img/gcp-core-infra-4.png>)
+![object version in storage bucket](gcp-core-infra-img/gcp-core-infra-44.png)
 
 * Object versioning
 
 ### Scope and permisson object storage
 
-![scope and permisson object storage](gcp-core-infra-img/gcp-core-infra-4.png>)
+![scope and permisson object storage](gcp-core-infra-img/gcp-core-infra-45.png)
 
 ### Type of storage options
 
@@ -491,7 +491,7 @@ Cloud Datastore highly scalable NoSQL database. One of its main use cases is to 
 
 ### Google managed Kubernetes Engine
 
-![Google managed Kubernetes Engine](gcp-core-infra-img/gcp-core-infra-5.png>)
+![Google managed Kubernetes Engine](gcp-core-infra-img/gcp-core-infra-58.png)
 
 ### Hybrid and multi-cloud 
 
