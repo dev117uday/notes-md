@@ -2,71 +2,46 @@
 
 Tags: linux-com-book
 
-- User accounts are defined in the `/etc/passwd` file
-- groups are defined in the `/etc/group` file
+* User accounts are defined in the `/etc/passwd` file
+* groups are defined in the `/etc/group` file
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled.png)
+![file types](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled.png>)
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled%201.png)
+![permission attributes](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled 1.png>)
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled%202.png)
+![chmod permission symbolic notation](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled 2.png>)
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled%203.png)
+![chmod notation example](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled 3.png>)
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled%204.png)
+![file permission in octal](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled 4.png>)
 
-- notes of chown and chgrp
+### chown and chgrp
 
----
+* `chown` : to change the file ownership&#x20;
+* `chgrp` : to change the group
 
 `d|rwx|rwx|rwx`
 
-- d : directory
-- 1st block for user
-- 2nd block for group (of user)
-- 3rd block for other
+* d : directory
+* 1st block for user
+* 2nd block for group (of user)
+* 3rd block for other
 
-`chmod u=rwx [test.sh](http://test.sh/)
-chmod g=rwx [test.sh](http://test.sh/)
-chmod o=rwx [test.sh](http://test.sh/)
-chmod go-wx [test.sh](http://test.sh/)
-chmod 744 [test.sh](http://test.sh/)`
+```
+chmod u=rwx test.sh
+chmod g=rwx test.sh
+chmod o=rwx test.sh
+chmod go-wx test.sh
+chmod 744 test.sh
+```
 
-read  = 4
-write = 2
-exec  = 1
-+ 7
-
-`chown` : to change the file ownership
-`chgrp` : to change the group
-
-grep : -i to avoid case sensitivity
-
-locate "file name" | grep "to filter"
-
-tar -cf file.tar File/
-
-- c to compress
--f for file
--x extract
-
-Tar is an archiver, meaning it would archive multiple files into a single file but without compression. Gzip which handles the . gz extension is the compression tool that is used to reduce the disk space used by the file
-
-add -z flag to use gzip
-
-> : add completely new content to the file
-> 
-> 
-> > : append new content to the file
-> > 
-
----
+numbering system : read = 4 write = 2 exec = 1
 
 ## Processes
 
-- When a system starts up, the kernel initiates a few of its own activities as processes and launches a program called init
-- init, in turn, runs a series of shell scripts (located in /etc) called init scripts
-- The fact that a program can launch other programs is expressed in the process scheme as a parent process producing a child process
+* When a system starts up, the kernel initiates a few of its own activities as processes and launches a program called init
+* init, in turn, runs a series of shell scripts (located in /etc) called init scripts
+* The fact that a program can launch other programs is expressed in the process scheme as a parent process producing a child process
 
 ```bash
 # to look at process 
@@ -110,18 +85,18 @@ root          14  0.0  0.0      0     0 ?        I    16:29   0:00 [rcu_tasks_tr
 root          15  0.0  0.0      0     0 ?        S    16:29   0:00 [ksoftirqd/0]
 ```
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled%205.png)
+![process state diagram](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled 5.png>)
 
 **Information shown by top**
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled%206.png)
+![top field information](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled 6.png>)
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled%207.png)
+![top field information](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled 7.png>)
 
-- to kill a process : `kill -signal [PID]`
+* to kill a process : `kill -signal [PID]`
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled%208.png)
+![process signals](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled 8.png>)
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled%209.png)
+![process signals part 2](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled 9.png>)
 
-![Untitled](Linux%20Commands%20Part%209%20-%2010%2039c5ef9cd69f4878b519893b9049e219/Untitled%2010.png)
+![process signals part 3](<Linux Commands Part 9 - 10 39c5ef9cd69f4878b519893b9049e219/Untitled 10.png>)
