@@ -7,33 +7,49 @@
 * Choose storage options
 * Interact and experience google cloud
 
-![gcp service categories](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled.png>)
+### GCP service categories
 
-![cloud advantages](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 1.png>)
+![gcp service categories](gcp-core-infra-img/gcp-core-infra-0.png)
 
-![evolution of cloud](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 2.png>)
+### Cloud advantages
 
-![Infrastructure as service](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 3.png>)
+![cloud advantages](gcp-core-infra-img/gcp-core-infra-1.png)
+
+### Evolution of cloud
+
+![evolution of cloud](gcp-core-infra-img/gcp-core-infra-2.png)
+
+### Infrastructure as service
+
+![Infrastructure as service](gcp-core-infra-img/gcp-core-infra-3.png)
 
 * IaaS : Pay for what they allocate
 * PaaS : Pay for what they use
 
-![cloud structure](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 4.png>)
+### Cloud structure
+
+![cloud structure](gcp-core-infra-img/gcp-core-infra-4.png)
 
 Google's nine products have more than one billion users each. Google designs and builds its own data centers, which incorporate multiple layers of physical security protections. Access to these datacenters is limited to only a very small number of Google employees. Security features include encryption using centrally managed keys and hardware encryption in hard drives and SSDs. The GFE additionally applies protections against denial-of-service attacks. Google also has multi-tier, multi-layer DoS protections that further reduce the risk of any DoS impact on a service running behind the GFE.
 
-![cloud cost](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 5.png>)
+### Cloud cost
+
+![cloud cost](gcp-core-infra-img/gcp-core-infra-5.png)
 
 Specifically, when you run an instance for more than 25% of a month, Compute Engine automatically gives you a discount for every incremental minute you use for that instance. Custom virtual machine types allow Compute Engine virtual machines to be fine tuned with optimal amounts of vCPU and memory for the applications so that you can tailor your pricing for your workloads.
 
-![project structure gcp](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 6.png>)
+### Project structure gcp
+
+![project structure gcp](gcp-core-infra-img/gcp-core-infra-6.png)
 
 * folder can contain sub folders
 * policies are applied at project, folder and org node level
   * some can be applied at resource level
   * policies are inherited downwards
 
-![projects in GCP](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 7.png>)
+### Projects in GCP
+
+![projects in GCP](gcp-core-infra-img/gcp-core-infra-7.png)
 
 Attributes of project
 
@@ -41,13 +57,21 @@ Attributes of project
 * project\_name
 * project\_number
 
-![info about projects](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 8.png>)
+### Info about projects
 
-![resource manager](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 9.png>)
+![info about projects](gcp-core-infra-img/gcp-core-infra-8.png)
 
-![organization nodes](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 10.png>)
+### Resource manager
 
-![top level of org](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 11.png>)
+![resource manager](gcp-core-infra-img/gcp-core-infra-9.png)
+
+### Organization nodes
+
+![organization nodes](gcp-core-infra-img/gcp-core-infra-10.png)
+
+### Top level of org
+
+![top level of org](gcp-core-infra-img/gcp-core-infra-11.png)
 
 who can do what and on which part
 
@@ -59,7 +83,9 @@ who can do what and on which part
 * can do what
   * defined by a role
 
-![types of IAM](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 12.png>)
+### Types of IAM
+
+![types of IAM](gcp-core-infra-img/gcp-core-infra-12.png)
 
 **Basic role**
 
@@ -70,23 +96,37 @@ who can do what and on which part
 
 Can be too general when working with sensitive data
 
-![basic IAM role](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 13.png>)
+### Basic IAM role
 
-![pre-define IAM role](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 14.png>)
+![basic IAM role](gcp-core-infra-img/gcp-core-infra-13.png)
 
-![custom IAM role](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 15.png>)
+### Pre-define IAM role
 
-![custom IAM role](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 16.png>)
+![pre-define IAM role](gcp-core-infra-img/gcp-core-infra-14.png)
+
+### Custom IAM role
+
+![custom IAM role](gcp-core-infra-img/gcp-core-infra-15.png)
+
+### Custom IAM role
+
+![custom IAM role](gcp-core-infra-img/gcp-core-infra-16.png)
 
 * service accounts do need to be managed
 
-![service account](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 17.png>)
+### Service account
 
-![Cloud identity](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 18.png>)
+![service account](gcp-core-infra-img/gcp-core-infra-17.png)
+
+### Cloud identity
+
+![Cloud identity](gcp-core-infra-img/gcp-core-infra-18.png)
 
 * more on cloud identity
 
-![ways to access gcp](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 19.png>)
+### Ways to access gcp
+
+![ways to access gcp](gcp-core-infra-img/gcp-core-infra-19.png)
 
 ## Quiz
 
@@ -124,29 +164,45 @@ Q8 : Which way of accessing Google Cloud lets you control services through the c
 
 * APIs
 
-![type of VPC](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 20.png>)
+### Type of VPC
 
-![what is vpc](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 21.png>)
+![type of VPC](gcp-core-infra-img/gcp-core-infra-20.png)
 
-![info on VPC](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 22.png>)
+### What is vpc
 
-![what is compute engine](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 23.png>)
+![what is vpc](gcp-core-infra-img/gcp-core-infra-21.png)
+
+### Info on VPC
+
+![info on VPC](gcp-core-infra-img/gcp-core-infra-22.png)
+
+### What is compute engine
+
+![what is compute engine](gcp-core-infra-img/gcp-core-infra-23.png)
 
 <figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption><p>range of compute services</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (9) (3).png" alt=""><figcaption><p>virtual machine VM lifecycle</p></figcaption></figure>
 
-![what are virtual machine](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 24.png>)
+### What are virtual machine
 
-![vm and disk relation](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 25.png>)
+![what are virtual machine](gcp-core-infra-img/gcp-core-infra-24.png)
+
+### VM and disk relation
+
+![vm and disk relation](gcp-core-infra-img/gcp-core-infra-25.png)
 
 A preemptible VM is different from an ordinary Compute Engine VM in only one respect. Compute Engine has permission to terminate a job if its resources are needed elsewhere. Although savings are possible with preemptible VMs, you need to ensure that your job can be stopped and restarted. In terms of storage, Compute Engine doesn't require a particular option or machine type to get high-throughput between processing and persistent disks.
 
 Let's say, you have a workload that doesn't require a human to sit and wait for it to finish, such as a batch job analyzing a large dataset. You can save money, in some cases up to 90 percent by choosing preemptible VMs to run the job
 
-![autoscale vs manual scale](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 26.png>)
+### Autoscale vs manual scale
 
-![vm upper limit](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 27.png>)
+![autoscale vs manual scale](gcp-core-infra-img/gcp-core-infra-26.png)
+
+### VM upper limit
+
+![vm upper limit](gcp-core-infra-img/gcp-core-infra-27.png)
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>general purpose virtual machone</p></figcaption></figure>
 
@@ -160,156 +216,306 @@ Let's say, you have a workload that doesn't require a human to sit and wait for 
 
 
 
-![routing tables](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 28.png>)
+### Routing tables
 
-![firewall in GCP](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 29.png>)
+![routing tables](gcp-core-infra-img/gcp-core-infra-28.png)
 
-![DNS ](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 30.png>)
+### Firewall in GCP
 
-![Google's DNS](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 31.png>)
+![firewall in GCP](gcp-core-infra-img/gcp-core-infra-29.png)
 
-![ Managed DNS](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 32.png>)
+### DNS 
 
-![Cloud CDN](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 33.png>)
+![DNS ](gcp-core-infra-img/gcp-core-infra-30.png)
 
-![type of networking](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 34.png>)
+### Google's DNS
 
-![IPsec VPN protocol](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 35.png>)
+![Google's DNS](gcp-core-infra-img/gcp-core-infra-31.png)
 
-![Direct peering](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 36.png>)
+###  Managed DNS
 
-![carrier peering](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 37.png>)
+![ Managed DNS](gcp-core-infra-img/gcp-core-infra-32.png)
 
-![dedicated interconenct](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 38.png>)
+### Cloud CDN
 
-![partner interconnect](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 39.png>)
+![Cloud CDN](gcp-core-infra-img/gcp-core-infra-33.png)
 
-![blob in storage bucket](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 40.png>)
+### type of networking
 
-![GCP cloud storage bucket](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 41.png>)
+![type of networking](gcp-core-infra-img/gcp-core-infra-34.png)
 
-![why use cloud storage](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 42.png>)
+### IPsec VPN protocol
 
-![blob](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 43.png>)
+![IPsec VPN protocol](gcp-core-infra-img/gcp-core-infra-35.png)
 
-![obejct version in storage bucket](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 44.png>)
+### Direct peering
+
+![Direct peering](gcp-core-infra-img/gcp-core-infra-36.png)
+
+### Carrier peering
+
+![carrier peering](gcp-core-infra-img/gcp-core-infra-37.png)
+
+### Dedicated interconnect
+
+![dedicated interconnect](gcp-core-infra-img/gcp-core-infra-38.png)
+
+### Partner interconnect
+
+![partner interconnect](gcp-core-infra-img/gcp-core-infra-39.png)
+
+### Blob in storage bucket
+
+![blob in storage bucket](gcp-core-infra-img/gcp-core-infra-40.png)
+
+### GCP cloud storage bucket
+
+![GCP cloud storage bucket](gcp-core-infra-img/gcp-core-infra-41.png)
+
+### Why use cloud storage
+
+![why use cloud storage](gcp-core-infra-img/gcp-core-infra-42.png)
+
+### Blob
+
+![blob](gcp-core-infra-img/gcp-core-infra-43.png)
+
+### Object version in storage bucket
+
+![object version in storage bucket](gcp-core-infra-img/gcp-core-infra-4.png>)
 
 * Object versioning
 
-![scope and permisson object storage](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 45.png>)
+### Scope and permisson object storage
 
-![type of storage options](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 46.png>)
+![scope and permisson object storage](gcp-core-infra-img/gcp-core-infra-4.png>)
 
-![type of storage options](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 47.png>)
+### Type of storage options
 
-![storage options](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 48.png>)
+![type of storage options](gcp-core-infra-img/gcp-core-infra-46.png)
 
-![Cloud SQL](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 49.png>)
+### Type of storage options
 
-![more info on cloud SQL](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 50.png>)
+![type of storage options](gcp-core-infra-img/gcp-core-infra-47.png)
 
-![intro to cloud spanner](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 51.png>)
+### Storage options
 
-![intro to firestore](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 52.png>)
+![storage options](gcp-core-infra-img/gcp-core-infra-48.png)
 
-![intro ot bigtable](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 53.png>)
+### Cloud SQL
 
-![type database to choose](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 54.png>)
+![Cloud SQL](gcp-core-infra-img/gcp-core-infra-49.png)
 
-![what is a container](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 55.png>)
+### More info on cloud SQL
 
-![what is kuberentes](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 56.png>)
+![more info on cloud SQL](gcp-core-infra-img/gcp-core-infra-50.png)
 
-![kubernetes cluster](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 57.png>)
+### Intro to cloud spanner
 
-![Google managed Kubernetes Engine](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 58.png>)
+![intro to cloud spanner](gcp-core-infra-img/gcp-core-infra-51.png)
 
-![hybrid and multi-cloud ](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 59.png>)
+### Intro to firestore
 
-![Anthos](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 60.png>)
+![intro to firestore](gcp-core-infra-img/gcp-core-infra-52.png)
 
-![GKE](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 61.png>)
+### Intro to bigtable
 
-![GKE autopilot](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 62.png>)
+![intro to bigtable](gcp-core-infra-img/gcp-core-infra-53.png)
 
-![microservice in gCP](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 63.png>)
+### Type database to choose
 
-![why container](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 64.png>)
+![type database to choose](gcp-core-infra-img/gcp-core-infra-54.png)
 
-![standard env vs flexible env](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 65.png>)
+### What is a container
 
-![cloud endpoints](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 66.png>)
+![what is a container](gcp-core-infra-img/gcp-core-infra-55.png)
 
-![APIgee Engine](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 67.png>)
+### What is kuberentes
 
-![Cloud RUN](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 68.png>)
+![what is kuberentes](gcp-core-infra-img/gcp-core-infra-56.png)
 
-![Simple deployment model](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 69.png>)
+### Kubernetes cluster
 
-![Cloud functions](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 70.png>)
+![kubernetes cluster](gcp-core-infra-img/gcp-core-infra-57.png)
 
-![intro to terraform](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 71.png>)
+### Google managed Kubernetes Engine
 
-![what is Sre](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 72.png>)
+![Google managed Kubernetes Engine](gcp-core-infra-img/gcp-core-infra-5.png>)
 
-![monitoring](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 73.png>)
+### Hybrid and multi-cloud 
 
-![SRE pyramid](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 74.png>)
+![hybrid and multi-cloud ](gcp-core-infra-img/gcp-core-infra-59.png)
 
-![SRE job](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 75.png>)
+### Anthos
 
-![latency](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 76.png>)
+![Anthos](gcp-core-infra-img/gcp-core-infra-60.png)
 
-![latency](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 77.png>)
+### GKE
 
-![traffic](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 78.png>)
+![GKE](gcp-core-infra-img/gcp-core-infra-61.png)
 
-![traffic part2](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 79.png>)
+### GKE autopilot
 
-![saturation](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 80.png>)
+![GKE autopilot](gcp-core-infra-img/gcp-core-infra-62.png)
 
-![saturation 2](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 81.png>)
+### microservice in gCP
 
-![handling error in cloud](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 82.png>)
+![microservice in gCP](gcp-core-infra-img/gcp-core-infra-63.png)
 
-![handling error in cloud 2](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 83.png>)
+### Why container
 
-![SLI vs SLO vs SLA](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 84.png>)
+![why container](gcp-core-infra-img/gcp-core-infra-64.png)
 
-![SLI](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 85.png>)
+### Standard env vs flexible env
+
+![standard env vs flexible env](gcp-core-infra-img/gcp-core-infra-65.png)
+
+### cloud endpoints
+
+![cloud endpoints](gcp-core-infra-img/gcp-core-infra-66.png)
+
+### APIgee Engine
+
+![APIgee Engine](gcp-core-infra-img/gcp-core-infra-67.png)
+
+### Cloud RUN
+
+![Cloud RUN](gcp-core-infra-img/gcp-core-infra-68.png)
+
+### Simple deployment model
+
+![Simple deployment model](gcp-core-infra-img/gcp-core-infra-69.png)
+
+### Cloud functions
+
+![Cloud functions](gcp-core-infra-img/gcp-core-infra-70.png)
+
+### Intro to terraform
+
+![intro to terraform](gcp-core-infra-img/gcp-core-infra-71.png)
+
+### What is SRE
+
+![what is Sre](gcp-core-infra-img/gcp-core-infra-72.png)
+
+### Monitoring
+
+![monitoring](gcp-core-infra-img/gcp-core-infra-73.png)
+
+### SRE pyramid
+
+![SRE pyramid](gcp-core-infra-img/gcp-core-infra-74.png)
+
+### SRE job
+
+![SRE job](gcp-core-infra-img/gcp-core-infra-75.png)
+
+### Latency
+
+![Latency](gcp-core-infra-img/gcp-core-infra-76.png)
+
+### Latency
+
+![Latency](gcp-core-infra-img/gcp-core-infra-77.png)
+
+### Traffic
+
+![Traffic](gcp-core-infra-img/gcp-core-infra-78.png)
+
+### Traffic part2
+
+![Traffic part2](gcp-core-infra-img/gcp-core-infra-79.png)
+
+### Saturation
+
+![Saturation](gcp-core-infra-img/gcp-core-infra-80.png)
+
+### Saturation 2
+
+![Saturation 2](gcp-core-infra-img/gcp-core-infra-81.png)
+
+### Handling error in cloud
+
+![Handling error in cloud](gcp-core-infra-img/gcp-core-infra-82.png)
+
+### Handling error in cloud 2
+
+![Handling error in cloud 2](gcp-core-infra-img/gcp-core-infra-83.png)
+
+### SLI vs SLO vs SLA
+
+![SLI vs SLO vs SLA](gcp-core-infra-img/gcp-core-infra-84.png)
+
+### SLI
+
+![SLI](gcp-core-infra-img/gcp-core-infra-85.png)
 
 Number of good events / count of all valid events
 
-![SLO](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 86.png>)
+### SLO
 
-![SLO](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 87.png>)
+![SLO](gcp-core-infra-img/gcp-core-infra-86.png)
 
-![SLA](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 88.png>)
+### SLO
 
-![improve service reliability](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 89.png>)
+![SLO](gcp-core-infra-img/gcp-core-infra-87.png)
 
-![SLO](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 90.png>)
+### SLA
 
-![ops team functions](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 91.png>)
+![SLA](gcp-core-infra-img/gcp-core-infra-88.png)
 
-![who to maintain ops](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 92.png>)
+### Improve service reliability
 
-![how to maintain ops](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 93.png>)
+![Improve service reliability](gcp-core-infra-img/gcp-core-infra-89.png)
 
-![cloud monitoring](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 94.png>)
+### SLO
 
-![cloud logging](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 95.png>)
+![SLO](gcp-core-infra-img/gcp-core-infra-90.png)
 
-![cloud logging](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 96.png>)
+### OPS team functions
 
-![cloud logging](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 97.png>)
+![OPS team functions](gcp-core-infra-img/gcp-core-infra-91.png)
 
-![type of cloud logging](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 98.png>)
+### Who to maintain OPS
 
-![error reporting](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 99.png>)
+![who to maintain OPS](gcp-core-infra-img/gcp-core-infra-92.png)
 
-![debugger](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 100.png>)
+### How to maintain OPS
 
-![cloud trace](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 101.png>)
+![how to maintain OPS](gcp-core-infra-img/gcp-core-infra-93.png)
 
-![cloud profiler](<GCP Core Infrastructure 85a519ee6b6f4393a749a5bd4eee42ce/Untitled 102.png>)
+### Cloud monitoring
+
+![Cloud monitoring](gcp-core-infra-img/gcp-core-infra-94.png)
+
+### Cloud logging
+
+![Cloud logging](gcp-core-infra-img/gcp-core-infra-95.png)
+
+### Cloud logging
+
+![Cloud logging](gcp-core-infra-img/gcp-core-infra-96.png)
+
+### Cloud logging
+
+![Cloud logging](gcp-core-infra-img/gcp-core-infra-97.png)
+
+### Type of Cloud logging
+
+![type of Cloud logging](gcp-core-infra-img/gcp-core-infra-98.png)
+
+### Error reporting
+
+![error reporting](gcp-core-infra-img/gcp-core-infra-99.png)
+
+### Debugger
+
+![debugger](gcp-core-infra-img/gcp-core-infra-100.png)
+
+### Cloud trace
+
+![Cloud trace](gcp-core-infra-img/gcp-core-infra-101.png)
+
+### Cloud profiler
+
+![Cloud profiler](gcp-core-infra-img/gcp-core-infra-102.png)
