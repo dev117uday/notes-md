@@ -31,6 +31,7 @@
     * [Constructors](java/object-oriented-programming/constructors.md)
     * [Visibility](java/object-oriented-programming/visibility.md)
     * [Generics](java/object-oriented-programming/generics.md)
+  * [Threads in Java](java/threads-in-java.md)
   * [Useful Stuff Java](java/name-it-something/README.md)
     * [Lambda & Stream](java/name-it-something/lambda-and-stream.md)
   * [Keywords in Java](java/keywords-in-java/README.md)
