@@ -85,5 +85,6 @@
     * [Redis](spring-boot/spring-data/redis.md)
     * [Spring Data JPA](spring-boot/spring-data/spring-data-jpa.md)
     * [JDBC](spring-boot/spring-data/jdbc.md)
+  * [Spring MVC](spring-boot/spring-mvc.md)
 * [Troubleshooting and Debugging](troubleshooting-and-debugging/README.md)
   * [Basics](troubleshooting-and-debugging/basics.md)
