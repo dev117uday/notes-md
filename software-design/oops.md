@@ -1,23 +1,13 @@
+---
+description: gfg se padhlo
+---
+
 # OOPS
 
-* Class: A Logical Entity
-  * Have some attributes
-  * Have some behavior
-* Object: An Instance of Class
-* Access Modifier
-*
+<figure><img src="../.gitbook/assets/Untitled (1) (2) (1) (1) (1).png" alt=""><figcaption><p>access levels for object</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/Untitled (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-* Inheritance: the usual
-  * types:
-    * Single Inheritance: single parent: single child
-    * Multilevel Inheritance : single parent -> one child -> child
-    * Hierarchical Inheritance : single parent -> multiple child
-    * Hybrid Inheritance : combination of one or more inheritance
-* Encapsulation: packing up all requirements in one entity and conditions on top of it for appropriate usage.
-* Abstraction : hiding the internal details and working
-  * abstract class : cannot be instantiated — implementation class will have to override
-  * abstract method : cannot be implemented — implementation class will have to override
-  * GraphicObject object = new Circle()
-  * GraphicObject is the abstract class, Circle is its concrete implementation
-* Polymorphism : Interfaces
+* Abstraction : [https://www.geeksforgeeks.org/abstraction-in-java-2/](https://www.geeksforgeeks.org/abstraction-in-java-2/)
+* Encapsulation : [https://www.geeksforgeeks.org/encapsulation-in-java/](https://www.geeksforgeeks.org/encapsulation-in-java/)
+* Inheritance : [https://www.geeksforgeeks.org/inheritance-in-java/](https://www.geeksforgeeks.org/inheritance-in-java/)
+* Polymorphism : [https://www.geeksforgeeks.org/polymorphism-in-java/](https://www.geeksforgeeks.org/polymorphism-in-java/)
+
