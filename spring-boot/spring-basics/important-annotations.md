@@ -24,7 +24,7 @@ public class CourseRepositoryTest {
 
 ### `@Service`
 
-Service Components are the class file which contains @Service annotation. These class files are used to write business logic in a different layer, between `@RestController` class and `@Repository`&#x20;
+Service Components are the class file which contains @Service annotation. These class files are used to write business logic in a different layer, between `@RestController` class and `@Repository`
 
 ### `@Repository`
 
@@ -46,3 +46,31 @@ public class FooService {
 
 * There's another annotation called @Primary that we can use to decide which bean to inject when ambiguity is present regarding dependency injection.
 * This annotation defines a preference when multiple beans of the same type are present.
+
+### `@EnableConfigurationProperties`
+
+```java
+@EnableConfigurationProperties(SecretConfigProp.class)
+```
+
+To load config from Class, refer below annotation
+
+### @ConfigurationProperties("secret")
+
+````java
+@ConfigurationProperties("secret")
+public record SecretConfigProp(String username, String password, String authToken) {
+}
+
+```spring-boot-properties
+secret.authToken:my_auth_token
+secret.username:myusername
+
+spring.config.import:optional:secrets.properties
+```
+
+```java-properties
+secret.password=password
+```
+````
+
