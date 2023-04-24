@@ -2,7 +2,7 @@
 
 ### Using XML as configuration
 
-1. Add the dependency to `pom.xml`&#x20;
+1. Add the dependency to `pom.xml`
 
 ```markup
 <dependency>
@@ -75,7 +75,6 @@ public class Doctor implements Staff {
                 '}';
     }
 }
-
 ```
 
 3\. Create a application context
@@ -86,8 +85,6 @@ ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 // to create a bean
 Doctor doctor = context.getBean(Doctor.class);
 ```
-
-
 
 ### Using Class based configuration
 
@@ -171,4 +168,51 @@ Using the `javax.annotation.api` , we can annotate different methods at differen
     public void postConstruct(){
         System.out.println("post construct called");
     }
+```
+
+### Creating a protoptye bean inside singleton class
+
+If you declare a prototype bean inside a singleton class, and create 2 different instance of singleton, there prototype bean will also be the same
+
+```java
+// example : prototype
+
+@Service
+@Scope("prototype")
+public class WeatherService {
+
+    String time = LocalDateTime.now().toString();
+    int temp = new Random().nextInt(60);
+
+    public String getTodayTemp() {
+        return time + " -> " + temp;
+    }
+}
+
+// service : singleton
+
+@Service
+public class UserService {
+
+    @Autowired
+    WeatherService weatherService;
+
+    @Autowired
+    ApplicationContext context;
+
+    @Autowired
+    private ObjectFactory<WeatherService> wFactory;
+    // use this to create seperate beans for each singleton instance
+
+    public String getCurrentTemp() {
+        return weatherService.getTodayTemp();
+    }
+
+    public String getCurrentTempDiff() {
+        // not recommended
+        // return context.getBean(WeatherService.class).getTodayTemp();
+        return wFactory.getObject().getTodayTemp();
+    }
+
+}
 ```

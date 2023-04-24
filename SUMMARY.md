@@ -83,6 +83,7 @@
     * [Spring A.O.P](spring-boot/spring-basics/spring-a.o.p.md)
   * [Spring Boot Controller](spring-boot/spring-boot-controller/README.md)
     * [Response Entity Exception Handling](spring-boot/spring-boot-controller/response-entity-exception-handling.md)
+  * [Spring Things](spring-boot/spring-things.md)
   * [Spring MVC](spring-boot/spring-mvc.md)
   * [Spring Data](spring-boot/spring-data/README.md)
     * [Redis](spring-boot/spring-data/redis.md)
