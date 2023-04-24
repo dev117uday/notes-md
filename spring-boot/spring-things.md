@@ -89,3 +89,45 @@ public int addPerson( @Valid @NonNull @RequestBody Person person) {
     return personService.addPerson(person);
 }
 ```
+
+## Faker
+
+To generate fake data
+
+```java
+<dependency>
+        <groupId>com.github.javafaker</groupId>
+        <artifactId>javafaker</artifactId>
+        <version>1.0.2</version>
+</dependency>
+
+
+
+@Bean
+public Faker faker() {
+	return new Faker();
+}
+
+private final Faker faker;
+
+@Override
+public void run(String... args) throws Exception {
+
+// create 100 rows of people in the database
+List<Person> people = IntStream.rangeClosed(1, 100)
+        .mapToObj(i -> new Person(
+                faker.name().firstName(),
+                faker.name().lastName(),
+                faker.phoneNumber().cellPhone(),
+                faker.internet().emailAddress(),
+                new Address(
+                        faker.address().streetAddress(),
+                        faker.address().city()
+                )
+        )).toList();
+
+repository.saveAll(people);
+}
+
+```
+
