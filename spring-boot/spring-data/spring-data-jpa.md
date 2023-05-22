@@ -37,7 +37,6 @@ private AnotherClass anotherClass;
 public class AnotherClass {
 	private String somethingField;
 }
-
 ```
 
 ### OneToOne
@@ -149,6 +148,20 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 		nativeQuery = true
 	)
 	Integer updatStudentEmailIdByFirstName(String firstName, String emailId);
+}
+```
+
+### Pagination and Sorting Repo
+
+```java
+@Repository
+public interface PersonPageRepository extends PagingAndSortingRepository<Person, Integer> {
+}
+
+
+public Page<Person> findAll(@RequestParam int page, @RequestParam int size) {
+    PageRequest pr = PageRequest.of(page,size);
+    return repository.findAll(pr);
 }
 
 ```
