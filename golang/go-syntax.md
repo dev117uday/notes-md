@@ -35,9 +35,7 @@ func main() {
 
 ## Data Types
 
-byte   :     alias for uint8
-rune   :     alias for int32
-
+byte : alias for uint8 rune : alias for int32
 
 ```go
 uint     unsigned, either 32 or 64 bits
@@ -68,7 +66,6 @@ func main() {
 	defer fmt.Println("world")
 	fmt.Println("hello")
 }
-
 ```
 
 Defer : A defer statement defers the execution of a function until the surrounding function returns. The deferred call's arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.
@@ -100,7 +97,7 @@ func main() {
       fmt.Printf("%s.\n", os)
   }
 }
-  ```
+```
 
 ## Switch Operations
 
@@ -135,7 +132,7 @@ default:
 }
 ```
 
-## Function Closure 
+## Function Closure
 
 Go functions may be closures. A closure is a function value that references variables from outside its body. The function may access and assign to the referenced variables; in this sense the function is "bound" to the variables. hence the function becomes static in some sense and its lifetime is that of the variable it gets binded to. also the internal variable of the func also lives as long as the binded variable
 
@@ -241,7 +238,7 @@ const (
 fmt.Println(C1, C3, C4) // "1 3 4"
 ```
 
-**Complete enum type with strings \[best practice\]** Here’s an idiomatic way to implement an enumerated type:
+**Complete enum type with strings \[best practice]** Here’s an idiomatic way to implement an enumerated type:
 
 * create a new integer type,
 * list its values using iota,
@@ -276,6 +273,3 @@ default:
 }
 // Output: North goes up.
 ```
-
-
-

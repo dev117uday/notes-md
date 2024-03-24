@@ -4,8 +4,6 @@ description: working with Redis and Spring Boot
 
 # Redis
 
-
-
 ### Redis with Spring Boot
 
 ```java
@@ -158,5 +156,4 @@ public class RedisReceiver implements MessageListener {
 	}
 
 }
-
 ```

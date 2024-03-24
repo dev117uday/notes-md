@@ -1,4 +1,4 @@
-# Basics
+# Troubleshooting and Debugging
 
 ### Troubleshooting and Debugging
 
@@ -29,7 +29,7 @@ Debugging : the process of identifying, analyzing and removing bugs in a system
 
 ### Main steps to solving any issue ?
 
-<figure><img src="../.gitbook/assets/Untitled.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Untitled.png" alt=""><figcaption><p>Questions to ask</p></figcaption></figure>
 
 ### Isolating the root cause is super important
 
@@ -45,8 +45,6 @@ Debugging : the process of identifying, analyzing and removing bugs in a system
   * .xsession-errors
 * MacOS : Library/Logs/
 * Windows : EventViewer
-
-<figure><img src="../.gitbook/assets/Untitled 1.png" alt=""><figcaption></figcaption></figure>
 
 Our solution dont come up by wandering about things, we have to look at information to plug things into our knowledge graph. looking at error messages or documentation
 
